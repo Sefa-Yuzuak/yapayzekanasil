@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block icerik %}
+<article class="yazi">
+  <h1>{{ p.baslik }}</h1>
+  <div class="metin">
+  {% for b in p.bolumler %}
+    {% if b.tur == "baslik" %}<h2>{{ b.metin }}</h2>
+    {% elif b.tur == "metin" %}<p>{{ b.metin }}</p>
+    {% elif b.tur == "madde" %}<ul class="madde">{% for m in b.maddeler %}<li>{{ m }}</li>{% endfor %}</ul>
+    {% elif b.tur == "uyari" %}<p class="uyari">{{ b.metin }}</p>
+    {% endif %}
+  {% endfor %}
+  </div>
+</article>
+{% endblock %}

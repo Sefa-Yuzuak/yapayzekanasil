@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ tam_baslik }}</title>
+<meta name="description" content="{{ meta_desc }}">
+<link rel="canonical" href="{{ site.url }}{{ canonical }}">
+{# Tek robots etiketi: ikinci bir robots bloğu ÇİFT ETİKET üretir. 404 bu bloğu ezer. #}
+{% block robots %}{% if site.noindex %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">{% endif %}{% endblock %}
+<meta property="og:type" content="{% block ogtur %}website{% endblock %}">
+<meta property="og:site_name" content="{{ site.ad }}">
+<meta property="og:title" content="{{ baslik }}">
+<meta property="og:description" content="{{ meta_desc }}">
+<meta property="og:url" content="{{ site.url }}{{ canonical }}">
+<meta property="og:locale" content="tr_TR">
+{# Varsayılan paylaşım görseli JPEG: X ve WhatsApp WebP önizlemeyi güvenilir basmıyor. #}
+<meta property="og:image" content="{{ site.url }}/static/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ baslik }} — {{ site.ad }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site.url }}/static/og.jpg">
+<meta name="theme-color" content="#2b1f66">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="{{ css_url }}">
+{% if site.gsc %}<meta name="google-site-verification" content="{{ site.gsc }}">{% endif %}
+{% if site.adsense and not site.noindex %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense }}" crossorigin="anonymous"></script>{% endif %}
+{% for s in schema %}
+<script type="application/ld+json">{{ s|json|safe }}</script>
+{% endfor %}
+<!-- derleme: {{ site.derleme_zamani }} -->
+</head>
+<body>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+
+<header class="ust">
+  <div class="kap ust-ic">
+    <a class="logo" href="/" aria-label="{{ site.ad }} ana sayfa">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="7" fill="#2b1f66"/><circle cx="12" cy="14" r="2.6" fill="#f5b942"/><circle cx="20" cy="14" r="2.6" fill="#f5b942"/><path d="M10.5 20.5c1.6 2.2 9.4 2.2 11 0" fill="none" stroke="#c9b8ff" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span>YapayZeka<b>Nasıl</b></span>
+    </a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="ana-menu" aria-label="Menüyü aç"><span></span></button>
+    <nav class="menu" id="ana-menu" aria-label="Ana menü">
+      {% if gorevler %}<a href="/nasil/">🛠 Nasıl yapılır</a>{% endif %}
+      {% for a in alanlar if a.rehberler %}<a href="{{ a.yol }}">{{ a.ikon }} {{ a.ad }}</a>{% endfor %}
+      {% if rehberler %}<a href="/rehberler/">📘 Tüm rehberler</a>{% endif %}
+      <a href="/hakkinda/">Yöntem</a>
+    </nav>
+  </div>
+</header>
+
+{% if kirinti %}
+<nav class="kirinti kap" aria-label="Site yolu">
+  <a href="/">Ana sayfa</a>
+  {% for ad, yol in kirinti %}<span aria-hidden="true">›</span><a href="{{ yol }}">{{ ad }}</a>{% endfor %}
+</nav>
+{% endif %}
+
+<main id="icerik" class="kap">
+{% block icerik %}{% endblock %}
+</main>
+
+<footer class="alt">
+  <div class="kap">
+    <div class="alt-ust">
+      <div>
+        <p class="alt-ad">{{ site.ad }}</p>
+        <p class="soluk">{{ site.slogan }}</p>
+        <p class="soluk kucuk">Her bilgi şirketin kendi sayfasından alınır ve kaynağın son kontrol tarihi
+        sayfada yazılır. Son güncelleme: <strong>{{ site.guncelleme_tr }}</strong>.</p>
+      </div>
+      <nav aria-label="Keşfet">
+        <p class="alt-baslik">Keşfet</p>
+        {% if gorevler %}<a href="/nasil/">Nasıl yapılır</a>{% endif %}
+        {% for a in alanlar if a.rehberler %}<a href="{{ a.yol }}">{{ a.ad }}</a>{% endfor %}
+        {% if rehberler %}<a href="/rehberler/">Tüm rehberler</a>{% endif %}
+      </nav>
+      <nav aria-label="Site">
+        <p class="alt-baslik">Site</p>
+        <a href="/hakkinda/">Hakkında ve yöntem</a>
+        <a href="/gizlilik/">Gizlilik ve çerezler</a>
+        {% if rehberler %}<a href="/veri/rehberler.json">Açık veri (JSON)</a>{% endif %}
+      </nav>
+    </div>
+    <p class="alt-not">Bu site bağımsızdır; adı geçen şirketlerle bağı yoktur, araçlara puan vermez.
+    Fiyatlar ve sınırlar değişebilir; karar vermeden önce sayfadaki kaynağı kontrol edin.
+    © {{ site.yil }} {{ site.ad }}</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var d = document.getElementById("menu-btn"), m = document.getElementById("ana-menu");
+  if (d && m) d.addEventListener("click", function () {
+    var acik = d.getAttribute("aria-expanded") === "true";
+    d.setAttribute("aria-expanded", String(!acik));
+    d.setAttribute("aria-label", acik ? "Menüyü aç" : "Menüyü kapat");
+    m.classList.toggle("acik", !acik);
+  });
+})();
+</script>
+</body>
+</html>

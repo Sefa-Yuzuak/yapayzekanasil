@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "baslangic",
+    "ad": "Başlangıç",
+    "ikon": "🚀",
+    "aciklama": "Hiç kullanmadıysanız buradan başlayın: hangi araç ne işe yarar, ücretsiz sürümle nereye kadar gidilir, ilk gün ne yapılır.",
+    "oncelik": 1
+  },
+  {
+    "slug": "ucret-ve-limitler",
+    "ad": "Ücret ve limitler",
+    "ikon": "💳",
+    "aciklama": "Hangi araç ücretsiz, ücretlisi kaç lira, ücretsiz sürümde neye izin var. Fiyatlar şirketlerin kendi sayfalarından, kontrol tarihiyle.",
+    "oncelik": 2
+  },
+  {
+    "slug": "gunluk-isler",
+    "ad": "Günlük işler",
+    "ikon": "✍️",
+    "aciklama": "E-posta, dilekçe, özet, çeviri, sunum, CV. Adım adım, kopyalanabilir örneklerle.",
+    "oncelik": 3
+  },
+  {
+    "slug": "gorsel-ve-video",
+    "ad": "Görsel ve video",
+    "ikon": "🎨",
+    "aciklama": "Yapay zekâyla resim ve video üretmek: hangi araç, ne kadar ücretsiz, üretilen görselin hakları kimde.",
+    "oncelik": 4
+  },
+  {
+    "slug": "guvenlik-ve-gizlilik",
+    "ad": "Güvenlik ve gizlilik",
+    "ikon": "🔒",
+    "aciklama": "Yazdıklarınız eğitimde kullanılıyor mu, nasıl kapatılır, hangi bilgiyi hiç yazmamalı. KVKK açısından ne değişir.",
+    "oncelik": 5
+  },
+  {
+    "slug": "ogrenci-ve-ogretmen",
+    "ad": "Öğrenci ve öğretmen",
+    "ikon": "🎓",
+    "aciklama": "Ödevde, derste ve sınav hazırlığında yapay zekâ: neye izin var, yapay zekâ dedektörleri gerçekten çalışıyor mu.",
+    "oncelik": 6
+  }
+]

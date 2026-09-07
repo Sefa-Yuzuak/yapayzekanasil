@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% from "_kart.html" import kart %}
+{% block icerik %}
+<h1>{{ alan.ikon }} {{ alan.ad }}</h1>
+<p class="giris">{{ alan.aciklama }}</p>
+<p class="damga">{{ alan.rehberler|length }} rehber · son güncelleme <strong>{{ site.guncelleme_tr }}</strong></p>
+<section class="bolum">
+  <div class="izgara">{% for r in alan.rehberler %}{{ kart(r) }}{% endfor %}</div>
+</section>
+{% set digerleri = alanlar|selectattr("rehberler")|rejectattr("slug", "equalto", alan.slug)|list %}
+{% if digerleri %}
+<section class="bolum">
+  <h2>Diğer konular</h2>
+  <ul class="cip-liste">
+    {% for a in digerleri %}<li><a class="cip" href="{{ a.yol }}">{{ a.ikon }} {{ a.ad }} <span class="cip-sayi">{{ a.rehberler|length }}</span></a></li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}

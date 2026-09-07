@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block icerik %}
+<h1>Yapay zekâ ile ne yapılır?</h1>
+<p class="giris">Her konu için tek bir soruya cevap veriyoruz: bu işi yapay zekâyla gerçekten
+   yapabilir misiniz, ücretsiz katmanda nereye kadar gidersiniz, çıktıyı ticari olarak
+   kullanabilir misiniz. Araç bilgileri şirketlerin kendi sayfalarından, kontrol tarihiyle.</p>
+<p class="damga">{{ gorevler|length }} konu · son güncelleme <strong>{{ site.guncelleme_tr }}</strong></p>
+
+<section class="bolum">
+  <div class="izgara">
+    {% for g in gorevler %}
+    <article class="kart">
+      <a class="kart-bag" href="{{ g.yol }}">
+        <span class="kart-alan">Nasıl yapılır</span>
+        <span class="kart-ad">{{ g.baslik }}</span>
+        <span class="kart-ozet">{{ g.ozet }}</span>
+      </a>
+      <p class="kart-alt">{{ g.okuma }} dk{% if g.araclar %} · {{ g.araclar|length }} araç{% endif %}{% if g.guncelleme %} · {{ g.guncelleme|tarih }}{% endif %}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

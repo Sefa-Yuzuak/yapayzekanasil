@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% from "_kart.html" import kart %}
+{% block icerik %}
+<h1>Tüm rehberler</h1>
+<p class="giris">{{ rehberler|length }} rehber, konuya göre. Her birinde kısa cevap, düzeltilen bir yaygın yanlış ve tarihli resmî kaynaklar var.</p>
+{% for a in alanlar if a.rehberler %}
+<section class="bolum">
+  <h2 id="{{ a.slug }}"><a href="{{ a.yol }}">{{ a.ikon }} {{ a.ad }}</a></h2>
+  <div class="izgara">{% for r in a.rehberler %}{{ kart(r) }}{% endfor %}</div>
+</section>
+{% endfor %}
+{% endblock %}

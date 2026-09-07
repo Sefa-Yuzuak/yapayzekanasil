@@ -1,0 +1,79 @@
+[
+  {
+    "slug": "gorsel-olusturma",
+    "baslik": "Yapay Zeka ile Görsel Nasıl Yapılır?",
+    "ozet": "Yapay zekâyla resim üretmek için para vermeniz gerekmiyor: hem ChatGPT'nin hem Gemini'nin ücretsiz katmanında görsel oluşturma var. Hangi araçta ne kadar hakkınız olduğu ve üretilen görseli nerede kullanabileceğiniz.",
+    "cevap": "Ücretsiz yapılabilir. Google'ın Türkçe abonelik sayfası, Gemini'nin ₺0'lık ücretsiz katmanında görsel oluşturma ve düzenlemenin bulunduğunu yazıyor. OpenAI'ın yardım sayfası da ücretsiz ChatGPT kullanıcılarının görsel üretebildiğini, ancak görsel üretmenin metin sohbetinden ayrı bir kullanım limitine tabi olduğunu belirtiyor. İkisinde de Türkçe istem yazabilirsiniz.",
+    "hedef_sorgu": "yapay zeka ile resim nasıl yapılır",
+    "guncelleme": "2026-09-07",
+    "yanlis": {
+      "iddia": "Yapay zekâyla düzgün görsel üretmek için Midjourney gibi ücretli bir araca abone olmak şart.",
+      "dogru": "Şart değil. Gemini'nin ücretsiz katmanında görsel oluşturma ve düzenleme, ChatGPT'nin ücretsiz katmanında da görsel üretme bulunuyor — ikisi de şirketlerin kendi sayfalarında yazılı. Ücretli plana geçmenin getirdiği şey yeni bir yetenek değil, daha yüksek kullanım sınırı.",
+      "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr"
+    },
+    "araclar": [
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "₺0 katmanda görsel oluşturma ve düzenleme var",
+        "turkce": "Var (Türkçe desteklenen diller arasında)",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "ChatGPT (OpenAI)",
+        "ucretsiz": "Var; metin sohbetinden ayrı kullanım limitine tabi",
+        "turkce": "Var (Türkçe istem yazılabiliyor)",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-07"
+      }
+    ],
+    "bolumler": [
+      {"tur": "uyari", "metin": "Tablodaki boş hücreler bir eksiklik değil, bilinçli bir tercih: filigran ve ticari kullanım koşulları için şirketlerin kendi sayfalarında net bir ifade bulamadık. Bulamadığımız bilgiyi tahminle doldurmuyoruz. Bu satırlar kaynak bulundukça dolacak."},
+
+      {"tur": "baslik", "metin": "En hızlı yol: hangisiyle başlamalı?"},
+      {"tur": "metin", "metin": "İkisi de ücretsiz ve ikisinde de Türkçe yazabiliyorsunuz. Aralarındaki seçim, zaten hangi hesabınızın olduğuna bakılarak yapılabilir: Google hesabınız varsa Gemini'de ek kurulum yok; ChatGPT kullanıyorsanız aynı sohbet içinde görsel isteyebilirsiniz."},
+      {"tur": "metin", "metin": "Google'ın Türkçe sayfası ücretsiz katmanda görsel oluşturmanın yanında düzenlemeyi de sayıyor. Yani ürettiğiniz görseli baştan yazmadan üzerinde değişiklik isteyebiliyorsunuz."},
+
+      {"tur": "baslik", "metin": "Adım adım"},
+      {"tur": "adim", "adimlar": [
+        {"baslik": "Aracı açın.", "metin": "Gemini için gemini.google adresi, ChatGPT için chatgpt.com. İkisinde de ücretsiz hesapla giriş yeterli."},
+        {"baslik": "Ne istediğinizi tek cümlede yazın.", "metin": "\"Bir görsel oluştur\" demeniz yeterli değil; ne, nerede, hangi tarzda olacağını söyleyin."},
+        {"baslik": "Sonucu düzeltin, baştan yazmayın.", "metin": "Beğenmediğiniz yeri tarif edin: \"arka planı gece yap\", \"yazıyı kaldır\". Yeniden istem yazmak yerine düzeltmek genelde daha hızlı sonuç veriyor."},
+        {"baslik": "Limite takılırsanız diğerine geçin.", "metin": "Görsel üretme her iki araçta da ayrı kotaya tabi. Birinde kota dolduysa diğeriyle devam edebilirsiniz."}
+      ]},
+
+      {"tur": "baslik", "metin": "İyi istem nasıl yazılır?"},
+      {"tur": "metin", "metin": "Görsel üretmede sonucu belirleyen şey aracın markası değil, istemin netliği. Dört bilgiyi vermek genelde yetiyor: konu, ortam, tarz, çerçeveleme."},
+      {"tur": "tablo", "basliklar": ["Zayıf istem", "Neden zayıf", "Daha iyisi"], "satirlar": [
+        ["Bir kedi çiz", "Konu var, geri kalan yok", "Pencere kenarında uyuyan tekir kedi, sabah ışığı, yumuşak odak, yatay çerçeve"],
+        ["Logo yap", "Marka, sektör, biçim belirsiz", "Bir kahve dükkânı için sade logo, tek renk, kahve çekirdeği ve fincan birleşimi, düz zemin"],
+        ["Güzel bir manzara", "\"Güzel\" ölçülebilir değil", "Gün batımında Karadeniz yaylası, sisli, geniş açı, gerçekçi fotoğraf tarzı"]
+      ], "not": "Bu satırlar örnek istemlerdir, kaynaklı bir olgu değildir."},
+
+      {"tur": "baslik", "metin": "Üretilen görseli nerede kullanabilirsiniz?"},
+      {"tur": "metin", "metin": "Bu, en çok yanlış bilgi dolaşan konu ve dürüst cevabı şu: kesin bir şey söyleyebilmek için kullandığınız aracın kendi kullanım koşullarına bakmanız gerekiyor. Koşullar araca göre değişiyor ve ücretsiz ile ücretli katmanda farklılaşabiliyor."},
+      {"tur": "madde", "maddeler": [
+        "Ticari kullanım yapacaksanız aracın kullanım koşullarını okumadan yayımlamayın.",
+        "Gerçek bir kişinin yüzünü ya da tanınır bir markayı içeren görselleri, telif dışında kişilik hakkı ve marka hakkı da ilgilendirir.",
+        "Yapay zekâyla üretilmiş bir görseli haber veya bilgilendirme içeriğinde kullanıyorsanız, üretildiğini belirtmek okuyucuya karşı dürüstlüktür."
+      ]},
+      {"tur": "uyari", "metin": "Bu bölüm hukuki tavsiye değildir. Ticari bir işte kullanacaksanız aracın güncel kullanım koşullarını kendiniz okuyun."}
+    ],
+    "sss": [
+      {"s": "Yapay zekâ ile ücretsiz görsel yapabilir miyim?", "c": "Evet. Google'ın Türkçe abonelik sayfası, Gemini'nin ₺0'lık ücretsiz katmanında görsel oluşturma ve düzenlemenin bulunduğunu yazıyor. OpenAI'ın yardım sayfası da ücretsiz ChatGPT kullanıcılarının görsel üretebildiğini belirtiyor."},
+      {"s": "Kaç tane görsel üretebilirim?", "c": "Kesin bir sayı yazamıyoruz. OpenAI'ın sayfası görsel üretmenin metin sohbetinden ayrı bir kullanım limiti olduğunu söylüyor ama sayı vermiyor; Google da ücretsiz katman için sayı yayımlamıyor. Sayı veren Türkçe kaynaklara temkinli yaklaşın."},
+      {"s": "Türkçe istem yazabilir miyim?", "c": "Evet. Google'ın destek sayfası Türkçeyi desteklenen diller arasında sayıyor; ChatGPT'de de Türkçe istem yazılabiliyor."},
+      {"s": "Ürettiğim görseli satabilir miyim?", "c": "Bu, kullandığınız aracın kendi kullanım koşullarına bağlı ve koşullar değişebiliyor. Ticari kullanım öncesi aracın güncel koşullarını okumanız gerekir; bu sayfada kesin bir izin ya da yasak bilgisi vermiyoruz çünkü resmî sayfalarda net bir ifade bulamadık."},
+      {"s": "Midjourney gibi ücretli bir araç şart mı?", "c": "Hayır. Ücretsiz katmanlarda görsel üretme mevcut. Ücretli planların getirdiği temel şey daha yüksek kullanım sınırı."}
+    ],
+    "kaynaklar": [
+      {"ad": "Google — Gemini abonelikleri (Türkçe)", "url": "https://gemini.google/tr/subscriptions/?hl=tr", "dogrulama": "2026-09-07"},
+      {"ad": "OpenAI Help Center — ChatGPT Free Tier FAQ", "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq", "dogrulama": "2026-09-07"},
+      {"ad": "Google Destek — Gemini'nin kullanılabildiği ülkeler ve diller", "url": "https://support.google.com/gemini/answer/13575153?hl=tr", "dogrulama": "2026-09-07"}
+    ]
+  }
+]

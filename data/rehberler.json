@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "chatgpt-ucretsiz-surum",
+    "alan": "ucret-ve-limitler",
+    "baslik": "ChatGPT ücretsiz sürümü: neler var, neler yok",
+    "ozet": "ChatGPT'nin ücretsiz sürümünde hangi model çalışıyor, kaç mesaj hakkınız var, neye para vermek gerekiyor. Hepsi OpenAI'ın kendi yardım sayfasından, kontrol tarihiyle.",
+    "cevap": "ChatGPT'nin ücretsiz sürümünde metin sohbetleri sınırsız; OpenAI'ın yardım sayfası bunu \"unlimited everyday text chats\" diye yazıyor ve yalnız kötüye kullanımı önleyen korumalara tabi tutuyor. Ücretsiz kullanıcılar GPT-5.6 Luna modelini kullanıyor, internette arama yapabiliyor, dosya ve görsel yükleyebiliyor. Sınır metinde değil, araçlarda: dosya yükleme, görsel üretme, sesli mod ve veri analizinin kendi ayrı kotaları var.",
+    "hedef_sorgu": "chatgpt ücretsiz mi",
+    "guncelleme": "2026-09-07",
+    "yanlis": {
+      "iddia": "ChatGPT'nin ücretsiz sürümünde günde birkaç mesaj hakkın var, dolunca beklemen gerekir.",
+      "dogru": "Metin sohbetlerinde sayılı mesaj hakkı yok. OpenAI'ın yardım sayfası ücretsiz katman için \"unlimited everyday text chats\" diyor. Kota, metin sohbetinde değil; dosya yükleme, görsel üretme, ses ve veri analizi gibi araçlarda uygulanıyor.",
+      "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+    },
+    "bolumler": [
+      {"tur": "uyari", "metin": "Bu sayfadaki bilgiler 7 Eylül 2026'da OpenAI'ın kendi yardım sayfasından alındı. OpenAI varsayılan modeli ve limitleri zaman içinde değiştirebiliyor; sayfanın kendisi de bunu söylüyor. Karar vermeden önce alttaki kaynak bağlantısına bakın."},
+
+      {"tur": "baslik", "metin": "Ücretsiz sürümde hangi model çalışıyor?"},
+      {"tur": "metin", "metin": "OpenAI'ın yardım merkezindeki \"ChatGPT Free Tier FAQ\" sayfası, ücretsiz kullanıcıların GPT-5.6 Luna modeline eriştiğini yazıyor. Aynı sayfa, \"Think\" özelliğinin mobil uygulamada bulunduğunu ve web'e yayılmakta olduğunu belirtiyor."},
+      {"tur": "metin", "metin": "Türkçe içerikte sık rastlanan \"ücretsiz sürüm eski modeli kullanır\" ifadesi, modelin adı her değiştiğinde eskiyen bir cümle. Bugün ücretsiz katmandaki model, sayfanın yazdığı adla GPT-5.6 Luna."},
+
+      {"tur": "baslik", "metin": "Ücretsiz katmanda neler yapabilirsiniz?"},
+      {"tur": "metin", "metin": "Yardım sayfası ücretsiz kullanıcılar için şu yetenekleri sıralıyor:"},
+      {"tur": "madde", "maddeler": [
+        "İnternette arama yapıp güncel bilgi alma",
+        "Kendi verinizi analiz ettirip çıkarım elde etme",
+        "İstemlerinize görsel veya dosya yükleme",
+        "500 MB depolamalı Library kullanımı"
+      ]},
+
+      {"tur": "baslik", "metin": "Sınırlar tam olarak nerede?"},
+      {"tur": "metin", "metin": "Sayfadaki ifade net: ücretsiz kullanıcıların gündelik metin sohbetleri sınırsız, yalnız kötüye kullanımı önleyen korumalara tabi. Buna karşılık dosya yükleme, görsel üretme, ses ve veri analizi gibi araçların kendi ayrı kullanım limitleri var ve bir limite ulaştığınızda ChatGPT sizi uyarıyor."},
+      {"tur": "tablo", "basliklar": ["Özellik", "Ücretsiz katmanda durumu"], "satirlar": [
+        ["Metin sohbeti", "Sınırsız (kötüye kullanım korumalarına tabi)"],
+        ["Model", "GPT-5.6 Luna"],
+        ["İnternette arama", "Var"],
+        ["Dosya ve görsel yükleme", "Var, ayrı kotaya tabi"],
+        ["Görsel üretme", "Ayrı kotaya tabi"],
+        ["Sesli mod", "Ayrı kotaya tabi"],
+        ["Veri analizi", "Ayrı kotaya tabi, ücretlilere göre daha dar"],
+        ["Library depolama", "500 MB"],
+        ["Kendi GPT'nizi oluşturma", "Yok"]
+      ], "not": "Kaynak: OpenAI Help Center, ChatGPT Free Tier FAQ. Kontrol tarihi 7 Eylül 2026."},
+
+      {"tur": "baslik", "metin": "Ücretli sürüme geçmek neyi değiştiriyor?"},
+      {"tur": "metin", "metin": "Yardım sayfası, ChatGPT Plus kullanıcılarının daha yüksek kullanım oranlarına eriştiğini söylüyor. Ayrıca ücretsiz katmanda bir limite takıldıysanız, Plus, Pro veya Business planına geçtiğinizde kullanım oranınızın sıfırlandığını da yazıyor."},
+      {"tur": "metin", "metin": "Yani ücretli sürümün getirdiği şey metin sohbetinde \"sınırsızlık\" değil — o zaten ücretsizde var. Fark, araç kotalarının genişlemesi."},
+
+      {"tur": "baslik", "metin": "Kendi GPT'nizi oluşturabilir misiniz?"},
+      {"tur": "metin", "metin": "Hayır. Bu, çoğu Türkçe kaynağın hâlâ yanlış anlattığı bir konu. OpenAI'ın sayfası şunu yazıyor: yeni GPT oluşturma ve yayımlama, Free, Go, Plus ve Pro dahil kişisel ChatGPT hesaplarında bulunmuyor. Var olan GPT'leri kullanmaya devam edebiliyorsunuz; bir GPT'yi düzenleme ise planınıza ve izinlerinize bağlı."},
+      {"tur": "metin", "metin": "GPT oluşturma yalnız Business, Enterprise ve Edu çalışma alanlarında, çalışma alanı ayarları ve izinleri elverdiğinde mümkün. Yani \"Plus alırsan kendi yapay zekânı yaparsın\" cümlesi bugün doğru değil."},
+
+      {"tur": "baslik", "metin": "Reklam var mı?"},
+      {"tur": "metin", "metin": "Yardım sayfası, bazı ülkelerde ücretsiz katmanda reklam görünebileceğini ve güncel kullanılabilirlik ile denetimler için ayrı bir reklam SSS sayfasına bakılmasını söylüyor. Türkiye'nin bu ülkeler arasında olup olmadığı bu sayfada yazmıyor; sayfa ülke listesi vermiyor."},
+      {"tur": "uyari", "metin": "Türkiye'de reklam gösterilip gösterilmediğini kesin olarak yazamıyoruz, çünkü OpenAI'ın bu sayfasında ülke listesi yok. Doğrulanmamış bir bilgiyi olgu gibi yazmak yerine boş bırakıyoruz."}
+    ],
+    "sss": [
+      {"s": "ChatGPT ücretsiz mi?", "c": "Evet. OpenAI'ın yardım sayfası \"ChatGPT is free to use\" diyor. Ücretsiz katmanda metin sohbeti sınırsız; dosya yükleme, görsel üretme, ses ve veri analizi gibi araçların ayrı kotaları var."},
+      {"s": "Ücretsiz sürümde günde kaç mesaj hakkım var?", "c": "Metin sohbetleri için sayılı bir hak yok. Sayfa \"unlimited everyday text chats\" ifadesini kullanıyor ve yalnız kötüye kullanımı önleyen korumalardan söz ediyor."},
+      {"s": "Ücretsiz sürüm hangi modeli kullanıyor?", "c": "GPT-5.6 Luna. Model adları sık değiştiği için bu bilgiyi kaynak sayfadan tekrar kontrol etmekte fayda var."},
+      {"s": "Ücretsiz sürümle internette arama yapabilir miyim?", "c": "Evet. Yardım sayfası ücretsiz kullanıcıların internette arama yapıp güncel bilgi alabildiğini yazıyor."},
+      {"s": "Plus'a geçersem kendi GPT'mi oluşturabilir miyim?", "c": "Hayır. OpenAI, yeni GPT oluşturma ve yayımlamanın Free, Go, Plus ve Pro dahil kişisel hesaplarda bulunmadığını yazıyor. Bu özellik yalnız Business, Enterprise ve Edu çalışma alanlarında."},
+      {"s": "Limite takılırsam ücretli plana geçince sıfırlanır mı?", "c": "Evet. Sayfa, ücretsiz katmanda bir kullanım limitine ulaşıldığında Plus, Pro veya Business planına geçişte kullanım oranlarının sıfırlandığını belirtiyor."}
+    ],
+    "kaynaklar": [
+      {"ad": "OpenAI Help Center — ChatGPT Free Tier FAQ", "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq", "dogrulama": "2026-09-07"}
+    ]
+  },
+
+  {
+    "slug": "chatgpt-verileriniz-egitimde-kullaniliyor-mu",
+    "alan": "guvenlik-ve-gizlilik",
+    "baslik": "ChatGPT'ye yazdıklarınız eğitimde kullanılıyor mu?",
+    "ozet": "ChatGPT'ye yazdıklarınızın modeli eğitmekte kullanılıp kullanılmadığı, bunu kapatmanın yolu ve geçici sohbetlerin ne kadar saklandığı. OpenAI'ın Data Controls sayfasından.",
+    "cevap": "Varsayılan olarak sohbetleriniz modeli iyileştirmek için kullanılabiliyor, ama bu kapatılabilir bir ayar. OpenAI'ın Data Controls sayfasındaki \"Improve the model for everyone\" seçeneğini kapattığınızda sohbetleriniz geçmişinizde durmaya devam ediyor fakat ChatGPT'yi eğitmekte kullanılmıyor. Ayar hesabın tamamına uygulanıyor; hangi cihazdan girdiğiniz fark etmiyor.",
+    "hedef_sorgu": "chatgpt verilerimi kullanıyor mu",
+    "guncelleme": "2026-09-07",
+    "yanlis": {
+      "iddia": "ChatGPT'ye yazdığınız her şey modelin eğitiminde kullanılır ve bunu engellemenin yolu yoktur.",
+      "dogru": "Engellenebilir. OpenAI'ın Data Controls ayarlarında \"Improve the model for everyone\" seçeneği kapatıldığında sohbetler eğitimde kullanılmıyor; sohbet geçmişiniz ise silinmiyor, yerinde kalıyor. Ayar tüm hesabı kapsıyor.",
+      "kaynak": "https://help.openai.com/en/articles/7730893-data-controls-faq"
+    },
+    "bolumler": [
+      {"tur": "uyari", "metin": "Bu sayfa 7 Eylül 2026'da OpenAI'ın Data Controls SSS sayfasından yazıldı. Gizlilik ayarları görece sık değişiyor; kritik bir karar vereceksiniz kaynağa bakın."},
+
+      {"tur": "baslik", "metin": "Varsayılan durum ne?"},
+      {"tur": "metin", "metin": "OpenAI'ın sayfası Data Controls'ü şöyle tanımlıyor: bu ayarlar, ChatGPT'nin sohbetlerinizi ve etkileşimlerinizi nasıl kullandığına karar vermenizi sağlıyor; özellikle de sohbetlerinizin modelleri iyileştirmeye yardım edip etmeyeceğini seçmenize izin veriyor."},
+      {"tur": "metin", "metin": "Seçeneklerin oturum açıp açmadığınıza göre değiştiğini de yazıyor: oturum açmadan da sohbetlerinizin ChatGPT'yi eğitmekte kullanılıp kullanılmayacağını seçebiliyorsunuz; oturum açtığınızda verinizi dışa aktarma ve hesabınızı silme gibi ek seçenekler geliyor."},
+
+      {"tur": "baslik", "metin": "Eğitimde kullanımı nasıl kapatırsınız?"},
+      {"tur": "adim", "adimlar": [
+        {"baslik": "Ayarlarda Data Controls bölümünü açın.", "metin": "OpenAI'ın sayfası bu bölümü hesap ayarları içinde tarif ediyor."},
+        {"baslik": "\"Improve the model for everyone\" seçeneğini kapatın.", "metin": "Sayfanın adlandırdığı ayar tam olarak budur."},
+        {"baslik": "Bir kez kapatmanız yeterli.", "metin": "Sayfa, model eğitimini kapattığınızda ayarın hesabınızın tamamına uygulandığını ve hangi cihazı kullandığınızın fark etmediğini belirtiyor."}
+      ]},
+      {"tur": "metin", "metin": "Kapattığınızda sohbetlerinize ne olduğu da yazılı: sohbetler geçmişinizde görünmeye devam ediyor ama ChatGPT'yi eğitmekte kullanılmıyor. Yani \"kapatırsam geçmişim silinir\" endişesi yersiz."},
+
+      {"tur": "baslik", "metin": "Geçici sohbetler (Temporary Chat) ne kadar saklanıyor?"},
+      {"tur": "metin", "metin": "Sayfa geçici sohbetler için dört madde veriyor: sistemlerden 30 gün sonra siliniyorlar; modelleri eğitmekte kullanılmıyorlar; yalnız kötüye kullanımı izlemek amacıyla incelenebiliyorlar; sohbet geçmişinize kaydedilmiyor ve hafıza oluşturmuyorlar."},
+      {"tur": "tablo", "basliklar": ["Durum", "Eğitimde kullanılır mı?", "Geçmişte görünür mü?", "Saklama"], "satirlar": [
+        ["Varsayılan sohbet", "Evet (ayar açıksa)", "Evet", "Sayfada süre belirtilmiyor"],
+        ["Model eğitimi kapalı", "Hayır", "Evet", "Sayfada süre belirtilmiyor"],
+        ["Geçici sohbet", "Hayır", "Hayır", "30 gün sonra siliniyor"]
+      ], "not": "Kaynak: OpenAI Help Center, Data Controls FAQ. Kontrol tarihi 7 Eylül 2026. Boş bırakılan hücreler, kaynak sayfada o bilginin yazmadığı anlamına gelir."},
+
+      {"tur": "baslik", "metin": "Kapatmanın kapatmadığı şey"},
+      {"tur": "metin", "metin": "Sayfa bir noktayı özellikle vurguluyor: Hafıza ve kişiselleştirme özelliklerini kapatmak, nadir ve yüksek riskli durumlarda ChatGPT'nin daha güvenli yanıt vermesine yardımcı olmak için sınırlı ve güvenlikle ilgili bağlamı kullanabilen güvenlik özelliklerini devre dışı bırakmıyor."},
+
+      {"tur": "baslik", "metin": "Pratikte ne yapmalı?"},
+      {"tur": "madde", "maddeler": [
+        "Model eğitimini kapatmak ücretsiz ve tek seferlik; ilk gün yapın.",
+        "Tek seferlik hassas bir işiniz varsa geçici sohbet kullanın: geçmişe kaydedilmiyor ve 30 gün sonra siliniyor.",
+        "Ayar ne olursa olsun, T.C. kimlik numarası, kart bilgisi, müşteri listesi gibi verileri hiç yazmayın. Ayar veriyi eğitimden çıkarır; sunucuya gitmesini engellemez.",
+        "İş yerinin verisiyle çalışıyorsanız önce kurumunuzun kuralına bakın; kişisel hesapla kurumsal veri işlemek ayrı bir sorumluluk doğurur."
+      ]}
+    ],
+    "sss": [
+      {"s": "ChatGPT yazdıklarımı eğitimde kullanıyor mu?", "c": "Varsayılan olarak kullanılabiliyor, ama kapatılabiliyor. Data Controls içindeki \"Improve the model for everyone\" ayarını kapattığınızda sohbetleriniz ChatGPT'yi eğitmekte kullanılmıyor."},
+      {"s": "Kapatırsam sohbet geçmişim silinir mi?", "c": "Hayır. OpenAI'ın sayfası, sohbetlerin geçmişte görünmeye devam edeceğini ama eğitimde kullanılmayacağını yazıyor."},
+      {"s": "Ayarı her cihazda ayrı ayrı yapmam gerekir mi?", "c": "Hayır. Sayfa, model eğitimini kapattığınızda ayarın hesabın tamamına uygulandığını ve cihazın fark etmediğini belirtiyor."},
+      {"s": "Geçici sohbetler ne kadar saklanıyor?", "c": "OpenAI'ın sayfasına göre geçici sohbetler sistemlerden 30 gün sonra siliniyor, modelleri eğitmekte kullanılmıyor ve sohbet geçmişine kaydedilmiyor."},
+      {"s": "Geçici sohbetler hiç okunmuyor mu?", "c": "Sayfa, geçici sohbetlerin yalnız kötüye kullanımı izlemek amacıyla incelenebileceğini yazıyor."}
+    ],
+    "kaynaklar": [
+      {"ad": "OpenAI Help Center — Data Controls FAQ", "url": "https://help.openai.com/en/articles/7730893-data-controls-faq", "dogrulama": "2026-09-07"}
+    ]
+  },
+
+  {
+    "slug": "gemini-fiyatlari-turk-lirasi",
+    "alan": "ucret-ve-limitler",
+    "baslik": "Gemini fiyatları: Türk lirasıyla güncel liste",
+    "ozet": "Google'ın yapay zekâ aboneliklerinin Türkiye fiyatları: ücretsiz katmanda ne var, AI Plus, Pro ve Ultra kaç lira. Google'ın kendi Türkçe sayfasından alınan liste.",
+    "cevap": "Gemini'nin ücretsiz katmanı var ve Google'ın Türkçe abonelik sayfasında ₺0 olarak listeleniyor. Ücretli planlar aylık ₺199,99 (Google AI Plus), ₺869,99 (Google AI Pro) ve ₺1.479,99'dan başlayan Google AI Ultra. Ücretli planların getirdiği temel şey daha yüksek kullanım sınırı: Plus ücretsize göre 2 kat, Pro 4 kat, Ultra 20 kata kadar.",
+    "hedef_sorgu": "gemini kaç para türkiye",
+    "guncelleme": "2026-09-07",
+    "yanlis": {
+      "iddia": "Yapay zekâ araçlarının Türkiye fiyatı yok, dolar üzerinden ödersiniz; Gemini'yi kullanmak için VPN gerekir.",
+      "dogru": "Google'ın Türkçe abonelik sayfası fiyatları doğrudan Türk lirasıyla listeliyor. Ayrıca Google'ın destek sayfası Türkiye'yi desteklenen ülkeler, Türkçeyi de desteklenen diller arasında sayıyor.",
+      "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr"
+    },
+    "bolumler": [
+      {"tur": "uyari", "metin": "Fiyatlar 7 Eylül 2026'da Google'ın Türkçe abonelik sayfasından alındı. Abonelik fiyatları değişebiliyor ve kampanyalara göre farklılaşabiliyor; ödeme yapmadan önce sayfadaki güncel tutara bakın."},
+
+      {"tur": "baslik", "metin": "Planlar ve fiyatlar"},
+      {"tur": "tablo", "basliklar": ["Plan", "Aylık fiyat", "Kullanım sınırı", "Depolama"], "satirlar": [
+        ["Ücretsiz", "₺0", "Temel", "15 GB"],
+        ["Google AI Plus", "₺199,99", "Ücretsize göre 2 kat", "400 GB"],
+        ["Google AI Pro", "₺869,99", "Ücretsize göre 4 kat", "5 TB"],
+        ["Google AI Ultra", "₺1.479,99", "20 kata kadar", "20 TB'a kadar"]
+      ], "not": "Kaynak: Google, Gemini abonelikleri (Türkçe sayfa). Kontrol tarihi 7 Eylül 2026. Ultra'nın daha yüksek kullanım kademesi ayrı fiyatlanıyor."},
+
+      {"tur": "baslik", "metin": "Ücretsiz katmanda ne var?"},
+      {"tur": "metin", "metin": "Google'ın Türkçe sayfası ücretsiz katmanı ₺0 olarak listeliyor ve içinde şunları sayıyor: 3.6 Flash erişimi, 3.1 Pro'ya farklı düzeylerde erişim imkânı, görsel oluşturma ve düzenleme, Deep Research, Gemini Live, Canvas ve Gems. Depolama, Google hizmetleri genelinde 15 GB."},
+      {"tur": "metin", "metin": "Yani ücretsiz katman yalnız sohbetten ibaret değil; görsel üretme ve derin araştırma gibi özellikler de bulunuyor. Ücretli planların temel farkı, aynı özelliklere daha yüksek kullanım sınırıyla erişmek."},
+
+      {"tur": "baslik", "metin": "Türkiye'den erişim ve Türkçe desteği"},
+      {"tur": "metin", "metin": "Google'ın destek sayfası, Gemini web uygulamasının 40'tan fazla dilde ve 230'dan fazla ülke ile idari bölgede kullanılabildiğini yazıyor. Desteklenen diller listesinde Türkçe, desteklenen ülkeler listesinde Türkiye açıkça yer alıyor."},
+
+      {"tur": "baslik", "metin": "Hangi plan kime uygun?"},
+      {"tur": "metin", "metin": "Bu soruya \"en iyi plan şu\" diye cevap vermiyoruz; kullanım biçiminize bağlı. Karar verirken bakılacak ölçülebilir şey şu: ücretsiz katmanda kullanım sınırına takılıyor musunuz? Takılmıyorsanız ücretli plan yalnız depolama ve ek özellikler için anlamlı olur."},
+      {"tur": "madde", "maddeler": [
+        "Ücretsiz katmanda sınıra takılmıyorsanız yükseltmeye gerek yok.",
+        "Sık sınıra takılıyorsanız ilk adım Plus (2 kat), sonra Pro (4 kat).",
+        "Ultra, 20 kata kadar sınır ve büyük depolama isteyen yoğun kullanım içindir.",
+        "Google Drive depolaması da bu planlara dahil; halihazırda Google One ödüyorsanız hesabı birlikte yapın."
+      ]}
+    ],
+    "sss": [
+      {"s": "Gemini ücretsiz mi?", "c": "Evet, ücretsiz bir katmanı var ve Google'ın Türkçe abonelik sayfasında ₺0 olarak listeleniyor. Ücretsiz katmanda görsel oluşturma, Deep Research, Gemini Live, Canvas ve Gems bulunuyor."},
+      {"s": "Gemini Türkiye'de kullanılabiliyor mu?", "c": "Evet. Google'ın destek sayfası desteklenen ülkeler listesinde Türkiye'yi, desteklenen diller listesinde Türkçeyi sayıyor."},
+      {"s": "Google AI Pro kaç lira?", "c": "Google'ın Türkçe abonelik sayfasında aylık ₺869,99 olarak listeleniyor (7 Eylül 2026 kontrolü). Fiyat değişebilir, sayfadan doğrulayın."},
+      {"s": "Ücretli plan almanın somut faydası ne?", "c": "Google'ın sayfası farkı kullanım sınırı üzerinden anlatıyor: Plus ücretsize göre 2 kat, Pro 4 kat, Ultra 20 kata kadar daha yüksek sınır. Depolama da planla birlikte artıyor."},
+      {"s": "Gemini kullanmak için VPN gerekir mi?", "c": "Google'ın kendi destek sayfası Türkiye'yi desteklenen ülkeler arasında listeliyor; ayrı bir erişim aracına ihtiyaç duyulduğuna dair bir bilgi bu sayfalarda yer almıyor."}
+    ],
+    "kaynaklar": [
+      {"ad": "Google — Gemini abonelikleri (Türkçe)", "url": "https://gemini.google/tr/subscriptions/?hl=tr", "dogrulama": "2026-09-07"},
+      {"ad": "Google Destek — Gemini'nin kullanılabildiği ülkeler ve diller", "url": "https://support.google.com/gemini/answer/13575153?hl=tr", "dogrulama": "2026-09-07"}
+    ]
+  }
+]

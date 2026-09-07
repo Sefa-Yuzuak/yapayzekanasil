@@ -1,0 +1,10 @@
+{% macro kart(r) %}
+<article class="kart">
+  <a class="kart-bag" href="{{ r.yol }}">
+    <span class="kart-alan">{{ r.alan_ad }}</span>
+    <span class="kart-ad">{{ r.baslik }}</span>
+    <span class="kart-ozet">{{ r.ozet }}</span>
+  </a>
+  <p class="kart-alt">{{ r.okuma }} dk okuma{% if r.guncelleme %} · {{ r.guncelleme|tarih }}{% endif %}{% if r.kaynaklar %} · {{ r.kaynaklar|length }} kaynak{% endif %}</p>
+</article>
+{% endmacro %}

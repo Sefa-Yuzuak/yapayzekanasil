@@ -1,0 +1,43 @@
+[
+  {
+    "url": "/hakkinda/",
+    "baslik": "Hakkında ve yöntem",
+    "meta": "Yapay Zeka Nasıl neyi, nasıl anlatıyor: yalnız şirketlerin kendi sayfalarından alınan, tarihli bilgi; her rehberde düzeltilen bir yaygın yanlış.",
+    "bolumler": [
+      {"tur": "metin", "metin": "Bu site, yapay zekâ araçlarını Türkiye'de kullanmak isteyen sıradan kullanıcı için yazılıyor: öğrenci, memur, esnaf, veli. Konu seçiminde ölçüt tek: insanlar bunu gerçekten arıyor mu ve mevcut Türkçe kaynaklar bu soruya doğru cevap veriyor mu?"},
+      {"tur": "baslik", "metin": "Neden bu siteye güvenilsin?"},
+      {"tur": "metin", "metin": "Yapay zekâ hakkında Türkçe içeriğin büyük kısmı ya çeviri ya da tarihsiz. Fiyatlar, ücretsiz sınırlar, Türkçe desteği gibi bilgiler aylar içinde değişiyor; birçok sayfa iki yıl önceki rakamı bugünün bilgisi gibi sunuyor. Burada her sayı ve her iddia şirketin KENDİ sayfasına bağlanır ve o sayfanın en son ne zaman kontrol edildiği yazılır."},
+      {"tur": "madde", "maddeler": [
+        "Kaynak yalnız resmî sayfa: şirketin dokümantasyonu, fiyat sayfası, yardım merkezi. Blog ve haber kaynak sayılmaz.",
+        "Her rehber yaygın bir yanlışı düzeltir ve yanlışın nereden kaynaklandığını söyler.",
+        "Doğrulanamayan bilgi yazılmaz. Bilinmeyen alan boş bırakılır, tahminle doldurulmaz.",
+        "Rehberler ekran görüntüsü yerine adım listesiyle anlatır; arayüzler sık değişiyor, adımlar daha uzun ömürlü."
+      ]},
+      {"tur": "baslik", "metin": "Neyi yapmıyoruz?"},
+      {"tur": "metin", "metin": "Araçlara puan vermiyoruz, \"en iyi yapay zekâ\" sıralaması yapmıyoruz. Bir aracın size uygun olup olmadığı ne için kullanacağınıza bağlı; biz ölçülebilir olanı yazıyoruz: ücretsiz katmanda neye izin var, aylık kaç dolar, Türkçe arayüz var mı, verileriniz eğitimde kullanılıyor mu ve bunu nasıl kapatırsınız."},
+      {"tur": "baslik", "metin": "Düzeltme ve iletişim"},
+      {"tur": "metin", "metin": "Eskimiş ya da yanlış bir bilgi görürseniz merhaba@yapayzekanasil.com adresine yazın. Kaynağı kontrol edip düzeltiriz; düzeltme tarihi sayfada görünür."}
+    ]
+  },
+  {
+    "url": "/gizlilik/",
+    "baslik": "Gizlilik ve Çerezler",
+    "meta": "Yapay Zeka Nasıl hangi verileri işliyor, hangi çerezler kullanılıyor, reklam ve ölçümleme nasıl çalışıyor.",
+    "bolumler": [
+      {"tur": "metin", "metin": "Bu site statik sayfalardan oluşur; üyelik, form ya da yorum yoktur. Sizden ad, e-posta veya başka bir kişisel bilgi istenmez."},
+      {"tur": "baslik", "metin": "Reklamlar ve çerezler"},
+      {"tur": "metin", "metin": "Sitede Google AdSense reklamları gösterilebilir. Google ve reklam ortakları, size daha alakalı reklam göstermek için üçüncü taraf çerezleri kullanabilir; bu çerezler bu siteye ve daha önce ziyaret ettiğiniz diğer sitelere dayanabilir."},
+      {"tur": "madde", "maddeler": [
+        "Kişiselleştirilmiş reklamları Google Reklam Ayarları'ndan kapatabilirsiniz: https://adssettings.google.com",
+        "Diğer üçüncü taraf sağlayıcıların çerezlerinden çıkmak için: https://www.aboutads.info/choices",
+        "Google'ın verileri nasıl kullandığı: https://policies.google.com/technologies/partner-sites"
+      ]},
+      {"tur": "baslik", "metin": "Sunucu kayıtları"},
+      {"tur": "metin", "metin": "Sunucu, güvenlik ve arıza tespiti için standart erişim kayıtları tutar (IP adresi, tarayıcı türü, istenen sayfa). Bu kayıtlar kısa süre saklanır ve kimseyle paylaşılmaz."},
+      {"tur": "baslik", "metin": "Dış bağlantılar"},
+      {"tur": "metin", "metin": "Rehberlerdeki kaynak bağlantıları şirketlerin kendi sitelerine gider; oradaki gizlilik uygulamaları o sitelere aittir."},
+      {"tur": "baslik", "metin": "İletişim"},
+      {"tur": "metin", "metin": "Gizlilikle ilgili sorular için: merhaba@yapayzekanasil.com"}
+    ]
+  }
+]

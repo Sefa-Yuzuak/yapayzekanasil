@@ -1,0 +1,11 @@
+data/ham/
+__pycache__/
+.venv/
+dist/
+.env
+*.pyc
+.DS_Store
+Thumbs.db
+.coolify-uuid
+.places.key
+*.key

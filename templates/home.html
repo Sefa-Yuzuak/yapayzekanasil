@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% from "_kart.html" import kart %}
+{% block icerik %}
+<section class="kahraman">
+  <h1>Yapay zekâ nasıl kullanılır?</h1>
+  <p class="giris">{{ site.aciklama }}</p>
+  {% if rehberler %}
+  <ul class="sayilar">
+    <li><strong>{{ rehberler|length }}</strong><span>rehber</span></li>
+    <li><strong>{{ alanlar|selectattr("rehberler")|list|length }}</strong><span>konu</span></li>
+    <li><strong>{{ site.guncelleme_tr }}</strong><span>son güncelleme</span></li>
+  </ul>
+  {% endif %}
+</section>
+
+{% if gorevler %}
+<section class="bolum">
+  <h2><a href="/nasil/">🛠 Yapay zekâ ile ne yapılır?</a></h2>
+  <p class="soluk">Her konuda tek soruya cevap: ücretsiz katmanda gerçekten yapılabilir mi,
+     Türkçe destekliyor mu, çıktıyı ticari kullanabilir misiniz.</p>
+  <div class="izgara">
+    {% for g in gorevler[:6] %}
+    <article class="kart">
+      <a class="kart-bag" href="{{ g.yol }}">
+        <span class="kart-alan">Nasıl yapılır</span>
+        <span class="kart-ad">{{ g.baslik }}</span>
+        <span class="kart-ozet">{{ g.ozet }}</span>
+      </a>
+      <p class="kart-alt">{{ g.okuma }} dk{% if g.araclar %} · {{ g.araclar|length }} araç karşılaştırıldı{% endif %}</p>
+    </article>
+    {% endfor %}
+  </div>
+  {% if gorevler|length > 6 %}<p><a class="dugme ikincil" href="/nasil/">{{ gorevler|length }} konunun tamamı</a></p>{% endif %}
+</section>
+{% endif %}
+
+{% if rehberler %}
+{% for a in alanlar if a.rehberler %}
+<section class="bolum">
+  <h2><a href="{{ a.yol }}">{{ a.ikon }} {{ a.ad }}</a></h2>
+  <p class="soluk">{{ a.aciklama }}</p>
+  <div class="izgara">
+    {% for r in a.rehberler[:3] %}{{ kart(r) }}{% endfor %}
+  </div>
+  {% if a.rehberler|length > 3 %}<p><a class="dugme ikincil" href="{{ a.yol }}">{{ a.ad }} — {{ a.rehberler|length }} rehberin tamamı</a></p>{% endif %}
+</section>
+{% endfor %}
+{% else %}
+<section class="bolum">
+  <h2>Nasıl çalışıyor?</h2>
+  <ul class="madde">
+    <li>Her rehber, insanların gerçekten aradığı bir "nasıl" sorusuna cevap verir.</li>
+    <li>Fiyat, ücretsiz sınır, Türkçe desteği gibi her olgu şirketin <strong>kendi sayfasına</strong> bağlanır; kaynağın son kontrol tarihi yazılır.</li>
+    <li>Her rehber, Türkçe içerikte dolaşan yaygın bir yanlışı düzeltir.</li>
+    <li>Araçlara puan verilmez; yalnız ölçülebilir bilgi yazılır.</li>
+  </ul>
+  <p><a class="dugme ikincil" href="/hakkinda/">Yöntemin tamamı</a></p>
+</section>
+{% endif %}
+{% endblock %}

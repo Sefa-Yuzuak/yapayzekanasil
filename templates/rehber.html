@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% from "_kart.html" import kart %}
+{% block ogtur %}article{% endblock %}
+{% block icerik %}
+<article class="yazi">
+  {% if alan %}<p class="ust-etiket">{{ alan.ikon }} <a href="{{ alan.yol }}">{{ alan.ad }}</a></p>{% endif %}
+  <h1>{{ r.baslik }}</h1>
+  <p class="giris">{{ r.ozet }}</p>
+  <p class="damga">
+    {% if r.guncelleme %}Güncelleme: <strong>{{ r.guncelleme|tarih }}</strong> · {% endif %}
+    {{ r.okuma }} dk okuma{% if r.kaynaklar %} · {{ r.kaynaklar|length }} resmî kaynak{% endif %}
+  </p>
+
+  {% if r.cevap %}
+  <div class="kisa-cevap">
+    <p class="etiket">Kısa cevap</p>
+    <p>{{ r.cevap }}</p>
+  </div>
+  {% endif %}
+
+  {% if r.yanlis %}
+  <aside class="yanlis" aria-label="Yaygın yanlış ve doğrusu">
+    <div class="yanlis-sol"><p class="etiket">Yaygın yanlış</p><p>{{ r.yanlis.iddia }}</p></div>
+    <div class="yanlis-sag"><p class="etiket">Doğrusu</p><p>{{ r.yanlis.dogru }}</p>
+      {% if r.yanlis.kaynak %}<p class="kucuk"><a href="{{ r.yanlis.kaynak }}" rel="nofollow noopener" target="_blank">Kaynak</a></p>{% endif %}
+    </div>
+  </aside>
+  {% endif %}
+
+  {% if r.icindekiler|length > 2 %}
+  <nav class="icindekiler" aria-label="İçindekiler">
+    <p class="etiket">Bu sayfada</p>
+    <ol>{% for i in r.icindekiler %}<li><a href="#{{ i.id }}">{{ i.ad }}</a></li>{% endfor %}</ol>
+  </nav>
+  {% endif %}
+
+  <div class="metin">
+  {% for b in r.bolumler %}
+    {% if b.tur == "baslik" %}
+    <h2 id="{{ b.id }}">{{ b.metin }}</h2>
+    {% elif b.tur == "altbaslik" %}
+    <h3>{{ b.metin }}</h3>
+    {% elif b.tur == "metin" %}
+    <p>{{ b.metin }}</p>
+    {% elif b.tur == "madde" %}
+    <ul class="madde">{% for m in b.maddeler %}<li>{{ m }}</li>{% endfor %}</ul>
+    {% elif b.tur == "adim" %}
+    <ol class="adimlar">{% for a in b.adimlar %}<li><strong>{{ a.baslik }}</strong> {{ a.metin }}</li>{% endfor %}</ol>
+    {% elif b.tur == "uyari" %}
+    <p class="uyari">{{ b.metin }}</p>
+    {% elif b.tur == "tablo" %}
+    <div class="tablo-sar">
+      <table class="veri">
+        <thead><tr>{% for s in b.basliklar %}<th scope="col">{{ s }}</th>{% endfor %}</tr></thead>
+        <tbody>{% for satir in b.satirlar %}<tr>{% for h in satir %}<td>{{ h }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+      </table>
+    </div>
+    {% if b.not %}<p class="soluk kucuk">{{ b.not }}</p>{% endif %}
+    {% endif %}
+  {% endfor %}
+  </div>
+
+  {% if r.sss %}
+  <section class="bolum sss">
+    <h2 id="sik-sorulanlar">Sık sorulanlar</h2>
+    {% for s in r.sss %}
+    <details{% if loop.first %} open{% endif %}><summary>{{ s.s }}</summary><p>{{ s.c }}</p></details>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if r.kaynaklar %}
+  <section class="bolum">
+    <h2 id="kaynaklar">Kaynaklar</h2>
+    <p class="soluk">Bu sayfadaki her sayı ve iddia aşağıdaki resmî sayfalardan alındı. Parantezdeki tarih,
+       kaynağın bizim tarafımızdan en son kontrol edildiği gündür; şirketler bu bilgileri değiştirebilir.</p>
+    <ol class="kaynak-liste">
+      {% for k in r.kaynaklar %}
+      <li><a href="{{ k.url }}" rel="nofollow noopener" target="_blank">{{ k.ad }}</a>{% if k.dogrulama %} <span class="soluk kucuk">(kontrol: {{ k.dogrulama|tarih }})</span>{% endif %}</li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% if r.ilgili %}
+  <section class="bolum">
+    <h2>Devamında ne okumalı</h2>
+    <div class="izgara">{% for x in r.ilgili %}{{ kart(x) }}{% endfor %}</div>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

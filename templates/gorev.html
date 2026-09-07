@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block ogtur %}article{% endblock %}
+{% block icerik %}
+<article class="yazi">
+  <p class="ust-etiket"><a href="/nasil/">Nasıl yapılır</a></p>
+  <h1>{{ g.baslik }}</h1>
+  <p class="giris">{{ g.ozet }}</p>
+  <p class="damga">
+    {% if g.guncelleme %}Güncelleme: <strong>{{ g.guncelleme|tarih }}</strong> · {% endif %}
+    {{ g.okuma }} dk okuma{% if g.araclar %} · {{ g.araclar|length }} araç karşılaştırıldı{% endif %}{% if g.kaynaklar %} · {{ g.kaynaklar|length }} resmî kaynak{% endif %}
+  </p>
+
+  {% if g.cevap %}
+  <div class="kisa-cevap">
+    <p class="etiket">Kısa cevap</p>
+    <p>{{ g.cevap }}</p>
+  </div>
+  {% endif %}
+
+  {% if g.yanlis %}
+  <aside class="yanlis" aria-label="Yaygın yanlış ve doğrusu">
+    <div class="yanlis-sol"><p class="etiket">Yaygın yanlış</p><p>{{ g.yanlis.iddia }}</p></div>
+    <div class="yanlis-sag"><p class="etiket">Doğrusu</p><p>{{ g.yanlis.dogru }}</p>
+      {% if g.yanlis.kaynak %}<p class="kucuk"><a href="{{ g.yanlis.kaynak }}" rel="nofollow noopener" target="_blank">Kaynak</a></p>{% endif %}
+    </div>
+  </aside>
+  {% endif %}
+
+  {% if g.araclar %}
+  {# Sitenin asıl ayrışma noktası: bu dört sütunu kaynaklı ve tarihli veren
+     Türkçe bir sayfa yok. Boş hücre "kaynakta yazmıyor" demektir, "yok" değil. #}
+  <section class="bolum">
+    <h2 id="araclar">Hangi araçla, ücretsiz katmanda ne kadar?</h2>
+    <p class="soluk">Her satır, aracın kendi sayfasından alındı. Boş bırakılan hücre, o bilginin
+       kaynak sayfada yazmadığı anlamına gelir — tahmin yazmıyoruz.</p>
+    <div class="tablo-sar">
+      <table class="veri">
+        <thead><tr>
+          <th scope="col">Araç</th><th scope="col">Ücretsiz katmanda</th>
+          <th scope="col">Türkçe</th><th scope="col">Filigran</th>
+          <th scope="col">Ticari kullanım</th><th scope="col">Kontrol</th>
+        </tr></thead>
+        <tbody>
+          {% for a in g.araclar %}
+          <tr>
+            <td><a href="{{ a.kaynak }}" rel="nofollow noopener" target="_blank">{{ a.ad }}</a></td>
+            <td>{{ a.ucretsiz or "—" }}</td>
+            <td>{{ a.turkce or "—" }}</td>
+            <td>{{ a.filigran or "—" }}</td>
+            <td>{{ a.ticari or "—" }}</td>
+            <td class="kucuk">{{ a.dogrulama|tarih }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if g.icindekiler|length > 2 %}
+  <nav class="icindekiler" aria-label="İçindekiler">
+    <p class="etiket">Bu sayfada</p>
+    <ol>{% for i in g.icindekiler %}<li><a href="#{{ i.id }}">{{ i.ad }}</a></li>{% endfor %}</ol>
+  </nav>
+  {% endif %}
+
+  <div class="metin">
+  {% for b in g.bolumler %}
+    {% if b.tur == "baslik" %}
+    <h2 id="{{ b.id }}">{{ b.metin }}</h2>
+    {% elif b.tur == "altbaslik" %}
+    <h3>{{ b.metin }}</h3>
+    {% elif b.tur == "metin" %}
+    <p>{{ b.metin }}</p>
+    {% elif b.tur == "madde" %}
+    <ul class="madde">{% for m in b.maddeler %}<li>{{ m }}</li>{% endfor %}</ul>
+    {% elif b.tur == "adim" %}
+    <ol class="adimlar">{% for a in b.adimlar %}<li><strong>{{ a.baslik }}</strong> {{ a.metin }}</li>{% endfor %}</ol>
+    {% elif b.tur == "uyari" %}
+    <p class="uyari">{{ b.metin }}</p>
+    {% elif b.tur == "tablo" %}
+    <div class="tablo-sar">
+      <table class="veri">
+        <thead><tr>{% for s in b.basliklar %}<th scope="col">{{ s }}</th>{% endfor %}</tr></thead>
+        <tbody>{% for satir in b.satirlar %}<tr>{% for h in satir %}<td>{{ h }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+      </table>
+    </div>
+    {% if b.not %}<p class="soluk kucuk">{{ b.not }}</p>{% endif %}
+    {% endif %}
+  {% endfor %}
+  </div>
+
+  {% if g.sss %}
+  <section class="bolum sss">
+    <h2 id="sik-sorulanlar">Sık sorulanlar</h2>
+    {% for s in g.sss %}
+    <details{% if loop.first %} open{% endif %}><summary>{{ s.s }}</summary><p>{{ s.c }}</p></details>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if g.kaynaklar %}
+  <section class="bolum">
+    <h2 id="kaynaklar">Kaynaklar</h2>
+    <p class="soluk">Bu sayfadaki her iddia aşağıdaki resmî sayfalardan alındı. Parantezdeki tarih,
+       kaynağın bizim tarafımızdan en son kontrol edildiği gündür.</p>
+    <ol class="kaynak-liste">
+      {% for k in g.kaynaklar %}
+      <li><a href="{{ k.url }}" rel="nofollow noopener" target="_blank">{{ k.ad }}</a>{% if k.dogrulama %} <span class="soluk kucuk">(kontrol: {{ k.dogrulama|tarih }})</span>{% endif %}</li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% if g.ilgili %}
+  <section class="bolum">
+    <h2>Yapay zekâyla başka neler yapılır?</h2>
+    <ul class="cip-liste">
+      {% for x in g.ilgili %}<li><a class="cip" href="{{ x.yol }}">{{ x.baslik }}</a></li>{% endfor %}
+    </ul>
+    <p><a class="dugme ikincil" href="/nasil/">Tüm konular</a></p>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}
