@@ -1784,5 +1784,822 @@
         "dogrulama": "2026-09-08"
       }
     ]
+  },
+  {
+    "slug": "logo",
+    "alan": "gorsel-ve-video",
+    "baslik": "Yapay Zeka ile Logo Nasıl Yapılır?",
+    "ozet": "Hazır şablonla yapılan logo marka olarak tescil edilemiyor. Bu bir yorum değil, Canva'nın kendi yardım sayfasında yazan bir kural — ve Türkçe içeriklerin neredeyse hiçbiri bunu söylemiyor.",
+    "cevap": "Logo üretmek ücretsiz katmanda mümkün, ama üretilen şeyin markanız olup olamayacağı ayrı bir soru ve cevabı çoğu kişinin beklediğinden katı. Canva'nın marka tescili sayfası açıkça yazıyor: logoda stok içerik (fotoğraf, grafik) kullanamazsınız çünkü size yalnızca münhasır olmayan bir lisans veriliyor — diğer Canva kullanıcıları aynı içeriği kullanmakta serbest, bu yüzden stok içerik logo tescili için uygun değil. Aynı sayfa çözümü de veriyor: ücretsiz kütüphanedeki basit çizgi ve şekillerle sıfırdan tasarlamak ya da kendi logonuzu yükleyip Canva'yı yalnız uygulamada kullanmak.",
+    "hedef_sorgu": "yapay zeka ile logo nasıl yapılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Canva'dan bir logo şablonu seçip düzenlersiniz, markanızın logosu hazır olur.",
+      "dogru": "Marka olarak tescil ettiremezsiniz. Canva'nın kendi sayfası şunu yazıyor: stok içeriği logoda kullanamazsınız çünkü size verilen lisans münhasır değil; diğer kullanıcılar aynı içeriği kullanabildiği için stok içerik marka tesciline uygun değil ve \"bir logodaki öğelerin size özel olması gerekir\". Şablonla yapılmış logo küçük ve kişisel işler için kullanılabilir; bir markanın tescilli logosu olamaz.",
+      "kaynak": "https://www.canva.com/help/trademarks-logo/"
+    },
+    "araclar": [
+      {
+        "ad": "Canva — hazır şablon / stok içerik",
+        "ucretsiz": "Ücretsiz şablon ve öğelerle logo tasarlanabiliyor",
+        "turkce": "",
+        "filigran": "Premium öğe kullanılırsa ücretsiz planda filigran çıkıyor",
+        "ticari": "Marka tesciline UYGUN DEĞİL — lisans münhasır değil, öğeler size özel olmuyor",
+        "kaynak": "https://www.canva.com/help/trademarks-logo/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva — ücretsiz kütüphaneden sıfırdan",
+        "ucretsiz": "Ücretsiz kütüphanedeki basit çizgi ve şekiller ile tüm yazı tipleri kullanılabiliyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "Tescil edilebilecek özgün logo bu yolla tasarlanabiliyor (stok içerik kullanılmadan)",
+        "kaynak": "https://www.canva.com/help/trademarks-logo/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini (Google) — görsel üretme",
+        "ucretsiz": "₺0 planda görüntü oluşturma ve düzenleme var",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Önce şu soruyu ayırın: logo mu, tescilli marka mı?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Logo ile marka aynı şey değil ve karışıklık tam burada başlıyor. Logo bir görseldir; marka, o görseli sizin adınıza tekelleştiren hukuki bir haktır. Bir logoyu beş dakikada üretebilirsiniz ama tescil edilebilir olması, o logodaki her öğenin size özel olmasına bağlı."
+      },
+      {
+        "tur": "metin",
+        "metin": "Canva'nın kendi sayfası bu ayrımı gayet açık kuruyor: tescil ettirmek istiyorsanız ya ücretsiz kütüphanedeki basit çizgi ve şekillerle sıfırdan tasarlayacaksınız ya da kendi tasarladığınız (veya bir tasarımcıya yaptırdığınız) logoyu yükleyip Canva'yı yalnız o logonun uygulandığı işler için kullanacaksınız."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Ne yaptınız?",
+          "Kullanılabilir mi?",
+          "Tescil edilebilir mi?"
+        ],
+        "satirlar": [
+          [
+            "Hazır logo şablonunu düzenlediniz",
+            "Evet, küçük ve kişisel işlerde",
+            "Hayır"
+          ],
+          [
+            "Stok grafik/fotoğraf kullandınız",
+            "Evet, lisans kapsamında",
+            "Hayır — lisans münhasır değil"
+          ],
+          [
+            "Ücretsiz kütüphanedeki basit şekillerle sıfırdan yaptınız",
+            "Evet",
+            "Evet, bu yol için tarif ediliyor"
+          ],
+          [
+            "Kendi logonuzu yükleyip uyguladınız",
+            "Evet",
+            "Evet, logo zaten sizin"
+          ],
+          [
+            "Yapay zekâ ile görsel ürettiniz",
+            "Aracın koşullarına bağlı",
+            "Aracın koşullarına bağlı"
+          ]
+        ],
+        "not": "İlk dört satır Canva'nın marka tescili yardım sayfasındaki ifadelerden çıkarıldı. Son satır için resmî bir ifade bulunamadı."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Baskıya verirken çıkan ikinci sürpriz"
+      },
+      {
+        "tur": "metin",
+        "metin": "Canva'nın telif sayfası, logo dışında da geçerli olan çok pratik bir uyarı içeriyor. Bazı baskı hizmetleri, yüklediğiniz tasarımın telif sahibi olduğunuzu onaylamanızı istiyor. Canva'nın cevabı net: eğer durum buysa o tasarımlarda Canva içeriğini kullanamazsınız, çünkü o içeriğin telif sahibi siz değilsiniz — yalnızca lisansınız var."
+      },
+      {
+        "tur": "metin",
+        "metin": "Aynı sayfa ayrımı da veriyor: baskı hizmeti yalnızca tasarımı kullanma hakkınız olduğunu onaylamanızı istiyorsa Canva içeriği kullanılabiliyor. Yani mesele hizmetin sizden tam olarak neyi onaylamanızı istediği."
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu, tişört, kupa, etiket gibi baskı ürünleri satmayı düşünen herkesi doğrudan ilgilendiriyor ve Türkçe içeriklerde neredeyse hiç geçmiyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: tescil edilebilir bir logoya giden yol"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Markayı tarif edin, logoyu değil.",
+            "metin": "\"Modern bir logo\" işe yaramıyor. Ne iş yaptığınızı, kime hitap ettiğinizi ve nerede görüneceğini (tabela mı, uygulama simgesi mi) yazın."
+          },
+          {
+            "baslik": "Fikir için şablona bakın, tasarım için bakmayın.",
+            "metin": "Canva'nın kendi sayfası şablonların ilham başlangıcı olarak kullanılabileceğini ama diğer kullanıcıların da aynı içeriği kullanmakta serbest olduğunu belirtiyor."
+          },
+          {
+            "baslik": "Stok grafiği çıkarın.",
+            "metin": "Tescil hedefliyorsanız logoda stok fotoğraf ve grafik kalmamalı. Ücretsiz kütüphanedeki basit çizgi ve şekiller ile yazı tipleri kullanılabiliyor."
+          },
+          {
+            "baslik": "Tek renkte ve küçükte deneyin.",
+            "metin": "İyi logo, 16 pikselde ve tek renkte de tanınır. Ayrıntılı görseller bu iki testte dağılıyor."
+          },
+          {
+            "baslik": "Benzerlik araştırmasını atlamayın.",
+            "metin": "Tescil, sizin logonuzun özgün olmasının yanında başkasının tescilli markasına benzememesini de gerektiriyor. Bu araştırmayı yapay zekâ yapamıyor."
+          }
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Bu sayfa hukuki tavsiye değildir. Marka tescili ülkeye göre değişen bir süreçtir; Türkiye'de başvurular Türk Patent ve Marka Kurumu'na yapılır. Ticari bir marka kuracaksanız tescil öncesi hukuki danışmanlık alın."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Canva'da yaptığım logoyu marka olarak tescil ettirebilir miyim?",
+        "c": "Stok içerik kullandıysanız hayır. Canva'nın sayfası, stok içeriğe yalnızca münhasır olmayan lisans verildiğini, diğer kullanıcıların aynı içeriği kullanabildiğini ve bu yüzden stok içeriğin marka tesciline uygun olmadığını yazıyor. Ücretsiz kütüphanedeki basit çizgi ve şekillerle sıfırdan tasarlarsanız ya da kendi logonuzu yüklerseniz tescil yolu açık."
+      },
+      {
+        "s": "Şablonla yapılmış logoyu hiç kullanamaz mıyım?",
+        "c": "Kullanabilirsiniz. Canva şablonların münhasır hak gerekmeyen küçük ve kişisel projeler için uygun olduğunu belirtiyor. Kısıt kullanımda değil, tescilde."
+      },
+      {
+        "s": "Logomu tişörte basıp satabilir miyim?",
+        "c": "Baskı hizmetinin sizden ne istediğine bağlı. Canva'nın telif sayfası, hizmet tasarımın telif sahibi olduğunuzu onaylamanızı istiyorsa Canva içeriğini kullanamayacağınızı — çünkü o içeriğin telif sahibi olmadığınızı, yalnız lisansınız olduğunu — yazıyor. Hizmet sadece kullanma hakkınız olduğunu onaylamanızı istiyorsa kullanılabiliyor."
+      },
+      {
+        "s": "Yapay zekâ ile ürettiğim görseli logo yapabilir miyim?",
+        "c": "Bunu kullandığınız aracın kendi kullanım koşulları belirliyor ve koşullar araca göre değişiyor. Bu sayfada kesin bir izin ya da yasak yazmıyoruz çünkü resmî sayfalarda net bir ifade bulamadık."
+      },
+      {
+        "s": "Logoda hangi öğeler kullanılabiliyor?",
+        "c": "Canva'nın tescil sayfasına göre ücretsiz kütüphanedeki basit çizgi ve şekiller ile tüm yazı tipleri kullanılabiliyor; stok fotoğraf ve grafikler kullanılamıyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Canva Yardım Merkezi — Canva'da oluşturulan logoların marka tescili",
+        "url": "https://www.canva.com/help/trademarks-logo/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Canva'da yapılan tasarımların telif sahipliği",
+        "url": "https://www.canva.com/help/copyright-design-ownership/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Tasarımımda filigran veya Canva logosu var",
+        "url": "https://www.canva.com/help/watermarks-design/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "muzik",
+    "alan": "gorsel-ve-video",
+    "baslik": "Yapay Zeka ile Müzik Nasıl Yapılır?",
+    "ozet": "Ücretsiz planda ürettiğiniz şarkının sahibi siz değilsiniz. Suno bunu kendi yardım sayfasında yazıyor — ve sonradan abone olmak geçmişe dönük hak vermiyor.",
+    "cevap": "Müzik üretmek ücretsiz yapılabiliyor ama çıkan şarkıyla ne yapabileceğiniz tamamen ne zaman ürettiğinize bağlı. Suno'nun kendi yardım sayfası şunu yazıyor: ücretsiz sürümde üretilen şarkıların mülkiyeti Suno'da kalıyor, siz yalnız ticari olmayan amaçlarla kullanabiliyorsunuz ve bu şarkılar paraya çevrilemiyor. Daha önemlisi: sonradan Pro veya Premier'e abone olmak, ücretsiz planda üretilmiş şarkılar için geçmişe dönük ticari kullanım hakkı vermiyor. Abonelik sırasında indirilen şarkılarda ise ticari haklar veriliyor ve abonelik bitse bile devam ediyor.",
+    "hedef_sorgu": "yapay zeka ile müzik nasıl yapılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Ücretsiz üret, beğendiğin şarkı çıkarsa abone olup yayımlarsın.",
+      "dogru": "Bu yol kapalı. Suno'nun yardım sayfası doğrudan bu senaryoyu ele alıyor: \"harika bir şarkı yaptıktan sonra abonelik başlatmak size o şarkı için geçmişe dönük lisans vermez.\" Ücretsiz planda üretilen şarkılar yalnız kişisel ve ticari olmayan kullanım için; Pro veya Premier'e abone olmak bunu geriye dönük değiştirmiyor. Şirket belirli durumlarda geçmişe dönük hak verebileceğini söylüyor ama bunun garanti olmadığını ve yalnız belirli şarkılar için geçerli olduğunu da ekliyor.",
+      "kaynak": "https://help.suno.com/en/articles/2410177"
+    },
+    "araclar": [
+      {
+        "ad": "Suno (ücretsiz / Basic)",
+        "ucretsiz": "Şarkı üretilebiliyor ve Suno bağlantısıyla paylaşılabiliyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "YOK — şarkıların mülkiyeti Suno'da kalıyor, yalnız kişisel ve ticari olmayan kullanım; paraya çevrilemiyor",
+        "kaynak": "https://help.suno.com/en/articles/9601601",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Suno (Pro / Premier — karşılaştırma için)",
+        "ucretsiz": "Ücretsiz katmanda değil; farkı göstermek için tabloda",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "Abonelik sırasında indirilen şarkılarda ticari haklar veriliyor ve abonelik bitse de devam ediyor; telif koruması garanti edilmiyor",
+        "kaynak": "https://help.suno.com/en/articles/9601665",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ElevenLabs (Eleven Music)",
+        "ucretsiz": "Var",
+        "turkce": "",
+        "filigran": "Ücretsiz planda yayımlarken \"Eleven Music\" atfı zorunlu",
+        "ticari": "YOK — ücretsiz plan ticari lisans içermiyor",
+        "kaynak": "https://elevenlabs.io/docs/help-center/legal/can-i-publish-the-content-i-generate-on-the-platform",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva (Pro ses parçaları)",
+        "ucretsiz": "Ücretsiz kütüphanedeki müzik kullanılabiliyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "Pro ses parçalı tasarımları sosyal medyada paylaşmadan önce ses lisansını doğrulamak gerekiyor (telif talebi riski)",
+        "kaynak": "https://www.canva.com/help/premium-elements/",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Şarkıyı kim yaptı sorusunun cevabı: ne zaman yaptınız?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Suno'nun yardım sayfası bu soruyu tek cümleyle özetliyor: \"Şarkıyı yaparken abone miydim?\" Cevap evetse şarkının sahibi sizsiniz ve aboneliğiniz bitse bile ticari kullanım hakkınız devam ediyor. Cevap hayırsa mülkiyet Suno'da kalıyor ve elinizde yalnız ticari olmayan kullanım hakkı oluyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu, alışılmış \"ücretsizde az, ücretlide çok\" mantığından farklı bir şey. Burada kısıtlanan miktar değil mülkiyet. Ücretsiz planda ne kadar şarkı üretirseniz üretin, hiçbiri sizin olmuyor."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Ne zaman ürettiniz?",
+          "Sahibi kim?",
+          "Para kazanabilir misiniz?"
+        ],
+        "satirlar": [
+          [
+            "Ücretsiz planda (Basic)",
+            "Suno",
+            "Hayır"
+          ],
+          [
+            "Pro/Premier aboneyken",
+            "Siz",
+            "Evet"
+          ],
+          [
+            "Ücretsizde ürettiniz, sonra abone oldunuz",
+            "Suno",
+            "Hayır — geçmişe dönük lisans verilmiyor"
+          ],
+          [
+            "Aboneyken ürettiniz, sonra abonelik bitti",
+            "Siz",
+            "Evet, devam ediyor"
+          ]
+        ],
+        "not": "Satırlar Suno'nun haklar ve mülkiyet yardım sayfalarındaki ifadelerden çıkarıldı."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Ticari hak, telif hakkı demek değil"
+      },
+      {
+        "tur": "metin",
+        "metin": "Suno'nun sayfasındaki bir cümle özellikle önemli ve genelde atlanıyor: ticari kullanım hakkı verilmesi telif korumasını garanti etmiyor. Bir eserin telif korumasına girip girmediğini Suno değil, bulunduğunuz ülkenin telif ofisi belirliyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Pratikte bu şu demek: aboneyken ürettiğiniz şarkıdan para kazanabilirsiniz, ama o şarkıyı bir başkası kullandığında telif hakkına dayanarak engelleyebileceğinizin garantisi yok. İki hak birbirinden bağımsız."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Dağıtım platformuna vermeden önce"
+      },
+      {
+        "tur": "metin",
+        "metin": "Suno'nun kendi uyarısı sert: bir şarkıyı paraya çeviriyorsanız içindeki materyalin yüzde yüzünün münhasır hak sahibi olmanız gerekiyor. Başkasının sözlerini kullandığınız bir şarkıyı yayımlamaya çalışmayın — sayfa sonucunu da yazıyor: YouTube kanalının kapatılması, dağıtımcıların sonraki yayınlarınızı engellemesi."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Sözleri yapay zekâya yazdırdıysanız bile o sözlerin başka bir şarkıya benzemediğinden emin olun.",
+          "Şarkıda bir sanatçının sesini ya da tarzını taklit ettiyseniz bu ayrı bir hak sorunu doğurabiliyor.",
+          "Videoya müzik gömüyorsanız videoyu dışa aktardığınız aracın kendi ses lisansı da işliyor — Canva, Pro ses parçalı tasarımları paylaşmadan önce ses lisansının doğrulanmasını, aksi hâlde telif talebi gelebileceğini yazıyor.",
+          "Ücretsiz planda ürettiğiniz bir şarkıyı \"sadece kanalımda kullanacağım\" diye yayımlamak da ticari kullanım sayılabiliyor: kanal para kazanıyorsa iş değişiyor."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Şarkıyı nerede kullanacağınıza baştan karar verin.",
+            "metin": "Yayımlanacak ve para kazandıracaksa ücretsiz planda hiç üretmeyin; ürettiğiniz şey sonradan kullanılabilir hale gelmiyor."
+          },
+          {
+            "baslik": "Tarzı değil, işlevi tarif edin.",
+            "metin": "\"Güzel bir şarkı\" yerine nerede çalacağını yazın: video açılışı mı, arka plan mı, 30 saniyelik reklam mı. Süre ve enerji seviyesi sonucu en çok belirleyen iki şey."
+          },
+          {
+            "baslik": "Sözleri ayrı düşünün.",
+            "metin": "Melodi ile sözlerin hak durumu ayrı ayrı sorgulanıyor. Başkasının sözünü kullanmak, müzik ne kadar özgün olursa olsun yayını riske atıyor."
+          },
+          {
+            "baslik": "İndirmeyi abonelik süresi içinde yapın.",
+            "metin": "Suno'nun sayfası ticari hakları \"abonelik sırasında indirilen şarkılar\" için tanımlıyor."
+          },
+          {
+            "baslik": "Videoya gömerken ikinci lisansı unutmayın.",
+            "metin": "Müziğin hakkı temiz olsa da videoyu dışa aktardığınız aracın filigran ve ses lisansı kuralları ayrıca geçerli."
+          }
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Bu sayfa hukuki tavsiye değildir. Telif ve komşu haklar ülkeye göre değişir; ticari bir yayın yapacaksanız kullandığınız aracın güncel koşullarını kendiniz okuyun."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Suno'nun ücretsiz sürümünde yaptığım şarkı bana mı ait?",
+        "c": "Hayır. Suno'nun yardım sayfası, ücretsiz sürümde (Basic) üretilen şarkıların mülkiyetinin Suno'da kaldığını, kullanıcının bu şarkıları yalnız ticari olmayan amaçlarla kullanabildiğini yazıyor."
+      },
+      {
+        "s": "Ücretsizde ürettiğim şarkıyı Spotify'a yükleyebilir miyim?",
+        "c": "Suno'ya göre hayır. Ücretsiz planda yapılan şarkılar yalnız ticari olmayan kullanım için ve paraya çevrilemiyor; ticari kullanım lisansı içermiyorlar."
+      },
+      {
+        "s": "Sonradan abone olursam eski şarkılarım ticari olur mu?",
+        "c": "Varsayılan olarak hayır. Suno'nun sayfası, Pro veya Premier aboneliğinin ücretsiz planda yapılmış şarkılar için geçmişe dönük ticari lisans vermediğini yazıyor. Belirli durumlarda geçmişe dönük hak verilebileceğini ama bunun garanti olmadığını da belirtiyor."
+      },
+      {
+        "s": "Aboneliğim biterse ürettiğim şarkıları kullanmaya devam edebilir miyim?",
+        "c": "Suno'ya göre evet: abone olduğunuz sırada üretilen şarkının sahibi sayılıyorsunuz ve aboneliğiniz bitse bile o şarkının ticari kullanım hakkı sizde kalıyor."
+      },
+      {
+        "s": "Ticari kullanım hakkı almak telif hakkı almak mı demek?",
+        "c": "Değil. Suno'nun sayfası ticari kullanım hakkı vermenin telif korumasını garanti etmediğini, telif niteliği ve korumasının bulunduğunuz ülkenin telif ofisince belirlendiğini yazıyor."
+      },
+      {
+        "s": "ElevenLabs'ın müzik aracı ücretsiz kullanılabilir mi?",
+        "c": "Ücretsiz planda üretilebiliyor ama ticari kullanım yok ve yayımlarken atıf zorunlu: ElevenLabs'ın sayfası Eleven Music ile ücretsiz planda üretilen içerik dağıtılırken \"Eleven Music\" atfı yapılması gerektiğini belirtiyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Suno Yardım — Şarkılarımı Spotify gibi platformlara dağıtabilir miyim?",
+        "url": "https://help.suno.com/en/articles/2410177",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Suno Yardım — Yaptığım müziğin sahibi Suno mu?",
+        "url": "https://help.suno.com/en/articles/2416769",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Suno Yardım — Abone olursam önceki şarkılarım için hak alır mıyım?",
+        "url": "https://help.suno.com/en/articles/2425729",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Suno Yardım — Ücretsiz planda hangi haklara sahibim?",
+        "url": "https://help.suno.com/en/articles/9601601",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Suno Yardım — Ücretli abonelikte hangi haklara sahibim?",
+        "url": "https://help.suno.com/en/articles/9601665",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ElevenLabs — Ürettiğim içeriği yayımlayabilir miyim?",
+        "url": "https://elevenlabs.io/docs/help-center/legal/can-i-publish-the-content-i-generate-on-the-platform",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Premium öğeler ve Pro ses lisansı",
+        "url": "https://www.canva.com/help/premium-elements/",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "fotograf-duzenleme",
+    "alan": "gorsel-ve-video",
+    "baslik": "Yapay Zeka ile Fotoğraf Nasıl Düzenlenir?",
+    "ozet": "Fotoğraf düzenleme, ücretsiz katmanların en cömert olduğu işlerden biri: Gemini'nin ₺0 planında görsel düzenleme var, Canva'da araç kademesi haktan ne kadar düştüğünü belirliyor.",
+    "cevap": "Ücretsiz yapılabiliyor. Google'ın Türkçe abonelik sayfası ₺0'lık planda görüntü oluşturma ve düzenlemenin bulunduğunu yazıyor. Canva tarafında ise hangi aracı seçtiğiniz doğrudan hakkınızı belirliyor: şirket araçları Standart, Premium ve Ultra diye üç kademeye ayırıyor, Canva Free'de Ultra araçlara erişim yok ve Standart araçlar da aylık 20 kullanımlık ortak haktan düşüyor. Görsel büyütme (Image Upscaler) Standart kademede, yani ücretsiz planda en az hak harcayan araçlar arasında.",
+    "hedef_sorgu": "yapay zeka ile fotoğraf düzenleme nasıl yapılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Fotoğraf düzenlemek için ücretli bir araca ihtiyacınız var; ücretsizler yalnız filtre uyguluyor.",
+      "dogru": "Gerekmiyor. Google'ın Türkçe abonelik sayfası ₺0'lık ücretsiz planda görüntü oluşturmanın yanında düzenlemeyi de sayıyor — yani ürettiğiniz ya da yüklediğiniz görsel üzerinde değişiklik isteyebiliyorsunuz. Canva'nın ücretsiz planında da Standart yapay zeka araçları aylık hak dahilinde kullanılabiliyor; kapalı olan yalnız Ultra kademesi.",
+      "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr"
+    },
+    "araclar": [
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "₺0 planda görüntü oluşturma ve düzenleme var",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva (Image Upscaler — Standart kademe)",
+        "ucretsiz": "Canva Free'de aylık 20 kullanımlık ortak haktan düşüyor; Standart kademe en az hak harcayan grup",
+        "turkce": "",
+        "filigran": "Premium öğe kullanılırsa ücretsiz planda filigran çıkıyor",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva (Magic Layers vb. — Premium kademe)",
+        "ucretsiz": "Aynı 20 kullanımlık haktan düşüyor ama daha fazla hak harcıyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT (OpenAI)",
+        "ucretsiz": "Görsel üretme var; metin sohbetinden ayrı kullanım limitine tabi. Görsel yükleme günlük 3 dosya sınırına dahil",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Ücretsiz planda hakkı ne harcıyor?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Canva'nın yapay zeka araçlarını üç kademeye ayırması, ücretsiz kullanıcı için doğrudan pratik bir anlam taşıyor. Şirketin kendi sayfası ücretsiz planı şöyle tanımlıyor: Standart VEYA Premium araçlarda ayda 20 kullanıma kadar, Ultra araçlara erişim yok."
+      },
+      {
+        "tur": "metin",
+        "metin": "Aynı sayfa 20 rakamının bir üst sınır olduğunu da açıkça belirtiyor: bu sayıya ancak tek tür araç kullanırsanız, isteminiz basitse ve kendi kademesinde en az güç harcayan aracı seçerseniz ulaşılıyor. Gelişmiş araçları sık kullanınca gerçek kullanım sayısı aralığın alt ucunda kalıyor."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Kademe",
+          "Canva Free'de",
+          "Örnek araçlar"
+        ],
+        "satirlar": [
+          [
+            "Standart",
+            "20 kullanımlık haktan düşüyor, en az harcayan grup",
+            "Image Upscaler, Canva AI ile görsel üretme, Magic Formulas"
+          ],
+          [
+            "Premium",
+            "Aynı haktan düşüyor, daha çok harcıyor",
+            "Magic Layers, Canva AI ile tasarım/görsel üretme"
+          ],
+          [
+            "Ultra",
+            "Erişim yok",
+            "Canva AI 2.0 ile sohbetle tasarım, video klip üretme"
+          ]
+        ],
+        "not": "Satırlar Canva'nın yapay zeka kullanımı yardım sayfasındaki kademe listelerinden çıkarıldı."
+      },
+      {
+        "tur": "metin",
+        "metin": "Ücretsiz planda bilinmesi gereken bir ayrıntı daha var: Canva, Çeviri ve Magic Write gibi araçların bolca kullanılabildiğini ve haktan düşmediğini söylüyor — ama bu yalnız ücretli planlar için. Sayfa açıkça \"Canva Free'de Standart araçlar da ortak haktan düşer\" diyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Düzenleme ile üretme arasındaki fark"
+      },
+      {
+        "tur": "metin",
+        "metin": "Google'ın Türkçe sayfası ücretsiz katmanda \"görüntü üretme ve düzenleme\" ifadesini birlikte kullanıyor. İkisi arasındaki fark pratikte çok işe yarıyor: baştan üretmek yerine var olan görselde değişiklik istemek genelde hem daha hızlı hem daha kontrollü sonuç veriyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Beğenmediğiniz yeri tarif edin, tüm istemi baştan yazmayın: \"arka planı sadeleştir\", \"soldaki nesneyi kaldır\".",
+          "Yüz ve el gibi ayrıntılarda sonuç bozulursa o bölgeyi ayrıca tarif etmek genelde işe yarıyor.",
+          "Çözünürlük artırma (upscale) ayrı bir iştir: bulanık bir fotoğrafı büyütmek eksik ayrıntıyı geri getirmez, tahmin ederek doldurur.",
+          "Ücretsiz planda hak sınırlı olduğu için önce ne istediğinizi netleştirin; deneme yanılma doğrudan hakkınızı yiyor."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Ne değişecek, tek cümlede yazın.",
+            "metin": "\"Bu fotoğrafı güzelleştir\" ölçülebilir değil. \"Arka planı beyaza çevir, gölgeyi koru\" ölçülebilir."
+          },
+          {
+            "baslik": "Kademeyi bilerek seçin.",
+            "metin": "Canva'da aynı işi Standart bir araçla yapabiliyorsanız Premium aracı kullanmak hakkınızı gereksiz harcıyor."
+          },
+          {
+            "baslik": "Orijinali saklayın.",
+            "metin": "Düzenlenmiş görselin üzerine tekrar düzenleme yapmak hataları biriktiriyor. Her denemeyi orijinalden başlatın."
+          },
+          {
+            "baslik": "Çıktıyı gerçek boyutunda kontrol edin.",
+            "metin": "Küçük önizlemede düzgün görünen düzenlemeler tam boyutta dağılabiliyor; özellikle yazı ve yüz bölgelerinde."
+          },
+          {
+            "baslik": "Nerede yayımlayacağınıza göre karar verin.",
+            "metin": "Ticari bir işte kullanacaksanız kullandığınız aracın koşullarını okumadan yayımlamayın."
+          }
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Gerçek bir kişinin fotoğrafını yapay zekâyla değiştirip yayımlamak, telif dışında kişilik hakkını da ilgilendirir. Bir haberde ya da bilgilendirme içeriğinde yapay zekâyla düzenlenmiş görsel kullanıyorsanız bunu belirtmek okuyucuya karşı dürüstlüktür."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Ücretsiz olarak fotoğraf düzenleyebilir miyim?",
+        "c": "Evet. Google'ın Türkçe abonelik sayfası ₺0'lık planda görüntü oluşturma ve düzenlemenin bulunduğunu yazıyor. Canva'nın ücretsiz planında da Standart ve Premium araçlar aylık 20 kullanımlık ortak haktan kullanılabiliyor."
+      },
+      {
+        "s": "Canva Free'de hangi araçlar kapalı?",
+        "c": "Canva'nın yardım sayfasına göre ücretsiz planda Ultra yapay zeka araçlarına ve Affinity'nin Premium yapay zeka araçlarına erişim yok. Standart ve Premium araçlar ortak aylık haktan kullanılabiliyor."
+      },
+      {
+        "s": "Ayda 20 kullanım az mı?",
+        "c": "Canva'nın kendisi 20 rakamının bir üst sınır olduğunu belirtiyor: yalnız tek tür araç kullanır, basit istem verir ve kendi kademesinde en az güç harcayan aracı seçerseniz bu sayıya ulaşılıyor. Gelişmiş araçları sık kullanınca gerçek sayı daha düşük oluyor."
+      },
+      {
+        "s": "Bulanık fotoğrafı netleştirebilir miyim?",
+        "c": "Çözünürlük artırma araçları mevcut ve Canva'da Image Upscaler Standart kademede yer alıyor. Ancak büyütme, kaydedilmemiş ayrıntıyı geri getirmez; eksik yerleri tahminle doldurur. Kesin ayrıntı gereken işlerde sonuca güvenmeyin."
+      },
+      {
+        "s": "Düzenlediğim fotoğrafı ticari işte kullanabilir miyim?",
+        "c": "Bu, kullandığınız aracın kendi kullanım koşullarına bağlı ve koşullar değişebiliyor. Bu sayfada kesin bir izin ya da yasak yazmıyoruz çünkü resmî sayfalarda net bir ifade bulamadık."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Yapay zeka kullanımınızı anlamak",
+        "url": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Tasarımımda filigran veya Canva logosu var",
+        "url": "https://www.canva.com/help/watermarks-design/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT Free Tier FAQ",
+        "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — Dosya yükleme SSS",
+        "url": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "dilekce",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile Dilekçe Nasıl Yazılır?",
+    "ozet": "Dilekçe yazdırmak ücretsiz katmanda serbest — metin sohbeti sınırsız. Riskli olan kısım metnin dili değil, içine giren kanun maddesi ve tarih.",
+    "cevap": "Dilekçe metnini yazdırmak için para vermeniz gerekmiyor: OpenAI'ın ücretsiz katman sayfası metin sohbetinin sınırsız olduğunu yazıyor, Google'ın Türkçe sayfası da ₺0 planda 3.6 Flash erişimini ve Canvas'ı listeliyor. Ama dilekçede asıl sorun üretim değil doğrulama. Yapay zekâ akıcı ve resmî görünen bir metin üretiyor; içine koyduğu kanun maddesi numarası, süre ve kurum adı doğru olmayabiliyor ve metnin ikna ediciliği bunun kanıtı değil. Kurala bağlı süreler ve başvuru mercileri, metni yazdırdığınız araçtan değil, kurumun kendi sayfasından doğrulanmalı.",
+    "hedef_sorgu": "yapay zeka ile dilekçe nasıl yazılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Yapay zekâ kanun maddesini de yazar, dilekçeyi olduğu gibi verebilirsiniz.",
+      "dogru": "Veremezsiniz. Yapay zekânın ürettiği metin resmî bir görünüme sahip olduğu için madde numaraları ve süreler de doğru sanılıyor; oysa metnin ikna ediciliği doğruluğunun kanıtı değil. Bu sitede uyguladığımız kural burada da geçerli: bir olgu, onu belirleyen kurumun kendi sayfasında yazılı değilse kullanılmaz. Dilekçedeki her madde numarasını, süreyi ve başvuru merciini mevzuattan ya da kurumun resmî sayfasından doğrulayın.",
+      "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+    },
+    "araclar": [
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Metin sohbeti sınırsız (kötüye kullanım korumalarına tabi); dosya yükleme günde 3",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "₺0 planda 3.6 Flash erişimi, 3.1 Pro'ya kısmi erişim ve Canvas listeleniyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Yapay zekânın iyi olduğu ve olmadığı kısım"
+      },
+      {
+        "tur": "metin",
+        "metin": "Dilekçede iki ayrı iş var ve yapay zekâ bunların yalnız birinde güvenilir. Birincisi biçim ve dil: hitap, konu satırı, olayın sırayla anlatılması, talebin net cümleyle yazılması. Burada gerçekten iyi ve ücretsiz katmanda sınırsız kullanılabiliyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "İkincisi hukuki dayanak: hangi kanunun kaçıncı maddesi, hangi süre içinde, hangi mercie. Burada üretilen metin doğru görünüyor ama doğru olduğu garanti değil. Bu ikisini ayırmak, dilekçeyi kullanılabilir kılan tek şey."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "İş",
+          "Yapay zekâ",
+          "Sizin yapmanız gereken"
+        ],
+        "satirlar": [
+          [
+            "Biçim ve hitap",
+            "Güvenilir",
+            "Kurumun kendi örnek formu varsa onu kullanın"
+          ],
+          [
+            "Olayın anlatımı",
+            "Güvenilir",
+            "Tarih ve tutarları siz verin"
+          ],
+          [
+            "Talebin netleştirilmesi",
+            "Güvenilir",
+            "Ne istediğinizi tek cümlede kontrol edin"
+          ],
+          [
+            "Kanun ve madde numarası",
+            "Doğrulanmadan kullanılmaz",
+            "Mevzuattan teyit edin"
+          ],
+          [
+            "Başvuru süresi",
+            "Doğrulanmadan kullanılmaz",
+            "Kurumun resmî sayfasından teyit edin"
+          ],
+          [
+            "Başvurulacak merci",
+            "Doğrulanmadan kullanılmaz",
+            "Kurumun resmî sayfasından teyit edin"
+          ]
+        ],
+        "not": "Bu tablo yöntem önerisidir, kaynaklı bir olgu değildir."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Bir dilekçenin taşıması gereken bilgiler"
+      },
+      {
+        "tur": "metin",
+        "metin": "Kurumdan kuruma değişse de dilekçelerin ortak iskeleti bellidir. Aşağıdaki maddeler bir yöntem önerisidir; başvurduğunuz kurumun kendi örnek formu varsa her zaman o esas alınır."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Başvurulan kurumun tam ve doğru adı.",
+          "Adınız, soyadınız ve kurumun istediği kimlik bilgisi.",
+          "Adres, telefon ve varsa e-posta — cevabın size ulaşacağı kanal.",
+          "Konu: tek satırda ne hakkında olduğu.",
+          "Olayın tarih sırasıyla ve gereksiz yorum olmadan anlatımı.",
+          "Talep: ne istediğiniz, tek ve net bir cümle.",
+          "Ekler listesi ve tarih ile imza."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Önce kurumun örnek formuna bakın.",
+            "metin": "Çoğu kurum kendi dilekçe örneğini yayımlıyor. Varsa yapay zekâya sıfırdan yazdırmak yerine o formu doldurtun."
+          },
+          {
+            "baslik": "Olayı kendi cümlelerinizle dökün.",
+            "metin": "Tarih, tutar, kişi ve belge adlarını siz verin. Bunları yapay zekâ bilmiyor; boş bırakılırsa uydurulabiliyor."
+          },
+          {
+            "baslik": "Talebi tek cümleye indirin.",
+            "metin": "Dilekçenin okunan tek yeri talep cümlesidir. Birden fazla talep varsa numaralandırın."
+          },
+          {
+            "baslik": "Hukuki dayanağı ayrıca doğrulayın.",
+            "metin": "Metinde geçen her madde numarasını ve süreyi mevzuattan ya da kurumun sayfasından kontrol edin. Doğrulayamadığınız dayanağı çıkarın — dayanaksız ama doğru bir dilekçe, dayanaklı ama yanlış olandan iyidir."
+          },
+          {
+            "baslik": "Kişisel veriyi son anda ekleyin.",
+            "metin": "Kimlik numarası, adres ve telefon gibi bilgileri araca yazmadan metni hazırlayın; bu alanları en sonda kendi belgenize yazın."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Yazmadan önce: hangi bilgiyi araca vermemeli?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Dilekçeler doğaları gereği kişisel veri taşıyor: kimlik numarası, adres, sağlık bilgisi, mali durum. Bu bilgiler metnin akıcılığına hiçbir katkı yapmıyor — yapay zekâ \"[TC kimlik numarası]\" yazılı bir taslağı da aynı kalitede üretiyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Kimlik numarası, adres ve telefon yerine köşeli parantezli yer tutucular kullanın; gerçek bilgiyi kendi belgenize yazın.",
+          "Sağlık ve ceza bilgisi içeren dilekçelerde olayı genelleştirerek anlatın, teşhis ve dosya numarası vermeyin.",
+          "Başka bir kişinin bilgisi (komşu, çalışan, öğrenci) söz konusuysa o kişinin verisini paylaşma yetkiniz olmayabilir.",
+          "Sohbet tabanlı araçlarda yazdıklarınızın modeli eğitmede kullanılıp kullanılmadığı ayarlanabiliyor; hassas metin yazmadan önce kontrol edin."
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Bu sayfa hukuki tavsiye değildir ve dilekçe örneği sunmaz. Hak kaybına yol açabilecek süreli işlerde (itiraz, dava, şikâyet süreleri) avukata danışın; süreyi yapay zekânın verdiği bilgiye göre hesaplamayın."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Yapay zekâ ile ücretsiz dilekçe yazdırabilir miyim?",
+        "c": "Evet. OpenAI'ın ücretsiz katman sayfası metin sohbetinin sınırsız olduğunu yazıyor; Google'ın Türkçe sayfası da ₺0 planda 3.6 Flash erişimini ve Canvas'ı listeliyor. Metin üretmek ücretsiz katmanın en az kısıtlandığı iş."
+      },
+      {
+        "s": "Yazdığı kanun maddelerine güvenebilir miyim?",
+        "c": "Doğrulamadan güvenmeyin. Üretilen metin resmî ve ikna edici görünüyor ama bu, içindeki madde numarası, süre ve merci bilgisinin doğru olduğu anlamına gelmiyor. Bunları mevzuattan ya da kurumun kendi sayfasından teyit edin."
+      },
+      {
+        "s": "Dilekçemi olduğu gibi kullanabilir miyim?",
+        "c": "Biçim ve anlatım tarafını kullanabilirsiniz. Hukuki dayanak, süre ve başvuru mercii bilgilerini doğrulamadan kullanmayın. Süreli işlerde avukata danışmak en güvenlisi."
+      },
+      {
+        "s": "Kimlik numaramı yazmam gerekiyor mu?",
+        "c": "Gerekmiyor. Yer tutucu kullanıp gerçek bilgiyi kendi belgenize yazarsanız metnin kalitesi değişmiyor, ama kişisel veriniz bir hizmete yüklenmemiş oluyor."
+      },
+      {
+        "s": "Kurumun kendi örnek formu varsa ne yapmalıyım?",
+        "c": "Onu kullanın. Kurumun yayımladığı form, biçim tartışmasını baştan bitiriyor; yapay zekâyı da formu doldurmak ve anlatımı düzenlemek için kullanabilirsiniz."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "OpenAI Help Center — ChatGPT Free Tier FAQ",
+        "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — Veri kontrolleri SSS (eğitimde kullanım ayarı)",
+        "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ]
   }
 ]
