@@ -2601,5 +2601,808 @@
         "dogrulama": "2026-09-08"
       }
     ]
+  },
+  {
+    "slug": "pdf",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile PDF Nasıl Özetlenir?",
+    "ozet": "Uzun bir PDF'i ChatGPT'ye yüklemek ücretsiz katmanda günde 3 dosyayla sınırlı. Aynı işi Gemini Notebook'ta yapmak ücretsiz kullanıcıya not defteri başına 50 kaynak veriyor — ve kaynak başına 500 bin kelime.",
+    "cevap": "Yapılabiliyor ama araç seçimi ücretsiz katmanda sonucu tamamen değiştiriyor. ChatGPT'nin ücretsiz katmanında günde 3 dosya yükleyebiliyorsunuz; dosya başına mutlak sınır 512 MB, metin ve doküman dosyalarında 2 milyon jeton. Gemini Notebook (NotebookLM) tarafında ise ücretsiz kullanıcı not defteri başına 50 kaynak ekleyebiliyor, her kaynak 500.000 kelimeye veya yüklenen dosyalar için 200 MB'a kadar olabiliyor; sohbet sayısı ise \"sınırlı\" olarak veriliyor. Uzun ve çok sayıda belgeyle çalışıyorsanız ikinci yol ücretsiz katmanda çok daha geniş.",
+    "hedef_sorgu": "yapay zeka ile pdf özetleme nasıl yapılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "PDF özetlemek için ChatGPT yeterli, istediğiniz kadar belge yükleyebilirsiniz.",
+      "dogru": "Ücretsiz katmanda yükleyemezsiniz. OpenAI'ın dosya yükleme sayfası ücretsiz kullanıcıları günde 3 dosyayla sınırlıyor ve başarısız yükleme denemelerinin de bu kotadan düşebileceğini yazıyor. Buna karşılık Google'ın Gemini Notebook destek sayfası ücretsiz kullanıcılar için not defteri başına 50 kaynak, kaynak başına 500.000 kelime veya 200 MB sınırı veriyor. Yani \"hangi araç daha iyi\" sorusunun cevabı ücretsiz katmanda belge sayısına göre değişiyor.",
+      "kaynak": "https://support.google.com/notebooklm/answer/16215270?hl=tr"
+    },
+    "araclar": [
+      {
+        "ad": "Gemini Notebook (NotebookLM)",
+        "ucretsiz": "Not defteri başına 50 kaynak; kaynak başına 500.000 kelime veya 200 MB. Sohbet sayısı \"sınırlı\". Günlük kotalar 24 saatte sıfırlanıyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Günde 3 dosya yükleme; dosya başına 512 MB, metin/dokümanda 2 milyon jeton",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Çeviri (PDF çevirisi)",
+        "ucretsiz": "10 MB'a kadar PDF, en fazla 300 sayfa; taranmış sayfalardaki yazı çevrilmiyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/translate/answer/2534559?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Kaç belge, ne kadar uzun?"
+      },
+      {
+        "tur": "metin",
+        "metin": "PDF işinde araç seçimini belirleyen iki sayı var: kaç belgeyle çalışacaksınız ve belgeler ne kadar uzun. Tek bir raporu özetleyecekseniz her araç yeter. On beş makaleyi karşılaştıracaksanız ücretsiz katmanların arasındaki fark uçurum."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "İşiniz",
+          "Ücretsiz katmanda daha uygun olan"
+        ],
+        "satirlar": [
+          [
+            "Tek bir PDF'i özetlemek",
+            "İkisi de olur"
+          ],
+          [
+            "Günde üçten fazla belge yüklemek",
+            "Gemini Notebook (ChatGPT ücretsizde günde 3 dosya)"
+          ],
+          [
+            "Onlarca kaynağı bir arada tutmak",
+            "Gemini Notebook (not defteri başına 50 kaynak)"
+          ],
+          [
+            "Çok uzun tek bir belge",
+            "Gemini Notebook (kaynak başına 500.000 kelime)"
+          ],
+          [
+            "PDF'i başka dile çevirmek",
+            "Google Çeviri (10 MB, en fazla 300 sayfa)"
+          ],
+          [
+            "Taranmış / fotoğrafı çekilmiş belge",
+            "Hiçbiri güvenilir değil"
+          ]
+        ],
+        "not": "Satırlar Google ve OpenAI'ın kendi destek sayfalarındaki sınırlardan çıkarıldı."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Taranmış PDF: en yaygın hayal kırıklığı"
+      },
+      {
+        "tur": "metin",
+        "metin": "Bir PDF'in içindeki yazıyı fareyle seçebiliyorsanız o gerçek metindir. Seçemiyorsanız elinizdeki şey aslında bir resimdir ve araçlar bunu farklı biçimlerde ama hep olumsuz karşılıyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "OpenAI'ın kendi SSS'i taranmış dosyalarda ve görsele dayalı tablolarda değerlerin güvenilir biçimde çıkarılamayabileceğini, kesin değer gerektiğinde tablo veya metin tabanlı dosya yüklenmesini yazıyor. Google'ın çeviri sayfası da çıktı dosyasındaki görsellerin ve taranmış PDF sayfalarındaki yazıların çevrilmediğini belirtiyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Pratik sonuç: taranmış bir belgeyle çalışacaksanız önce metne dönüştürmeniz gerekiyor. Bunu atlayıp özet istemek, çoğu zaman \"okumuş gibi yapan\" bir cevapla sonuçlanıyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Kaynak eklerken bilinmesi gerekenler"
+      },
+      {
+        "tur": "metin",
+        "metin": "Google'ın Gemini Notebook destek sayfası, kaynak eklemenin ayrıntılarını da yazıyor ve bunların birkaçı doğrudan işinizi etkiliyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Desteklenen biçimler: Word (docx), metin (txt), Markdown (md), PDF, CSV ve PowerPoint (pptx).",
+          "Bir web sayfası eklediğinizde yalnız metin içeriği alınıyor; resimler, gömülü videolar ve iç içe sayfalar alınmıyor. Ödeme duvarlı sayfalar desteklenmiyor.",
+          "Google Drive'dan alınan kaynaklar otomatik güncelleniyor ve birkaç dakikada bir eşitleniyor; orijinal belgede yaptığınız değişiklik not defterine yansıyor.",
+          "Drive'daki dosyaya erişiminizi kaybederseniz ya da dosya silinirse ilgili kaynağa da erişemiyorsunuz.",
+          "Etkin olmayan kaynaklar da kaynak sınırına dahil ediliyor ama not defterinde referans olarak kullanılmıyor."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: uzun bir belgeyi özetletmek"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Belgenin metin olduğunu doğrulayın.",
+            "metin": "Yazıyı fareyle seçebiliyor musunuz? Seçemiyorsanız önce metne dönüştürün; aksi hâlde çıkan özet güvenilir olmaz."
+          },
+          {
+            "baslik": "Kaynağı adıyla anın.",
+            "metin": "Google'ın sayfası birden fazla kaynak seçiliyken sorguda kaynak adını anmayı öneriyor: \"Bu kaynağı özetle\" yerine \"X belgesindeki temel bulgular nelerdir?\" gibi."
+          },
+          {
+            "baslik": "Genel özet yerine soru sorun.",
+            "metin": "\"Özetle\" komutu her belgede aynı yüzeysel çıktıyı veriyor. Ne öğrenmek istediğinizi sorarsanız cevap da işinize yarar hale geliyor."
+          },
+          {
+            "baslik": "Yükleme hakkınızı boşa harcamayın.",
+            "metin": "ChatGPT'nin ücretsiz katmanında günde 3 dosya hakkınız var ve başarısız denemeler de bu kotadan düşebiliyor. Yüklemeden önce dosyanın doğru olduğundan emin olun."
+          },
+          {
+            "baslik": "Önemli sayıları belgeden doğrulayın.",
+            "metin": "Özet, belgede geçmeyen bir sayı üretebiliyor. Kararınıza esas olacak her rakamı belgenin içinde bulun."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Yüklediğiniz belgeye ne oluyor?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Google'ın Gemini Notebook sayfası veri tarafını da açıklıyor ve buradaki ayrım önemli. Kişisel hesaplar için ifade şu: verileriniz korunuyor ve geri bildirimde bulunmadığınız sürece Gemini Notebook'u eğitmek için kullanılmıyor. Ancak beğenme veya beğenmeme geri bildirimi paylaştığınızda sorgularınız, yüklemeleriniz ve modelin yanıtları dahil olmak üzere o etkileşimin tüm bağlamı incelenebiliyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Aynı sayfa, incelemenin hiç yapılmadığı durumu ayrıca tanımlıyor ve bunu Google Workspace ile Workspace for Education kullanıcılarına bağlıyor: bu hesaplarda yüklemeler, sorgular ve model yanıtları beğenme/beğenmeme geri bildirimi verilse bile inceleme uzmanlarınca incelenmiyor ve modelleri eğitmek için kullanılmıyor."
+      },
+      {
+        "tur": "uyari",
+        "metin": "Buradan çıkan pratik kural şu: gizli bir belgeyle çalışıyorsanız kişisel hesapta beğeni/beğenmeme düğmesine basmayın — o düğme, o etkileşimin incelenebilmesinin kapısını açıyor. Kurumsal belgeler için kurumunuzun bilgi güvenliği kuralına bakın."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Ücretsiz olarak kaç PDF yükleyebilirim?",
+        "c": "Araca göre değişiyor. OpenAI'ın sayfasına göre ChatGPT'nin ücretsiz katmanında günde 3 dosya yükleyebiliyorsunuz. Google'ın Gemini Notebook sayfasına göre ücretsiz kullanıcılar not defteri başına 50 kaynak ekleyebiliyor."
+      },
+      {
+        "s": "Çok uzun bir PDF'i özetletebilir miyim?",
+        "c": "Gemini Notebook'ta her kaynak 500.000 kelimeye veya yüklenen dosyalar için 200 MB'a kadar olabiliyor. ChatGPT'de dosya başına mutlak sınır 512 MB, metin ve doküman dosyalarında ise 2 milyon jeton."
+      },
+      {
+        "s": "Taranmış PDF'i özetletebilir miyim?",
+        "c": "Güvenilir değil. OpenAI'ın SSS'i taranmış dosyalarda ve görsele dayalı tablolarda değerlerin güvenilir çıkarılamayabileceğini yazıyor. Google'ın çeviri sayfası da taranmış PDF sayfalarındaki yazıların işlenmediğini belirtiyor. Önce metne dönüştürmek gerekiyor."
+      },
+      {
+        "s": "PDF'i başka dile çevirebilir miyim?",
+        "c": "Google Çeviri 10 MB'a kadar PDF kabul ediyor ve PDF'ler en fazla 300 sayfa olabiliyor. Görsellerin içindeki ve taranmış sayfalardaki yazılar çevrilmiyor."
+      },
+      {
+        "s": "Yüklediğim belge modeli eğitmekte kullanılıyor mu?",
+        "c": "Google'ın Gemini Notebook sayfasına göre kişisel hesaplarda verileriniz geri bildirimde bulunmadığınız sürece eğitim için kullanılmıyor; beğenme/beğenmeme geri bildirimi verirseniz o etkileşimin tüm bağlamı — yüklemeleriniz dahil — incelenebiliyor. Workspace ve Workspace for Education hesaplarında ise geri bildirim verilse bile inceleme yapılmadığı belirtiliyor."
+      },
+      {
+        "s": "Web sayfasını kaynak olarak ekleyebilir miyim?",
+        "c": "Ekleyebilirsiniz ama yalnız metin içeriği alınıyor; resimler, gömülü videolar ve iç içe sayfalar alınmıyor. Ödeme duvarı olan sayfalar desteklenmiyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Google Destek — Gemini Notebook: kaynak ekleme, türler ve sınırlar (Türkçe)",
+        "url": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Gemini Notebook: planlar, kullanım sınırları ve veri işleme (Türkçe)",
+        "url": "https://support.google.com/notebooklm/answer/16213268?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — Dosya yükleme SSS",
+        "url": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT ile veri analizi",
+        "url": "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Dokümanları ve web sitelerini çevirme (Türkçe)",
+        "url": "https://support.google.com/translate/answer/2534559?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "web-sitesi",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile Web Sitesi Nasıl Yapılır?",
+    "ozet": "Ücretsiz planda site yayımlayabiliyorsunuz ama kendi alan adınızla değil. Bir de kimsenin söylemediği şey var: Gamma'nın ücretsiz kredileri yenilenmiyor, yani siteyi güncellemeye devam edemeyebilirsiniz.",
+    "cevap": "Site kurmak ücretsiz katmanda mümkün, iki sert kısıtla. Birincisi alan adı: Gamma'nın yardım sayfası tüm kullanıcıların gamma.site alt alan adına yayımlayabildiğini, ama özel alan adının yalnız Pro ve üzeri planlarda kullanılabildiğini yazıyor. İkincisi ve daha az bilineni süreklilik: aynı şirketin kredi sayfasına göre ücretsiz planda tüm yapay zeka işlemleri kredi harcıyor ve krediler yenilenmiyor. Yani ücretsiz planda siteyi kurabilirsiniz ama kredi bittiğinde yapay zekâyla güncellemeye devam edemezsiniz.",
+    "hedef_sorgu": "yapay zeka ile web sitesi nasıl yapılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Yapay zekâ ile dakikalar içinde ücretsiz web siteniz olur, alan adınızı bağlayıp yayına alırsınız.",
+      "dogru": "Alan adını bağlayamazsınız. Gamma'nın yardım sayfası açıkça yazıyor: özel alan adları yalnızca Pro ve üzeri planlarda kullanılabiliyor. Ücretsiz planda siteniz gamma.site alt alan adında yayımlanıyor. Buna bir de kredi meselesi ekleniyor: ücretsiz planda krediler yenilenmediği için siteyi kurduktan sonra yapay zekâyla geliştirmeye devam etmek bir noktada duruyor.",
+      "kaynak": "https://help.gamma.app/en/articles/11047742-can-i-change-the-domain-of-my-gamma-site"
+    },
+    "araclar": [
+      {
+        "ad": "Gamma (ücretsiz)",
+        "ucretsiz": "gamma.site alt alan adında yayımlanabiliyor; tüm yapay zeka işlemleri kredi harcıyor ve krediler YENİLENMİYOR",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "Özel alan adı yalnız Pro ve üzeri planlarda",
+        "kaynak": "https://help.gamma.app/en/articles/11047742-can-i-change-the-domain-of-my-gamma-site",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gamma (Pro ve üzeri)",
+        "ucretsiz": "Ücretsiz katmanda değil; farkı göstermek için tabloda",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "Özel alan adı bağlanabiliyor; alan adı doğrudan site ayarlarından satın alınabiliyor",
+        "kaynak": "https://help.gamma.app/en/articles/11047742-can-i-change-the-domain-of-my-gamma-site",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva",
+        "ucretsiz": "Yapay zeka araçlarında ayda 20 kullanıma kadar; hak her ayın 1'inde 00:00 UTC'de sıfırlanıyor",
+        "turkce": "",
+        "filigran": "Premium öğe kullanılırsa ücretsiz planda filigran çıkıyor",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Alan adı meselesi neden bu kadar önemli?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Bir sitenin adresi, o sitenin kimliğidir. Ücretsiz alt alan adı kişisel bir sayfa ya da bir portfolyo için sorun değil; ama kartvizite basılacak, faturaya yazılacak, reklamda geçecek bir adres söz konusuysa iş değişir."
+      },
+      {
+        "tur": "metin",
+        "metin": "Gamma'nın kendi sayfası bunu açıkça anlatıyor: özel alan adı kullanmak markanın görünürlüğünü ve arama motoru performansını, sitenin Gamma'nın varsayılan adresi yerine markalı bir adreste barınmasıyla iyileştiriyor. Yani şirketin kendisi de alt alan adının bir kısıt olduğunu söylüyor."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "",
+          "Ücretsiz plan",
+          "Pro ve üzeri"
+        ],
+        "satirlar": [
+          [
+            "Site yayımlama",
+            "Var",
+            "Var"
+          ],
+          [
+            "Adres",
+            "gamma.site alt alan adı",
+            "Kendi alan adınız"
+          ],
+          [
+            "Alan adı satın alma",
+            "Yok",
+            "Site ayarlarından satın alınabiliyor"
+          ],
+          [
+            "Yapay zeka kredisi",
+            "Yenilenmiyor",
+            "Aylık doluyor, ek kredi alınabiliyor"
+          ]
+        ],
+        "not": "Satırlar Gamma'nın alan adı ve kredi yardım sayfalarındaki ifadelerden çıkarıldı."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Kredinin bitmesi ne demek?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu, site kurmayı sunum hazırlamaktan ayıran nokta. Bir sunumu bir kez yapıp bırakırsınız; bir siteyi sürekli güncellersiniz. Gamma'nın kredi sayfasına göre ücretsiz planda tüm yapay zeka işlemleri kredi harcıyor ve krediler yenilenmiyor — bitince davetle kredi kazanmak ya da ücretli plana geçmek gerekiyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Yeni sayfa eklemek, mevcut sayfayı yapay zekâyla düzenlemek, yeni yerleşim denemek: hepsi kredi harcıyor. Site kurulduktan sonra elle düzenleme yapmaya devam edebilirsiniz, ama yapay zekâ desteği bir noktada duruyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Sayfa yapısını önce kâğıtta kurun.",
+            "metin": "Kaç sayfa, hangi başlıklar, hangi sırayla. Yapı belliyken üretim bir seferde bitiyor; belli değilken her deneme kredi yiyor."
+          },
+          {
+            "baslik": "Metinleri hazır getirin.",
+            "metin": "Site metnini araca yazdırmak yerine kendiniz yazıp yapıştırmak hem daha az kredi harcıyor hem de içerik gerçekten sizin işinizi anlatıyor."
+          },
+          {
+            "baslik": "Alan adı kararını baştan verin.",
+            "metin": "Ücretsiz planda kuracağınız siteyi sonradan kendi alan adınıza taşımak Pro gerektiriyor. Bunu en başta bilmek, yarım kalmış bir siteyle uğraşmaktan iyi."
+          },
+          {
+            "baslik": "Yayımlamadan önce telefonla bakın.",
+            "metin": "Ziyaretçilerin çoğu siteye telefondan giriyor. Masaüstünde düzgün görünen bir yerleşim telefonda dağılabiliyor."
+          },
+          {
+            "baslik": "İletişim bilgisini gerçek yazın.",
+            "metin": "Yapay zekânın ürettiği örnek metinlerde sahte adres, sahte telefon ve sahte e-posta kalabiliyor. Yayımlamadan önce bunları tek tek gözden geçirin."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Bu araçlarla ne yapılmaz?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Sunumdan siteye dönüşen bu araçlar tanıtım siteleri için kuruldu. Aşağıdaki işler için farklı bir çözüm gerekiyor ve bunu baştan bilmek zaman kazandırıyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Ödeme alınan bir mağaza: sepet, stok ve ödeme altyapısı isteyen işler.",
+          "Üye girişi olan sistemler: kullanıcı hesabı, panel, yetkilendirme.",
+          "Bir veri tabanına bağlı listeleme: ilan, randevu, rezervasyon.",
+          "Yoğun içerik yayını: düzenli yazı akışı ve kategorilerle büyüyen bir blog."
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Sitenizde çerez kullanıyor ya da form üzerinden kişisel veri topluyorsanız, ziyaretçiyi bilgilendiren bir gizlilik metni yayımlamak gerekiyor. Bu, aracın hazır sayfaları arasında gelmeyebilir."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Ücretsiz planda kendi alan adımı bağlayabilir miyim?",
+        "c": "Hayır. Gamma'nın yardım sayfası özel alan adlarının yalnızca Pro ve üzeri planlarda kullanılabildiğini yazıyor. Ücretsiz planda site gamma.site alt alan adında yayımlanıyor."
+      },
+      {
+        "s": "Alan adını nereden alacağım?",
+        "c": "Gamma'nın sayfasına göre alan adınız yoksa doğrudan site ayarlarından satın alabiliyorsunuz; zaten bir alan adınız varsa DNS ayarlarını yaparak elle bağlayabiliyorsunuz. İkisi de Pro gerektiriyor."
+      },
+      {
+        "s": "Siteyi kurduktan sonra ücretsiz güncelleyebilir miyim?",
+        "c": "Yapay zekâyla güncellemek kredi harcıyor ve Gamma'nın sayfasına göre ücretsiz planda krediler yenilenmiyor. Kredi bittiğinde ya davetle kredi kazanmanız ya da ücretli plana geçmeniz gerekiyor."
+      },
+      {
+        "s": "Var olan bir sunumumu siteye çevirebilir miyim?",
+        "c": "Gamma'nın yardım sayfası bunu bir seçenek olarak anlatıyor: mevcut bir gamma dosyasını üç nokta menüsünden \"Publish to Site > Convert to Site\" ile siteye dönüştürüp yayımlayabiliyorsunuz. Yayımlanmış siteyi istediğiniz zaman yayından kaldırabiliyorsunuz."
+      },
+      {
+        "s": "Bu araçlarla internet mağazası kurulur mu?",
+        "c": "Bu araçlar tanıtım siteleri için tasarlanmış. Ödeme, stok, üye girişi ve veri tabanına bağlı listeleme gerektiren işler için farklı bir altyapıya ihtiyacınız var."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Gamma Yardım Merkezi — Sitemin alan adını değiştirebilir miyim?",
+        "url": "https://help.gamma.app/en/articles/11047742-can-i-change-the-domain-of-my-gamma-site",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gamma Yardım Merkezi — Gamma'da site nasıl oluşturulur ve yayımlanır?",
+        "url": "https://help.gamma.app/en/articles/8429268-how-do-i-create-publish-a-site-in-gamma",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gamma Yardım Merkezi — Krediler nasıl çalışır?",
+        "url": "https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Yapay zeka kullanımınızı anlamak",
+        "url": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "e-posta",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile E-posta Nasıl Yazılır?",
+    "ozet": "E-posta yazdırmak ücretsiz katmanda sınırsız. Asıl mesele, yazdırmak için yapıştırdığınız şeyin ne olduğu: gelen bir müşteri e-postasını yapıştırmak, o kişinin verisini bir hizmete yüklemek demek.",
+    "cevap": "Ücretsiz yapılabiliyor ve bu iş için ücretli plana geçmeye gerek yok: OpenAI'ın ücretsiz katman sayfası metin sohbetinin sınırsız olduğunu yazıyor, Google'ın Türkçe sayfası da ₺0 planda 3.6 Flash erişimini ve Canvas'ı listeliyor. Dikkat edilmesi gereken yer üretim değil girdi. Cevap yazdırmak için gelen e-postayı olduğu gibi yapıştırdığınızda, gönderenin adı, adresi ve yazdıkları da o hizmete gitmiş oluyor. OpenAI'ın veri kontrolleri sayfasına göre yazdıklarınızın modeli iyileştirmede kullanılması kapatılabiliyor; kapatınca sohbetler hesabınızda kalmaya devam ediyor ama eğitimde kullanılmıyor.",
+    "hedef_sorgu": "yapay zeka ile e-posta nasıl yazılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Gelen e-postayı yapıştırıp cevap yazdırmak zararsız; nasılsa kimse okumuyor.",
+      "dogru": "Yapıştırdığınız şey artık sizin bilgisayarınızda değil. Gelen bir e-postada gönderenin adı, adresi, imzasındaki telefon ve anlattığı konu var — bunlar sizin değil, o kişinin verisi ve paylaşma yetkiniz olmayabilir. OpenAI'ın veri kontrolleri sayfası \"modeli herkes için iyileştir\" ayarının kapatılabildiğini, kapatınca sohbetlerin geçmişte kaldığını ama eğitimde kullanılmadığını yazıyor. Ayar sizin verinizi korur; başkasının verisi konusundaki sorumluluğu ortadan kaldırmaz.",
+      "kaynak": "https://help.openai.com/en/articles/7730893-data-controls-faq"
+    },
+    "araclar": [
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Metin sohbeti sınırsız (kötüye kullanım korumalarına tabi)",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT — veri ayarı",
+        "ucretsiz": "\"Modeli herkes için iyileştir\" kapatılabiliyor; kapatınca sohbetler kalıyor ama eğitimde kullanılmıyor. Ayar tüm hesaba uygulanıyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "₺0 planda 3.6 Flash erişimi, 3.1 Pro'ya kısmi erişim ve Canvas listeleniyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "İyi bir e-posta istemi nasıl kurulur?"
+      },
+      {
+        "tur": "metin",
+        "metin": "E-posta yazdırmakta sonucu belirleyen şey aracın gücü değil, verdiğiniz üç bilgi: kime yazıyorsunuz, ne istiyorsunuz, aranızdaki ilişki ne. Bu üçü verilmediğinde çıkan metin herkese yazılmış gibi duruyor ve tam da bu yüzden kimseye ulaşmıyor."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Zayıf istem",
+          "Neden zayıf",
+          "Daha iyisi"
+        ],
+        "satirlar": [
+          [
+            "Müşteriye özür maili yaz",
+            "Ne olduğu, kimin hatası olduğu belirsiz",
+            "Teslimat 3 gün gecikti, hata bizde, yeni tarihi ve telafiyi bildiren kısa bir özür maili"
+          ],
+          [
+            "Zam talebi maili yaz",
+            "Dayanak yok",
+            "Son bir yılda üstlendiğim iki yeni sorumluluğu ve piyasa karşılaştırmasını dayanak gösteren, görüşme talep eden mail"
+          ],
+          [
+            "Toplantı iste",
+            "Konu ve süre yok",
+            "Gelecek hafta 30 dakikalık, bütçe onayı konulu görüşme isteyen, üç saat seçeneği sunan mail"
+          ]
+        ],
+        "not": "Bu satırlar örnek istemlerdir, kaynaklı bir olgu değildir."
+      },
+      {
+        "tur": "metin",
+        "metin": "Bir de son adım var: uzunluk. Yapay zekâ e-postaları olduğundan uzun yazma eğiliminde. \"Üç cümleyi geçmesin\" demek, çoğu zaman metnin kendisini iyileştirmekten daha etkili."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Yapıştırmadan önce durun"
+      },
+      {
+        "tur": "metin",
+        "metin": "E-posta işinde en çok atlanan risk burada. Cevap yazdırmak için gelen mesajı olduğu gibi yapıştırmak pratik görünüyor ama o mesaj size ait değil: içinde başka birinin adı, adresi, telefonu ve anlattığı özel durum var."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Gelen e-postayı yapıştırmadan önce imza bloğunu, adresi ve telefonu silin — cevabın kalitesine hiçbir katkısı yok.",
+          "Kişi ve kurum adlarını \"müşteri\", \"tedarikçi\" gibi genel ifadelerle değiştirin; metni sonra kendiniz özelleştirin.",
+          "Sağlık, mali durum ve hukuki süreç içeren yazışmalarda olayı özetleyerek anlatın, belgeyi yüklemeyin.",
+          "Kurumsal hesapla çalışıyorsanız kurumunuzun yapay zekâ politikası varsa o geçerli."
+        ]
+      },
+      {
+        "tur": "metin",
+        "metin": "OpenAI'ın veri kontrolleri sayfasına göre \"modeli herkes için iyileştir\" ayarı kapatılabiliyor ve kapatıldığında sohbetler hesabınızda kalmaya devam ediyor ama eğitimde kullanılmıyor. Aynı sayfa bu ayarın tek tek sohbetlere değil hesabın tamamına uygulandığını da belirtiyor. Geçici sohbetler ise 30 günde siliniyor, eğitimde kullanılmıyor ve yalnız kötüye kullanım incelemesi için görülebiliyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Amacı tek cümlede yazın.",
+            "metin": "\"Bu e-postanın okunduktan sonra karşı tarafta yapmasını istediğim şey nedir?\" Cevabı yazamıyorsanız e-postayı da yazamazsınız."
+          },
+          {
+            "baslik": "Kişisel veriyi çıkarın.",
+            "metin": "İsim, adres, telefon ve müşteri numarası yerine yer tutucu kullanın; gerçek bilgileri son metne kendiniz koyun."
+          },
+          {
+            "baslik": "Ton ve uzunluğu birlikte söyleyin.",
+            "metin": "\"Resmî ama sıcak, en fazla dört cümle\" gibi. Ton tek başına verilirse metin uzuyor."
+          },
+          {
+            "baslik": "Konu satırını ayrıca isteyin.",
+            "metin": "Açılma oranını belirleyen tek satır o. Üç seçenek isteyip birini seçmek, tek seçenekle yetinmekten iyi sonuç veriyor."
+          },
+          {
+            "baslik": "Göndermeden önce yüksek sesle okuyun.",
+            "metin": "Yapay zekâ metinlerinin ele veren yanı hata değil, tekdüzelik. Kendi ağzınızdan çıkmayacak bir cümle varsa değiştirin."
+          }
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Resmî yazışmalarda ve hak kaybına yol açabilecek konularda (fesih, itiraz, ihtar) yapay zekânın ürettiği metni olduğu gibi göndermeyin; bu metinler hukuki sonuç doğurabilir."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Ücretsiz olarak kaç e-posta yazdırabilirim?",
+        "c": "OpenAI'ın ücretsiz katman sayfası metin sohbetinin kötüye kullanım korumalarına tabi olarak sınırsız olduğunu yazıyor. E-posta yazdırmak ücretsiz katmanın en az kısıtlandığı işlerden biri."
+      },
+      {
+        "s": "Gelen e-postayı yapıştırmam sakıncalı mı?",
+        "c": "Gelen e-posta gönderenin verisini içeriyor: ad, adres, telefon, anlattığı konu. Bunları paylaşma yetkiniz olmayabilir. İmza bloğunu ve kimlik bilgilerini silip olayı genel ifadelerle anlatmak hem daha güvenli hem sonucu değiştirmiyor."
+      },
+      {
+        "s": "Yazdıklarım eğitimde kullanılıyor mu?",
+        "c": "OpenAI'ın veri kontrolleri sayfasına göre \"modeli herkes için iyileştir\" ayarı kapatılabiliyor. Kapattığınızda sohbetleriniz hesabınızda kalmaya devam ediyor ama eğitimde kullanılmıyor. Ayar tüm hesaba uygulanıyor."
+      },
+      {
+        "s": "Geçici sohbet ne işe yarıyor?",
+        "c": "OpenAI'ın sayfasına göre geçici sohbetler 30 günde siliniyor, eğitimde kullanılmıyor ve yalnız kötüye kullanım incelemesi için görülebiliyor. Tek seferlik hassas bir metin için uygun."
+      },
+      {
+        "s": "Yazdırdığım e-postayı olduğu gibi gönderebilir miyim?",
+        "c": "Günlük yazışmada genelde evet, okuduktan sonra. Ancak fesih, itiraz, ihtar gibi hukuki sonuç doğurabilecek yazışmalarda metni olduğu gibi göndermeyin."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "OpenAI Help Center — ChatGPT Free Tier FAQ",
+        "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — Veri kontrolleri SSS",
+        "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "sinav-hazirligi",
+    "alan": "ogrenci-ve-ogretmen",
+    "baslik": "Yapay Zeka ile Sınava Nasıl Çalışılır?",
+    "ozet": "Ders notlarınızı yükleyip soru sormak, ücretsiz katmanda gerçekten geniş: Gemini Notebook'ta not defteri başına 50 kaynak, kaynak başına 500 bin kelime. Ama bir şart var: cevaplar yalnız yüklediğiniz kaynaktan gelmeli.",
+    "cevap": "Ücretsiz katmanda yapılabiliyor ve sınava hazırlık, yapay zekânın en az riskli kullanımlarından biri — çünkü teslim edilen bir ürün yok, öğrenilen bir konu var. Google'ın Gemini Notebook destek sayfasına göre ücretsiz kullanıcılar not defteri başına 50 kaynak ekleyebiliyor; her kaynak 500.000 kelimeye veya yüklenen dosyalar için 200 MB'a kadar olabiliyor. Desteklenen biçimler arasında PDF, Word, PowerPoint, metin, Markdown ve CSV var — yani ders notu, slayt ve makale aynı defterde toplanabiliyor. Sohbet sayısı ücretsiz katmanda \"sınırlı\" olarak veriliyor.",
+    "hedef_sorgu": "yapay zeka ile sınava nasıl çalışılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Konuyu yapay zekâya sorup anlattırmak, ders notundan çalışmakla aynı şey.",
+      "dogru": "Aynı şey değil ve fark sınavda ortaya çıkıyor. Kaynak yüklemeden sorulan sorularda cevap modelin genel bilgisinden geliyor; sizin dersinizde işlenen tanım, kullanılan gösterim ve hocanızın vurguladığı ayrıntı orada yok. Kaynak temelli çalışmak bunu çözüyor: kendi ders notunuzu yükleyip cevapların o kaynaktan gelmesini istediğinizde, çalıştığınız şey sınavda sorulacak şey oluyor.",
+      "kaynak": "https://support.google.com/notebooklm/answer/16215270?hl=tr"
+    },
+    "araclar": [
+      {
+        "ad": "Gemini Notebook (NotebookLM)",
+        "ucretsiz": "Not defteri başına 50 kaynak; kaynak başına 500.000 kelime veya 200 MB. PDF, Word, PowerPoint, txt, Markdown, CSV. Sohbet sayısı \"sınırlı\"",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Metin sohbeti sınırsız; dosya yükleme günde 3",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "₺0 planda 3.6 Flash erişimi, 3.1 Pro'ya kısmi erişim, Canvas, Gem'ler ve Gemini Notebook listeleniyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Önce sınırı çizelim: bu sayfa ödev yaptırmayı anlatmıyor"
+      },
+      {
+        "tur": "metin",
+        "metin": "Sınava hazırlık ile ödev teslimi arasında hem etik hem pratik bir fark var. Sınava hazırlıkta teslim edilen bir ürün yok; öğrenilen bir konu var ve sonucu sınavda siz veriyorsunuz. Bu yüzden yapay zekânın en az riskli kullanımlarından biri."
+      },
+      {
+        "tur": "metin",
+        "metin": "Ödev teslimi ise başka bir konu ve kuralı tek yerden gelmiyor: kurumun yönergesi, dersin öğretmeninin koyduğu sınır ve aracın kendi kullanım koşulları üst üste biniyor. Üçü çakıştığında en dar olanı geçerli sayılıyor. Bu sayfa hazırlık tarafını anlatıyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Kaynak temelli çalışmanın farkı"
+      },
+      {
+        "tur": "metin",
+        "metin": "Yapay zekâya doğrudan bir konu sorduğunuzda cevap genel bilgiden geliyor. Ders notunuzu yükleyip aynı soruyu sorduğunuzda cevap sizin kaynağınızdan geliyor. İkisi arasındaki fark, sınavda sorulan tanımın hangisi olduğu."
+      },
+      {
+        "tur": "metin",
+        "metin": "Google'ın destek sayfası burada işe yarayan bir öneri veriyor: birden fazla kaynak seçiliyken sorguda kaynak adını anmak aramayı daraltıyor. \"Bu kaynağı özetle\" yerine \"X belgesindeki temel bulgular nelerdir?\" biçiminde sormak öneriliyor."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Nasıl sordunuz?",
+          "Cevap nereden geliyor?",
+          "Sınav için"
+        ],
+        "satirlar": [
+          [
+            "Kaynak yüklemeden konuyu sordunuz",
+            "Modelin genel bilgisi",
+            "Riskli — dersinizin tanımı olmayabilir"
+          ],
+          [
+            "Ders notunuzu yükleyip sordunuz",
+            "Yüklediğiniz kaynak",
+            "Uygun"
+          ],
+          [
+            "Birden fazla kaynak yükleyip kaynağı adıyla andınız",
+            "Belirttiğiniz kaynak",
+            "En isabetlisi"
+          ],
+          [
+            "Taranmış / fotoğrafı çekilmiş not yüklediniz",
+            "Güvenilmez",
+            "Önce metne dönüştürün"
+          ]
+        ],
+        "not": "Satırlar Google'ın Gemini Notebook destek sayfasındaki kullanım önerilerinden ve dosya sınırlarından çıkarıldı."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: bir sınav için çalışma düzeni"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Tüm kaynağı tek yerde toplayın.",
+            "metin": "Ders notu, slayt, makale, kendi özetiniz. Ücretsiz katmanda not defteri başına 50 kaynak hakkınız var; bir sınav için fazlasıyla yeterli."
+          },
+          {
+            "baslik": "Önce kendinize sorular ürettirin.",
+            "metin": "Konuyu anlattırmak yerine \"bu konudan çıkabilecek 10 soru\" isteyin. Soruyu görmek, eksiğinizi anlatının kendisinden daha hızlı gösteriyor."
+          },
+          {
+            "baslik": "Cevabı önce siz verin.",
+            "metin": "Soruyu okuyup cevabı kendi cümlelerinizle yazın, sonra kaynakla karşılaştırın. Okuyarak çalışmanın en büyük yanılgısı, tanıdık gelen şeyi bilinen sanmak."
+          },
+          {
+            "baslik": "Anlamadığınız yeri kaynağa bağlayarak sorun.",
+            "metin": "\"Bunu basitleştir\" yerine \"bu tanımı ders notundaki örnekle açıkla\" deyin. Cevabın kaynağa bağlı kalması, uydurma bilgiyi büyük ölçüde engelliyor."
+          },
+          {
+            "baslik": "Son turda kaynağa dönün.",
+            "metin": "Sınavdan önceki son okuma yapay zekâ çıktısından değil, kendi ders notunuzdan olsun."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Yapay zekâ dedektörleri meselesi"
+      },
+      {
+        "tur": "metin",
+        "metin": "Öğrenci tarafında en çok kaygı yaratan konu bu ve dürüst cevap şu: bu araçların doğruluğu tartışmalı, yanılma payları var ve bir metnin yapay zekâ ürünü olduğunu kesin olarak kanıtlayamıyorlar. Ama bu, \"yakalanmazsınız\" anlamına gelmiyor — tersine, yanlış pozitif ihtimali kendi yazdığınız metnin de işaretlenebileceği anlamına geliyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Kurumunuzun yönergesine bakın: çoğu kurumda yapay zekâ kullanımı yasak değil, beyana tabi.",
+          "Kullandıysanız yazın. Beyan etmek, sonradan tartışmaya girmekten her durumda daha ucuz.",
+          "Çalışma sürecinizin kaydını tutun: taslaklar, notlar, arama geçmişi. Bir iddia karşısında en güçlü savunma bu.",
+          "Dedektör çıktısına dayanarak kendinizi suçlu ya da masum ilan etmeyin; bu araçlar kesin kanıt üretmiyor."
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Ders notlarınızda başka öğrencilerin ya da öğretmenlerin kişisel bilgileri olabilir. Yüklemeden önce bunları çıkarın. Kurumunuzun verdiği hesapla kişisel hesabın veri kuralları da farklı olabiliyor."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Ders notlarımı ücretsiz olarak yükleyip soru sorabilir miyim?",
+        "c": "Evet. Google'ın Gemini Notebook destek sayfasına göre ücretsiz kullanıcılar not defteri başına 50 kaynak ekleyebiliyor; her kaynak 500.000 kelimeye veya yüklenen dosyalar için 200 MB'a kadar olabiliyor."
+      },
+      {
+        "s": "Hangi dosya biçimlerini yükleyebilirim?",
+        "c": "Google'ın sayfasına göre Word (docx), metin (txt), Markdown (md), PDF, CSV ve PowerPoint (pptx) destekleniyor. Metni kopyalayıp yapıştırarak da yeni kaynak oluşturabiliyorsunuz."
+      },
+      {
+        "s": "Kaç kez soru sorabilirim?",
+        "c": "Google'ın plan tablosunda ücretsiz katman için sohbet sayısı \"sınırlı\" olarak veriliyor ve sayı yazılmıyor. Aynı sayfa günlük kotaların 24 saat, aylık kotaların 30 gün sonra sıfırlandığını belirtiyor."
+      },
+      {
+        "s": "Yapay zekânın anlattığına güvenebilir miyim?",
+        "c": "Kaynak yükleyip cevabın o kaynaktan gelmesini istediğinizde risk büyük ölçüde azalıyor. Kaynaksız sorulan sorularda cevap modelin genel bilgisinden geliyor ve sizin dersinizde işlenen tanımla örtüşmeyebiliyor. Sınavdan önceki son okumayı kendi ders notunuzdan yapın."
+      },
+      {
+        "s": "Yapay zekâ ile çalışmak kopya sayılır mı?",
+        "c": "Sınava hazırlıkta teslim edilen bir ürün yok, o yüzden çalışma yöntemi olarak kullanılması genelde sorun değil. Ödev ve proje teslimi ayrı bir konu: kurumun yönergesi, dersin kuralı ve aracın koşulları birlikte geçerli, çakışırsa en dar olan uygulanır."
+      },
+      {
+        "s": "Yapay zekâ dedektörleri güvenilir mi?",
+        "c": "Doğrulukları tartışmalı ve yanılma payları var; bir metnin yapay zekâ ürünü olduğunu kesin kanıtlayamıyorlar. Bu, yanlış pozitif riskinin de olduğu anlamına geliyor — kendi yazdığınız metin işaretlenebilir. En sağlam yol kurumun yönergesine uymak ve çalışma sürecinizin kaydını tutmak."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Google Destek — Gemini Notebook: kaynak ekleme, türler ve sınırlar (Türkçe)",
+        "url": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Gemini Notebook: planlar ve kullanım sınırları (Türkçe)",
+        "url": "https://support.google.com/notebooklm/answer/16213268?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — Dosya yükleme SSS",
+        "url": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ]
   }
 ]

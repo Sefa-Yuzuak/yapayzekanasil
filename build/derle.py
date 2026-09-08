@@ -188,7 +188,10 @@ def main() -> int:
         sira = gorevler[i + 1:] + gorevler[:i]          # kendisi hariç, kendinden sonra başla
         ayni = [x for x in sira if x.get("alan") == g.get("alan")]
         diger = [x for x in sira if x.get("alan") != g.get("alan")]
-        g["ilgili"] = (ayni + diger)[:3]
+        # Üç yuvanın en fazla ikisi aynı konudan: hepsini aynı konuya verirsek
+        # kalabalık konular kendi içine kapanıyor ve tek görevli bir konu
+        # (ör. ogrenci-ve-ogretmen) hiç bağlantı almıyor.
+        g["ilgili"] = (ayni[:2] + diger)[:3]
 
     for r in rehberler:
         r.setdefault("slug", slugify(r["baslik"]))
