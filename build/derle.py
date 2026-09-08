@@ -181,7 +181,14 @@ def main() -> int:
         if kaynaksiz:
             sys.exit(f"HATA: {g['slug']} görevinde kaynaksız araç satırı: {kaynaksiz}")
     for g in gorevler:
-        g["ilgili"] = [x for x in gorevler if x is not g][:3]
+        # Sabit ilk üçü vermek, listenin başındaki görevlere bütün iç bağlantıyı
+        # yığıp sonrakileri öksüz bırakıyordu. Önce aynı konudan, sonra sırayı
+        # kendi konumundan başlatarak dolaş: her görev hem bağlantı alıyor hem veriyor.
+        i = gorevler.index(g)
+        sira = gorevler[i + 1:] + gorevler[:i]          # kendisi hariç, kendinden sonra başla
+        ayni = [x for x in sira if x.get("alan") == g.get("alan")]
+        diger = [x for x in sira if x.get("alan") != g.get("alan")]
+        g["ilgili"] = (ayni + diger)[:3]
 
     for r in rehberler:
         r.setdefault("slug", slugify(r["baslik"]))

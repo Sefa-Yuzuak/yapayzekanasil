@@ -1008,5 +1008,781 @@
         "dogrulama": "2026-09-07"
       }
     ]
+  },
+  {
+    "slug": "altyazi",
+    "alan": "gorsel-ve-video",
+    "baslik": "Yapay Zeka ile Altyazı Nasıl Eklenir?",
+    "ozet": "Türkçe otomatik altyazı üç araçta da çalışıyor ve üçünde de bedava. Fark, altyazıyı çıkardıktan sonra videoyu nereye götürebildiğinizde ortaya çıkıyor.",
+    "cevap": "Türkçe otomatik altyazı ücretsiz yapılabiliyor. YouTube'un Türkçe destek sayfası otomatik altyazının desteklendiği diller arasında Türkçeyi sayıyor ve altyazılar video yüklendikten sonra kendiliğinden oluşuyor. VEED'in desteklenen diller listesinde de Türkçe hem yazıya dökme hem çeviri sütununda yer alıyor. Kritik ayrım şurada: YouTube'da altyazı doğrudan videonun üzerinde yayımlanıyor ve indirme gerekmiyor; VEED'de altyazı ücretsiz üretilse bile videoyu indirdiğinizde üstünde VEED.IO filigranı oluyor. Bir de herkesin atladığı sınır var: YouTube'da canlı yayın otomatik altyazısı yalnızca İngilizce.",
+    "hedef_sorgu": "yapay zeka ile altyazı nasıl eklenir",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "YouTube canlı yayınlarda da otomatik altyazı veriyor, Türkçe yayında açarsınız.",
+      "dogru": "Vermiyor. YouTube'un kendi Türkçe destek sayfası açıkça yazıyor: canlı yayınlar için otomatik altyazılar yalnızca İngilizce dilinde sunuluyor ve yalnız İngilizce yayın yapan, \"normal gecikme\" ile yayında olan kanallarda kullanılabiliyor. Aynı sayfa, canlı yayın bittikten sonra o altyazıların videoyla kaydedilmediğini, kayıt için yeni altyazılar üretildiğini ve bunların canlıda görünenden farklı olabileceğini de belirtiyor.",
+      "kaynak": "https://support.google.com/youtube/answer/6373554?hl=tr"
+    },
+    "araclar": [
+      {
+        "ad": "YouTube otomatik altyazı",
+        "ucretsiz": "Video yüklendikten sonra otomatik oluşuyor; işleme süresi sesin karmaşıklığına bağlı",
+        "turkce": "Var (desteklenen diller listesinde Türkçe yer alıyor)",
+        "filigran": "Yok — altyazı videonun üzerinde yayımlanıyor, indirme gerekmiyor",
+        "ticari": "",
+        "kaynak": "https://support.google.com/youtube/answer/6373554?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "VEED",
+        "ucretsiz": "Altyazı üretme ve çeviri var; ama videoyu indirirken filigran kuralı işliyor",
+        "turkce": "Var (yazıya dökme ve çeviri sütunlarının ikisinde de)",
+        "filigran": "Ücretsiz hesapta her dışa aktarımda çıkıyor; kaldırmanın tek yolu ücretli abonelik",
+        "ticari": "",
+        "kaynak": "https://support.veed.io/en/articles/6971225-languages-we-support-for-subtitle-generation-and-translation",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "CapCut otomatik altyazı",
+        "ucretsiz": "Var; konuşma tanıma bulutta çalışıyor, doğru dilin seçilmesi gerekiyor",
+        "turkce": "",
+        "filigran": "Videoyu dışa aktarırken CapCut'ın filigran kuralları geçerli",
+        "ticari": "",
+        "kaynak": "https://www.capcut.com/help/auto-captions",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Altyazıyı nereye koyacaksınız?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Altyazı araçlarını karşılaştırırken sorulacak ilk soru doğruluk oranı değil, altyazının nereye gideceği. Çünkü ücretsiz katmanların çoğu altyazıyı üretmekte cömert, üretilen şeyi dışarı çıkarmakta cimri."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Video zaten YouTube'a yüklenecekse altyazıyı orada üretmek en az sürtünmeli yol: indirme yok, filigran yok, ek araç yok.",
+          "Video Instagram, TikTok ya da bir sunum içine gidecekse altyazıyı videonun içine gömmeniz gerekiyor — burada dışa aktarma kuralları devreye giriyor.",
+          "Altyazıyı ayrı dosya (.srt) olarak alabiliyorsanız alın: aynı dosyayı birden çok platformda kullanabilirsiniz."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "YouTube'da otomatik altyazının yazılı sınırları"
+      },
+      {
+        "tur": "metin",
+        "metin": "YouTube'un Türkçe destek sayfası otomatik altyazının ne zaman oluşmadığını da açıkça sayıyor. Bunlar tahmin değil, şirketin kendi listesi: videonun dili otomatik altyazılar tarafından desteklenmiyorsa, aynı anda konuşan kişiler varsa veya aynı anda birden fazla dil konuşuluyorsa altyazı üretilemiyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Aynı sayfa, bir videoda birden fazla dilde ses parçası varsa otomatik altyazının varsayılan dile ayarlandığını da belirtiyor. Yani Türkçe-İngilizce karışık konuşulan bir videoda tek dil seçiliyor ve diğer kısımlar bozuk çıkıyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "YouTube'un kendi tavsiyesi de dikkat çekici: içerik üreticilere profesyonel olarak hazırlanmış altyazıya öncelik vermelerini öneriyor ve otomatik altyazıların yanlış telaffuz, aksan, lehçe veya arka plan gürültüsü nedeniyle konuşulanı yanlış yansıtabileceğini yazıyor. Yani otomatik altyazıyı üreten şirketin kendisi \"her zaman kontrol edin\" diyor."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Durum",
+          "Otomatik altyazı ne yapıyor?"
+        ],
+        "satirlar": [
+          [
+            "Türkçe video, tek konuşmacı",
+            "Destekleniyor; yükleme sonrası otomatik oluşuyor"
+          ],
+          [
+            "Aynı anda konuşan kişiler",
+            "Üretilemiyor"
+          ],
+          [
+            "Aynı videoda birden fazla dil",
+            "Üretilemiyor; birden fazla ses parçası varsa varsayılan dile ayarlanıyor"
+          ],
+          [
+            "Türkçe canlı yayın",
+            "Yok — canlı otomatik altyazı yalnızca İngilizce"
+          ],
+          [
+            "Canlı yayın kaydı",
+            "Canlıdaki altyazı saklanmıyor; kayıt için yeni altyazı üretiliyor"
+          ]
+        ],
+        "not": "Satırlar YouTube'un Türkçe destek sayfasındaki ifadelerden çıkarıldı."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: Türkçe altyazı"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Sesi düzeltmeye videodan önce başlayın.",
+            "metin": "Otomatik altyazının doğruluğunu en çok belirleyen şey mikrofon. Arka plan gürültüsü ve düşük ses seviyesi, sonradan hiçbir araçla telafi edilemiyor; CapCut'ın yardım sayfası sesi olmayan ya da çok kısık olan videoda altyazı üretilemediğini yazıyor."
+          },
+          {
+            "baslik": "Dili elle seçin.",
+            "metin": "CapCut'ın yardım sayfasına göre yanlış dil seçmek ya hiç altyazı üretmiyor ya da yanlış metin çıkarıyor. Otomatik algılamaya güvenmeyin, Türkçeyi kendiniz seçin."
+          },
+          {
+            "baslik": "Özel adları ve sayıları gözden geçirin.",
+            "metin": "Altyazıda en sık bozulan yer burası. Kurum adları, kısaltmalar ve rakamlar için metni baştan sona okumak yerine doğrudan bu üçünü tarayın."
+          },
+          {
+            "baslik": "Satır uzunluğunu kısaltın.",
+            "metin": "Otomatik altyazı bazen tek satıra çok kelime sıkıştırıyor. Telefonda okunabilmesi için satırları bölmek, çeviri doğruluğundan daha çok fark yaratıyor."
+          },
+          {
+            "baslik": "Dışa aktarma kuralını en sona bırakmayın.",
+            "metin": "Altyazı ücretsiz üretilse bile videoyu indirdiğiniz araç filigran basıyor olabilir. Bunu saatlerce çalıştıktan sonra değil, başlarken öğrenin."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Altyazı mı, çeviri mi?"
+      },
+      {
+        "tur": "metin",
+        "metin": "İki iş sık karıştırılıyor: yazıya dökme (konuşulanı aynı dilde metne çevirmek) ile çeviri (o metni başka dile aktarmak). Araçlar ikisini ayrı ayrı destekliyor ve bir dil birinde varken diğerinde olmayabiliyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "VEED'in desteklenen diller tablosu bu ayrımı iki ayrı sütun olarak veriyor ve Türkçe her ikisinde de yer alıyor. Yani Türkçe videodan Türkçe altyazı da, Türkçe altyazıdan başka dile çeviri de yapılabiliyor."
+      },
+      {
+        "tur": "uyari",
+        "metin": "Otomatik altyazı erişilebilirlik için tek başına yeterli sayılmaz. YouTube'un kendi sayfası bile profesyonel olarak hazırlanmış altyazıya öncelik verilmesini öneriyor."
+      }
+    ],
+    "sss": [
+      {
+        "s": "YouTube Türkçe otomatik altyazı veriyor mu?",
+        "c": "Evet. YouTube'un Türkçe destek sayfasındaki desteklenen diller listesinde Türkçe yer alıyor ve altyazılar kullanılabildiğinde videoda otomatik olarak yayınlanıyor."
+      },
+      {
+        "s": "Canlı yayında Türkçe otomatik altyazı açabilir miyim?",
+        "c": "Hayır. YouTube'un destek sayfası canlı yayınlar için otomatik altyazının yalnızca İngilizce sunulduğunu ve yalnız İngilizce yayın yapan kanallarda kullanılabildiğini yazıyor."
+      },
+      {
+        "s": "Otomatik altyazı neden hiç oluşmadı?",
+        "c": "YouTube'un sayfası üç sebep sayıyor: videonun dili otomatik altyazılar tarafından desteklenmiyordur, aynı anda konuşan kişiler vardır ya da aynı anda birden fazla dil konuşuluyordur. Ayrıca yükleme sonrası altyazının hazır olması zaman alabiliyor."
+      },
+      {
+        "s": "Altyazıyı ücretsiz çıkarıp videoyu filigransız indirebilir miyim?",
+        "c": "Aracına bağlı. VEED'de altyazı ücretsiz üretilse de ücretsiz hesapta dışa aktarılan videoda filigran bulunuyor. CapCut'ta ise şablon ve Pro içerik kullanılmazsa filigransız dışa aktarma mümkün."
+      },
+      {
+        "s": "Otomatik altyazıya güvenebilir miyim?",
+        "c": "Kontrolsüz güvenmeyin. YouTube kendi sayfasında otomatik altyazıların yanlış telaffuz, aksan, lehçe veya arka plan gürültüsü nedeniyle hatalı olabileceğini ve daima incelenmesi gerektiğini yazıyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "YouTube Yardım — Otomatik altyazı oluşturmayı kullanma (Türkçe)",
+        "url": "https://support.google.com/youtube/answer/6373554?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "VEED Yardım Merkezi — Altyazı ve çeviride desteklenen diller",
+        "url": "https://support.veed.io/en/articles/6971225-languages-we-support-for-subtitle-generation-and-translation",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "VEED Yardım Merkezi — Videolarımda VEED filigranı olacak mı?",
+        "url": "https://support.veed.io/en/articles/7056370-will-the-videos-i-created-have-a-veed-watermark-on-them",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "CapCut Yardım — Otomatik altyazı neden çalışmıyor?",
+        "url": "https://www.capcut.com/help/auto-captions",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "excel",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile Excel Dosyası Nasıl Analiz Edilir?",
+    "ozet": "Ücretsiz ChatGPT'de tablo analizi var ama günde 3 dosya yükleyebiliyorsunuz. Bir de kimsenin yazmadığı bir sınır var: veri analizi internete çıkamıyor.",
+    "cevap": "Yapılabiliyor ama ücretsiz katmanda iki sert sınır var ve ikisi de OpenAI'ın kendi sayfalarında yazılı. Birincisi: ücretsiz kullanıcılar günde 3 dosya yükleyebiliyor (ücretli planlarda 3 saatte 80 dosya). İkincisi ve daha az bilineni: veri analizi dış web isteği ya da API çağrısı yapamıyor — analiz dışarıdaki bir veriye bağlıysa o veriyi önce siz yüklemek zorundasınız. Dosya boyutunda da sınır var: CSV ve tablolarda yaklaşık 50 MB, dosya başına mutlak sınır 512 MB.",
+    "hedef_sorgu": "yapay zeka ile excel analizi nasıl yapılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Tabloyu yükleyip \"bunu güncel kurla çevir\" ya da \"piyasa verisiyle karşılaştır\" diyebilirsiniz.",
+      "dogru": "Diyemezsiniz. OpenAI'ın veri analizi sayfası açıkça yazıyor: veri analizi dış web isteği veya API çağrısı yapamıyor. Analiz dışarıdaki bir veriye bağlıysa o veriyi önce yüklemeniz ya da kullanılabilir bir kaynağa bağlamanız gerekiyor. Bunu bilmeden sorulan sorular \"cevap verdi ama sayılar uydurma\" sonucunu doğuruyor.",
+      "kaynak": "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt"
+    },
+    "araclar": [
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Günde 3 dosya yükleme; CSV/tablolarda yaklaşık 50 MB, dosya başına mutlak sınır 512 MB",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT veri analizi (yetenek sınırı)",
+        "ucretsiz": "Dış web isteği veya API çağrısı yapamıyor; taranmış/görsel tablolarda değerleri güvenilir çıkaramayabiliyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva (Magic Formulas)",
+        "ucretsiz": "Standart araç kademesinde; Canva Free'de aylık 20 kullanımlık ortak haktan düşüyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Ücretsiz katmanın gerçek sınırı: günde 3 dosya"
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu rakam OpenAI'ın dosya yükleme sayfasında yazılı ve ücretsiz katmanı en çok belirleyen sayı. Ücretli planlarda sınır 3 saatte 80 dosya; ücretsizde günde 3. Aynı sayfa yoğun saatlerde bu sınırların düşürülebileceğini de not ediyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Pratik sonucu şu: ücretsiz katmanda dosyayı deneme yanılmayla defalarca yükleyemezsiniz. Doğru dosyayı ilk seferde hazırlamak, aracın kendisinden daha önemli hale geliyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Başarısız yükleme denemeleri de kotadan düşebiliyor — sayfa bunu açıkça yazıyor.",
+          "Dosya boyutu sınırı CSV ve tablolarda yaklaşık 50 MB; satır boyutuna göre değişiyor.",
+          "Dosya başına mutlak sınır 512 MB, görsellerde 20 MB.",
+          "Metin ve doküman dosyaları dosya başına 2 milyon jetonla sınırlı; bu sınır tablolara uygulanmıyor."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "En çok yanlış anlaşılan yetenek: internete çıkamıyor"
+      },
+      {
+        "tur": "metin",
+        "metin": "Veri analizi bir hesap makinesi gibi çalışıyor: verdiğiniz veriyle işlem yapıyor. OpenAI'ın sayfası bunu açıkça yazıyor — veri analizi dış web isteği veya API çağrısı yapamıyor, analiz dışarıdaki bir veriye bağlıysa o veriyi önce yüklemeniz gerekiyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu, \"şu tabloyu güncel dolar kuruyla çevir\" ya da \"rakip fiyatlarıyla karşılaştır\" gibi isteklerin neden güvenilmez sonuç verdiğini açıklıyor. Karşılaştırılacak veri dosyada yoksa, dosyada olmayan bir şeyle karşılaştırma yapılamaz."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "İstek",
+          "Çalışır mı?",
+          "Neden"
+        ],
+        "satirlar": [
+          [
+            "\"Bu tablodaki satışları aya göre topla\"",
+            "Evet",
+            "Bütün veri dosyanın içinde"
+          ],
+          [
+            "\"Bu tabloyu güncel kurla TL'ye çevir\"",
+            "Hayır",
+            "Güncel kur dışarıda; veri analizi dışarı çıkamıyor"
+          ],
+          [
+            "\"Kur şudur, ona göre çevir\"",
+            "Evet",
+            "Veriyi siz verdiniz"
+          ],
+          [
+            "\"Taranmış PDF'teki tabloyu analiz et\"",
+            "Güvenilmez",
+            "Görsel tablolardan değerler güvenilir çıkarılamayabiliyor"
+          ],
+          [
+            "\"Şu grafiği çiz\"",
+            "Evet",
+            "Ama grafik türünü belirtmezseniz istediğinizden farkını çizebiliyor"
+          ]
+        ],
+        "not": "Satırlar OpenAI'ın veri analizi ve dosya yükleme yardım sayfalarındaki ifadelerden çıkarıldı."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Taranmış belge ve ekran görüntüsü tuzağı"
+      },
+      {
+        "tur": "metin",
+        "metin": "OpenAI'ın kendi SSS'i bu konuda net: taranmış dosyalarda, görsele dayalı tablolarda ve karmaşık görsel düzeni olan dosyalarda değerler güvenilir biçimde çıkarılamayabiliyor. Kesin değer önemliyse tablo ya da metin tabanlı bir dosya yüklemeniz öneriliyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu, Türkçe içerikte neredeyse hiç yazılmayan ama en çok hataya yol açan noktalardan biri: raporun ekran görüntüsünü yükleyip sayılar üzerinden karar vermek. Sayı okunmuş görünüyor ama okunduğu garanti değil."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: bir tabloyu analiz ettirmek"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Dosyayı tablo olarak verin.",
+            "metin": "Ekran görüntüsü ya da taranmış PDF yerine .xlsx veya .csv yükleyin. Kesin değer gerektiren her işte bu tek başına en büyük fark."
+          },
+          {
+            "baslik": "Gereksiz sayfaları ve sütunları silin.",
+            "metin": "Ücretsiz katmanda günde 3 dosya hakkınız var; büyük ve dağınık bir dosyayı yükleyip \"eksik analiz etti\" sonucu almak bir hakkı boşa harcıyor."
+          },
+          {
+            "baslik": "Dışarıdan gereken veriyi dosyaya koyun.",
+            "metin": "Kur, enflasyon, rakip fiyatı gibi veriler dosyada yoksa analiz onları getiremiyor. Ya dosyaya ekleyin ya da istemde açıkça yazın."
+          },
+          {
+            "baslik": "Yöntemi siz söyleyin.",
+            "metin": "OpenAI'ın sayfası, ilk denemede sizin istediğinizden farklı bir analiz yöntemi ya da grafik türü seçilebileceğini yazıyor. Hangi sütun, hangi gruplama, hangi grafik — bunları belirtin."
+          },
+          {
+            "baslik": "Sonucu bir satırdan doğrulayın.",
+            "metin": "Çıkan tablodan bir satırı kendiniz hesaplayın. Analiz eksik yapılmışsa bu en hızlı yakalandığı yer; sayfa da dosyanın tamamının analiz edilmemiş olabileceğini belirtiyor."
+          }
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Kurum verisi ve kişisel veri içeren tabloları yüklemeden önce kurumunuzun bilgi güvenliği kuralına bakın. Kimlik numarası, maaş ve sağlık bilgisi gibi alanları yüklemeden önce çıkarmak ya da maskelemek en güvenli yol."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Ücretsiz ChatGPT'de kaç dosya yükleyebilirim?",
+        "c": "OpenAI'ın dosya yükleme sayfasına göre ücretsiz kullanıcılar günde 3 dosya yükleyebiliyor. Ücretli planlarda sınır 3 saatte 80 dosya. Sayfa, yoğun saatlerde bu sınırların düşürülebileceğini de belirtiyor."
+      },
+      {
+        "s": "Excel dosyası boyut sınırı ne kadar?",
+        "c": "OpenAI'ın sayfasına göre CSV ve tablolarda dosya boyutu satır büyüklüğüne bağlı olarak yaklaşık 50 MB'ı geçemiyor. Dosya başına mutlak sınır 512 MB, görsellerde 20 MB."
+      },
+      {
+        "s": "Tabloyu güncel döviz kuruyla çevirtebilir miyim?",
+        "c": "Veri analizi bunu kendi başına yapamıyor. OpenAI'ın sayfası veri analizinin dış web isteği veya API çağrısı yapamadığını, dışarıdaki veriye bağlı analizlerde verinin önce yüklenmesi gerektiğini yazıyor. Kuru siz yazarsanız hesaplama yapılabiliyor."
+      },
+      {
+        "s": "Ekran görüntüsündeki tabloyu analiz edebilir mi?",
+        "c": "Güvenilir değil. OpenAI'ın SSS'i görsele dayalı tablolarda, taranmış dosyalarda ve karmaşık görsel düzeni olan dosyalarda değerlerin güvenilir çıkarılamayabileceğini, kesin değer gerektiğinde tablo veya metin tabanlı dosya yüklenmesini yazıyor."
+      },
+      {
+        "s": "Dosyayı yükledim ama analiz eksik kaldı, neden?",
+        "c": "OpenAI'ın sayfasına göre bir dosya başarıyla yüklense de analiz için fazla büyük, fazla karmaşık, görsel ağırlıklı veya kötü yapılandırılmış olabiliyor. Öneri, belirli sayfa/satır/sütunları tek tek incelettirmek ya da dosyayı bölmek."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "OpenAI Help Center — ChatGPT ile veri analizi",
+        "url": "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — Dosya yükleme SSS (plan bazlı sınırlar)",
+        "url": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT Free Tier FAQ",
+        "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Yapay zeka kullanımınızı anlamak",
+        "url": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "cv",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile CV Nasıl Hazırlanır?",
+    "ozet": "CV şablonlarında asıl tuzak tasarım değil lisans: Canva'da beğendiğiniz şablonun içinde premium bir öğe varsa ücretsiz planda CV'niz filigranlı iniyor — ve o öğeyi satın alsanız bile lisans tek tasarım için geçerli.",
+    "cevap": "Metni yazdırmak ücretsiz katmanda rahat: OpenAI'ın sayfası ücretsiz ChatGPT'de metin sohbetinin sınırsız olduğunu yazıyor, yani CV metnini istediğiniz kadar yazdırıp düzeltebilirsiniz. Sıkıntı tasarım tarafında çıkıyor. Canva'nın yardım sayfası, ücretsiz kullanıcıda premium öğelerin tasarımda filigranla göründüğünü belirtiyor; filigranı kaldırmak için ya o öğeleri satın almanız ya da ücretli plana geçmeniz gerekiyor. Üstelik satın alınan premium öğe Pro İçerik lisansıyla geliyor ve aynı öğeyi birden fazla tasarımda kullanacaksanız her kullanım için yeni lisans almanız gerekiyor.",
+    "hedef_sorgu": "yapay zeka ile cv nasıl hazırlanır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Canva'da premium bir öğeyi bir kez satın alırsan sonsuza kadar her tasarımında kullanabilirsin.",
+      "dogru": "Kullanamazsınız. Canva'nın kendi yardım sayfası, premium öğelerin Pro İçerik lisansıyla satın alındığını ve öğeyi birden fazla tasarımda kullanmak istiyorsanız her kullanım için yeni lisans almanız gerektiğini yazıyor. Aynı sayfa \"daha önce satın aldığım öğede neden hâlâ filigran var\" sorusuna verdiği cevapta da sebeplerden birini \"öğeyi farklı bir tasarımda kullanıyorsunuz\" diye sayıyor. CV'nizi iki farklı sürümde hazırlarsanız bu doğrudan sizi ilgilendiriyor.",
+      "kaynak": "https://www.canva.com/help/premium-elements/"
+    },
+    "araclar": [
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Metin sohbeti sınırsız — CV metnini yazdırıp defalarca düzelttirebiliyorsunuz",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva (tasarım)",
+        "ucretsiz": "Ücretsiz şablon ve içerikle çalışılabiliyor; yapay zeka araçlarında ayda 20 kullanıma kadar",
+        "turkce": "",
+        "filigran": "Premium öğe kullanılırsa ücretsiz planda filigran çıkıyor; öğeyi satın almak veya ücretli plana geçmek gerekiyor",
+        "ticari": "Premium öğe Pro İçerik lisansıyla satın alınıyor; her yeni tasarımda ayrı lisans gerekiyor",
+        "kaynak": "https://www.canva.com/help/watermarks-design/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "₺0 planda 3.6 Flash, Canvas ve Gem'ler listeleniyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "CV'de yapay zekânın gerçekten işe yaradığı yer"
+      },
+      {
+        "tur": "metin",
+        "metin": "Yapay zekâ CV'nizi sizin yerinize yazamaz, çünkü ne yaptığınızı bilmiyor. İşe yaradığı yer başka: elinizdeki dağınık bilgiyi düzenlemek, aynı cümleyi farklı işe göre yeniden yazmak ve ilan metniyle CV'niz arasındaki boşluğu göstermek."
+      },
+      {
+        "tur": "metin",
+        "metin": "OpenAI'ın ücretsiz katman sayfası metin sohbetinin sınırsız olduğunu yazdığı için CV metni tarafında ücretsiz katman gerçekten rahat: aynı maddeyi on kez yeniden yazdırmanın bir bedeli yok. Kısıtlar dosya yükleme ve tasarım tarafında başlıyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "\"CV yaz\" demeyin; ne yaptığınızı anlatın, o yazsın. Boş bir istem genel geçer bir metin üretir ve bu metin her başvuruda aynı görünür.",
+          "İş ilanını yapıştırıp \"bu ilana göre hangi maddelerim zayıf\" diye sormak, CV yazdırmaktan daha çok işe yarıyor.",
+          "Rakam olmayan madde zayıftır: \"ekip yönettim\" yerine \"6 kişilik ekip\", \"süreci hızlandırdım\" yerine \"3 günden 1 güne\".",
+          "Ürettiği her cümleyi okuyun: yapay zekâ sizin yapmadığınız işleri de gayet doğal biçimde yazabiliyor."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Tasarım tarafındaki asıl tuzak: filigran ve lisans"
+      },
+      {
+        "tur": "metin",
+        "metin": "CV şablonları çekici görünür ve çoğu ücretsizdir; ama şablonun içindeki tek bir premium öğe bile çıktıyı değiştiriyor. Canva'nın yardım sayfası bunu doğrudan yazıyor: ücretsiz kullanıcıysanız premium öğeler tasarımınızda filigranla görünüyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Aynı sayfa üç çıkış yolu sayıyor: tasarımı indirirken kullandığınız premium öğeleri satın almak, öğenin üzerindeki \"filigranı kaldır\" düğmesiyle tek tek satın almak, ya da ücretli plana geçmek. Kararsızsanız filigranlı bir taslak indirip nasıl göründüğüne bakabileceğinizi de belirtiyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Asıl sürpriz lisans tarafında. Canva'ya göre premium öğeler Pro İçerik lisansıyla satın alınıyor ve öğeyi birden fazla tasarımda kullanacaksanız her kullanım için yeni lisans almanız gerekiyor. CV'yi iki ayrı sektöre göre iki ayrı tasarım olarak hazırlayan biri bunu ikinci tasarımda fark ediyor."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Durum",
+          "Sonuç"
+        ],
+        "satirlar": [
+          [
+            "Tamamen ücretsiz şablon ve öğeler",
+            "Filigransız iniyor"
+          ],
+          [
+            "Şablonda tek bir premium öğe var",
+            "Ücretsiz planda filigranlı iniyor"
+          ],
+          [
+            "Premium öğeyi satın aldınız",
+            "O tasarımda filigran kalkıyor"
+          ],
+          [
+            "Aynı öğeyi ikinci bir tasarımda kullandınız",
+            "Yeni lisans gerekiyor"
+          ],
+          [
+            "Farklı hesap veya takımdasınız",
+            "Satın alınmış öğe yine filigranlı görünebiliyor"
+          ]
+        ],
+        "not": "Satırlar Canva'nın filigran ve premium öğe yardım sayfalarındaki ifadelerden çıkarıldı."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: CV'yi hazırlamak"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Önce ham bilgiyi dökün.",
+            "metin": "Tarih, unvan, sorumluluk, sonuç. Düzensiz olması sorun değil; düzenlemek yapay zekânın gerçekten iyi olduğu iş."
+          },
+          {
+            "baslik": "İş ilanını da verin.",
+            "metin": "Başvuracağınız ilanı yapıştırıp CV'nizle karşılaştırtın. Eksik anahtar kelimeleri görmek, metni güzelleştirmekten daha çok fark yaratıyor."
+          },
+          {
+            "baslik": "Her maddeye sonuç ekletin.",
+            "metin": "\"Ne yaptım\" değil \"ne değişti\" sorusunu sorun. Sayı yoksa madde zayıf kalır."
+          },
+          {
+            "baslik": "Şablonu seçerken filigranı kontrol edin.",
+            "metin": "Şablonda kilit simgeli öğe varsa ücretsiz planda filigranlı inecek. Kararsızsanız Canva'nın önerdiği gibi önce filigranlı taslağı indirip bakın."
+          },
+          {
+            "baslik": "Son okumayı kendiniz yapın.",
+            "metin": "Yapay zekânın yazdığı hiçbir cümle, sizin doğrulamadığınız hâliyle CV'ye girmemeli. Mülakatta savunacağınız şey o cümle."
+          }
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "CV'niz kişisel veri içeriyor: kimlik numarası, adres, telefon, doğum tarihi. Bir araca yüklemeden önce bu alanları çıkarmak, sonradan silmeye çalışmaktan çok daha kolay."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Yapay zekâ ile ücretsiz CV hazırlayabilir miyim?",
+        "c": "Metin tarafında evet: OpenAI'ın sayfası ücretsiz ChatGPT'de metin sohbetinin sınırsız olduğunu yazıyor. Tasarım tarafında ise ücretsiz şablon ve öğelerle çalışırsanız filigransız indirebiliyorsunuz; şablonda premium öğe varsa Canva'nın sayfasına göre ücretsiz planda filigran çıkıyor."
+      },
+      {
+        "s": "Canva'da CV'mde neden filigran var?",
+        "c": "Canva'nın yardım sayfasına göre premium öğeler ücretsiz kullanıcının tasarımında filigranla görünüyor. Kaldırmak için kullandığınız premium öğeleri satın almanız ya da Canva Pro/Teams'e geçmeniz gerekiyor."
+      },
+      {
+        "s": "Premium öğeyi satın aldım, ikinci CV'mde yine filigran var. Neden?",
+        "c": "Canva'ya göre premium öğeler Pro İçerik lisansıyla satın alınıyor ve öğeyi birden fazla tasarımda kullanacaksanız her kullanım için yeni lisans gerekiyor. Sayfanın kendisi filigranın sürmesinin sebepleri arasında \"öğeyi farklı bir tasarımda kullanıyorsunuz\" maddesini sayıyor."
+      },
+      {
+        "s": "CV'mi yapay zekâya yazdırmam sorun olur mu?",
+        "c": "Metni düzenletmek yaygın bir kullanım. Dikkat edilecek şey doğruluk: yapay zekâ yapmadığınız işleri de doğal biçimde yazabiliyor. CV'deki her cümleyi mülakatta savunabilecek durumda olmalısınız."
+      },
+      {
+        "s": "CV'mi yüklerken nelere dikkat etmeliyim?",
+        "c": "CV kişisel veri içeriyor. Kimlik numarası, adres ve doğum tarihi gibi alanları yüklemeden önce çıkarmak en güvenli yol; sohbet araçlarında verilerin eğitimde kullanılıp kullanılmadığı ayarını da kontrol edin."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Canva Yardım Merkezi — Tasarımımda filigran veya Canva logosu var",
+        "url": "https://www.canva.com/help/watermarks-design/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Premium öğeler ve lisans",
+        "url": "https://www.canva.com/help/premium-elements/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Yapay zeka kullanımınızı anlamak",
+        "url": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT Free Tier FAQ",
+        "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "makale",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile Makale ve Blog Yazısı Nasıl Yazılır?",
+    "ozet": "Metin yazdırmak ücretsiz katmanın en cömert olduğu iş: ChatGPT'de metin sohbeti sınırsız. Asıl sorun sınır değil, çıkan metnin doğruluğu ve nerede kullanılabileceği.",
+    "cevap": "Metin üretmek için para vermeniz gerekmiyor. OpenAI'ın ücretsiz katman sayfası, ücretsiz kullanıcıların kötüye kullanım korumalarına tabi olarak sınırsız günlük metin sohbeti yapabildiğini yazıyor. Google'ın Türkçe abonelik sayfası da ₺0 planda 3.6 Flash modeline erişimi, Canvas'ı ve Gem'leri listeliyor. Yani yazı yazdırmak ücretsiz katmanın en az kısıtlandığı iş. Buna karşılık dosya yükleme ayrı bir kotaya tabi ve Canva tarafında Magic Write, ücretsiz planda aylık 20 kullanımlık ortak haktan düşüyor.",
+    "hedef_sorgu": "yapay zeka ile makale nasıl yazılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Ücretsiz ChatGPT'de günde belli sayıda mesaj hakkınız var, uzun yazı yazdıramazsınız.",
+      "dogru": "Yanlış. OpenAI'ın ücretsiz katman sayfası \"ücretsiz kullanıcılar sınırsız günlük metin sohbetine sahiptir\" diyor; sınır kötüye kullanım korumalarıyla ilgili. Ayrı kotaya tabi olanlar dosya yükleme, görsel üretme, ses ve veri analizi gibi araçlar. Yani metin yazdırmak ücretsiz katmanın en rahat olduğu iş; bunu kısıtlı sanarak ücretli plana geçmeye gerek yok.",
+      "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+    },
+    "araclar": [
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Metin sohbeti sınırsız (kötüye kullanım korumalarına tabi); dosya yükleme günde 3",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "₺0 planda 3.6 Flash erişimi, 3.1 Pro'ya kısmi erişim, Canvas, Gem'ler ve Deep Research listeleniyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Magic Write",
+        "ucretsiz": "Canva Free'de aylık 20 kullanımlık ortak haktan düşüyor; ücretli planlarda haktan düşmüyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Sınır yok, ama sorun da orada değil"
+      },
+      {
+        "tur": "metin",
+        "metin": "Metin üretmek, ücretsiz katmanın gerçekten cömert olduğu tek iş. Görselde kota var, dosyada günlük sınır var, seslendirmede lisans sorunu var — ama düz metin yazdırmakta ücretsiz katman büyük ölçüde açık."
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu yüzden bu sayfanın konusu \"nasıl daha çok yazdırılır\" değil. Asıl mesele, sınırsız üretilebilen bir şeyin doğruluğunu ve kullanılabilirliğini nasıl denetleyeceğiniz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Uydurma kaynak sorunu"
+      },
+      {
+        "tur": "metin",
+        "metin": "Yapay zekâya bir konuda yazı yazdırdığınızda metin akıcı, düzenli ve ikna edici çıkıyor. İçindeki isim, tarih, rakam ve kaynakların doğru olduğu ise bundan bağımsız bir mesele. Metnin ikna ediciliği doğruluğunun kanıtı değil."
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu sitede uyguladığımız kural aynısı: bir olgu, onu üreten kurumun kendi sayfasında yazılı değilse sayfaya girmiyor. Aynı kuralı kendi yazınızda uygulamak, yapay zekâyla yazılmış bir metni yayımlanabilir hale getiren tek şey."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Metindeki her rakamı ve tarihi asıl kaynağından doğrulayın; kaynağı yapay zekâdan istemeyin, kendiniz bulun.",
+          "Verilen bağlantıları tek tek açın: var olmayan ya da konuyla ilgisiz bağlantılar en sık rastlanan hata.",
+          "\"Araştırmalara göre\" ile başlayan cümleleri ya kaynaklandırın ya silin.",
+          "Kendi alanınızda olmayan bir konuda yazdırdığınız metni yayımlamadan önce o alandan birine okutun."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: yayımlanabilir bir yazı"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Konuyu değil, soruyu verin.",
+            "metin": "\"Uzaktan çalışma hakkında yazı\" genel bir metin üretir. \"Uzaktan çalışan bir ekipte performans nasıl ölçülür\" belirli bir metin üretir."
+          },
+          {
+            "baslik": "Önce plan isteyin, sonra metin.",
+            "metin": "Başlıkları görüp düzeltmek, uzun bir metni baştan yazdırmaktan hızlı. Yapı yanlışsa metnin tamamı yanlış yerden başlıyor."
+          },
+          {
+            "baslik": "Kendi bilginizi metne katın.",
+            "metin": "Yapay zekânın bilmediği tek şey sizin deneyiminiz — ve okuyucuya asıl değeri veren de o. Kendi örneğinizi eklemediğiniz metin, herkesin üretebileceği metindir."
+          },
+          {
+            "baslik": "Olguları teker teker doğrulayın.",
+            "metin": "Rakam, tarih, kurum adı ve alıntıları asıl kaynağından kontrol edin. Doğrulayamadığınız cümleyi silmek, düzeltmeye çalışmaktan hızlı."
+          },
+          {
+            "baslik": "Son hâli sizin sesinizle olsun.",
+            "metin": "Yapay zekâ metinlerinin tanınmasını sağlayan şey hata değil, tekdüzelik. Kendi cümle uzunluğunuza ve kelime tercihlerinize çekmek, metni hem okunur hem sizin yapıyor."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Okulda ve işte: söylemek gerekir mi?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Kural tek yerden gelmiyor. Okulda kurumun yönergesi ve dersin öğretmeninin koyduğu sınır, işte kurumun politikası, yayıncılıkta ise yayın kuruluşunun ilkesi geçerli. Üçü çakıştığında en dar olanı bağlayıcı sayılıyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Akademik bir çalışmada yapay zekâ kullanımı çoğu kurumda beyana tabi; kullanmadan önce yönergeye bakın.",
+          "Bir işveren adına yazdığınız metinde kurumun yapay zekâ politikası varsa o geçerli.",
+          "Yapay zekâ dedektörlerine dayanarak suçlama ya da savunma yapmak riskli: bu araçların yanılma payı, kendi sağlayıcıları tarafından da kabul ediliyor.",
+          "Ne kullandığınızı söylemek, sonradan yakalanmaktan her durumda daha ucuz."
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Bu sayfa hukuki tavsiye değildir. Telif, intihal ve akademik dürüstlük kuralları bulunduğunuz kuruma ve ülkeye göre değişir."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Ücretsiz ChatGPT'de kaç yazı yazdırabilirim?",
+        "c": "OpenAI'ın ücretsiz katman sayfası, ücretsiz kullanıcıların kötüye kullanım korumalarına tabi olarak sınırsız günlük metin sohbeti yapabildiğini yazıyor. Ayrı kotaya tabi olanlar dosya yükleme, görsel üretme, ses ve veri analizi gibi araçlar."
+      },
+      {
+        "s": "Yapay zekânın verdiği kaynaklara güvenebilir miyim?",
+        "c": "Doğrulamadan güvenmeyin. Metin akıcı ve ikna edici olabilir; bu, içindeki isim, tarih, rakam ve bağlantıların doğru olduğu anlamına gelmiyor. Bağlantıları tek tek açıp kaynağı kendiniz kontrol edin."
+      },
+      {
+        "s": "Canva Magic Write ücretsiz mi?",
+        "c": "Canva'nın yardım sayfasına göre Magic Write ücretli planlarda aylık haktan düşmüyor, ama Canva Free'de ortak aylık haktan düşüyor. Ücretsiz planda hak ayda 20 kullanıma kadar ve her ayın 1'inde 00:00 UTC'de sıfırlanıyor."
+      },
+      {
+        "s": "Gemini'nin ücretsiz planında yazı yazdırabilir miyim?",
+        "c": "Evet. Google'ın Türkçe abonelik sayfası ₺0 planda 3.6 Flash erişimini, 3.1 Pro'ya kısmi erişimi, Canvas'ı, Gem'leri ve Deep Research'ü listeliyor."
+      },
+      {
+        "s": "Yapay zekâ ile yazdığımı belirtmek zorunda mıyım?",
+        "c": "Bu, bulunduğunuz bağlamdaki kurala bağlı: okulda kurumun yönergesi ve dersin kuralı, işte kurumun politikası, yayıncılıkta yayın kuruluşunun ilkesi geçerli. Akademik çalışmalarda çoğu kurumda beyan gerekiyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "OpenAI Help Center — ChatGPT Free Tier FAQ",
+        "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Yapay zeka kullanımınızı anlamak",
+        "url": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      }
+    ]
   }
 ]
