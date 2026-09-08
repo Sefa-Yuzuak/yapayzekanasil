@@ -7,7 +7,7 @@
   {% if rehberler %}
   <ul class="sayilar">
     <li><strong>{{ rehberler|length }}</strong><span>rehber</span></li>
-    <li><strong>{{ alanlar|selectattr("rehberler")|list|length }}</strong><span>konu</span></li>
+    <li><strong>{{ alanlar|selectattr("dolu")|list|length }}</strong><span>konu</span></li>
     <li><strong>{{ site.guncelleme_tr }}</strong><span>son güncelleme</span></li>
   </ul>
   {% endif %}

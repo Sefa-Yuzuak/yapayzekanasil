@@ -197,6 +197,12 @@ def main() -> int:
     for a in alanlar:
         a["yol"] = f"/{a['slug']}/"
         a["rehberler"] = [r for r in rehberler if r.get("alan") == a["slug"]]
+        # Görevler de bir konuya bağlı: konu merkezi ikisini birden toplamazsa
+        # /nasil/ kümesi sitenin geri kalanından kopuk kalıyor.
+        a["gorevler"] = [g for g in gorevler if g.get("alan") == a["slug"]]
+        # Şablonlar bir konuya bağlantı vermeden önce buna bakar: sayfası
+        # üretilmeyen konuya menüden bağlantı verilirse kırık bağlantı olur.
+        a["dolu"] = bool(a["gorevler"] or a["rehberler"])
     for r in rehberler:
         ayni = [x for x in rehberler if x.get("alan") == r.get("alan") and x is not r]
         diger = [x for x in rehberler if x.get("alan") != r.get("alan")]
@@ -276,10 +282,11 @@ def main() -> int:
               oncelik="0.9", kirinti=[("Rehberler", "/rehberler/")])
 
     for a in alanlar:
-        if not a["rehberler"]:
+        if not a["dolu"]:
             continue     # boş hub = ince sayfa
-        sayfa(a["yol"], "alan.html", f"{a['ad']}: {len(a['rehberler'])} Rehber", a["aciklama"],
-              [liste_schema(site, a["ad"], a["yol"], a["rehberler"]),
+        icerik = a["gorevler"] + a["rehberler"]
+        sayfa(a["yol"], "alan.html", f"{a['ad']}: {len(icerik)} Sayfa", a["aciklama"],
+              [liste_schema(site, a["ad"], a["yol"], icerik),
                kirintilar(site, (a["ad"], a["yol"]))],
               oncelik="0.8", alan=a, kirinti=[(a["ad"], a["yol"])])
 

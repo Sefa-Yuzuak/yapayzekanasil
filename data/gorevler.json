@@ -1,6 +1,7 @@
 [
   {
     "slug": "gorsel-olusturma",
+    "alan": "gorsel-ve-video",
     "baslik": "Yapay Zeka ile Görsel Nasıl Yapılır?",
     "ozet": "Yapay zekâyla resim üretmek için para vermeniz gerekmiyor: hem ChatGPT'nin hem Gemini'nin ücretsiz katmanında görsel oluşturma var. Hangi araçta ne kadar hakkınız olduğu ve üretilen görseli nerede kullanabileceğiniz.",
     "cevap": "Ücretsiz yapılabilir. Google'ın Türkçe abonelik sayfası, Gemini'nin ₺0'lık ücretsiz katmanında görsel oluşturma ve düzenlemenin bulunduğunu yazıyor. OpenAI'ın yardım sayfası da ücretsiz ChatGPT kullanıcılarının görsel üretebildiğini, ancak görsel üretmenin metin sohbetinden ayrı bir kullanım limitine tabi olduğunu belirtiyor. İkisinde de Türkçe istem yazabilirsiniz.",
@@ -32,48 +33,980 @@
       }
     ],
     "bolumler": [
-      {"tur": "uyari", "metin": "Tablodaki boş hücreler bir eksiklik değil, bilinçli bir tercih: filigran ve ticari kullanım koşulları için şirketlerin kendi sayfalarında net bir ifade bulamadık. Bulamadığımız bilgiyi tahminle doldurmuyoruz. Bu satırlar kaynak bulundukça dolacak."},
-
-      {"tur": "baslik", "metin": "En hızlı yol: hangisiyle başlamalı?"},
-      {"tur": "metin", "metin": "İkisi de ücretsiz ve ikisinde de Türkçe yazabiliyorsunuz. Aralarındaki seçim, zaten hangi hesabınızın olduğuna bakılarak yapılabilir: Google hesabınız varsa Gemini'de ek kurulum yok; ChatGPT kullanıyorsanız aynı sohbet içinde görsel isteyebilirsiniz."},
-      {"tur": "metin", "metin": "Google'ın Türkçe sayfası ücretsiz katmanda görsel oluşturmanın yanında düzenlemeyi de sayıyor. Yani ürettiğiniz görseli baştan yazmadan üzerinde değişiklik isteyebiliyorsunuz."},
-
-      {"tur": "baslik", "metin": "Adım adım"},
-      {"tur": "adim", "adimlar": [
-        {"baslik": "Aracı açın.", "metin": "Gemini için gemini.google adresi, ChatGPT için chatgpt.com. İkisinde de ücretsiz hesapla giriş yeterli."},
-        {"baslik": "Ne istediğinizi tek cümlede yazın.", "metin": "\"Bir görsel oluştur\" demeniz yeterli değil; ne, nerede, hangi tarzda olacağını söyleyin."},
-        {"baslik": "Sonucu düzeltin, baştan yazmayın.", "metin": "Beğenmediğiniz yeri tarif edin: \"arka planı gece yap\", \"yazıyı kaldır\". Yeniden istem yazmak yerine düzeltmek genelde daha hızlı sonuç veriyor."},
-        {"baslik": "Limite takılırsanız diğerine geçin.", "metin": "Görsel üretme her iki araçta da ayrı kotaya tabi. Birinde kota dolduysa diğeriyle devam edebilirsiniz."}
-      ]},
-
-      {"tur": "baslik", "metin": "İyi istem nasıl yazılır?"},
-      {"tur": "metin", "metin": "Görsel üretmede sonucu belirleyen şey aracın markası değil, istemin netliği. Dört bilgiyi vermek genelde yetiyor: konu, ortam, tarz, çerçeveleme."},
-      {"tur": "tablo", "basliklar": ["Zayıf istem", "Neden zayıf", "Daha iyisi"], "satirlar": [
-        ["Bir kedi çiz", "Konu var, geri kalan yok", "Pencere kenarında uyuyan tekir kedi, sabah ışığı, yumuşak odak, yatay çerçeve"],
-        ["Logo yap", "Marka, sektör, biçim belirsiz", "Bir kahve dükkânı için sade logo, tek renk, kahve çekirdeği ve fincan birleşimi, düz zemin"],
-        ["Güzel bir manzara", "\"Güzel\" ölçülebilir değil", "Gün batımında Karadeniz yaylası, sisli, geniş açı, gerçekçi fotoğraf tarzı"]
-      ], "not": "Bu satırlar örnek istemlerdir, kaynaklı bir olgu değildir."},
-
-      {"tur": "baslik", "metin": "Üretilen görseli nerede kullanabilirsiniz?"},
-      {"tur": "metin", "metin": "Bu, en çok yanlış bilgi dolaşan konu ve dürüst cevabı şu: kesin bir şey söyleyebilmek için kullandığınız aracın kendi kullanım koşullarına bakmanız gerekiyor. Koşullar araca göre değişiyor ve ücretsiz ile ücretli katmanda farklılaşabiliyor."},
-      {"tur": "madde", "maddeler": [
-        "Ticari kullanım yapacaksanız aracın kullanım koşullarını okumadan yayımlamayın.",
-        "Gerçek bir kişinin yüzünü ya da tanınır bir markayı içeren görselleri, telif dışında kişilik hakkı ve marka hakkı da ilgilendirir.",
-        "Yapay zekâyla üretilmiş bir görseli haber veya bilgilendirme içeriğinde kullanıyorsanız, üretildiğini belirtmek okuyucuya karşı dürüstlüktür."
-      ]},
-      {"tur": "uyari", "metin": "Bu bölüm hukuki tavsiye değildir. Ticari bir işte kullanacaksanız aracın güncel kullanım koşullarını kendiniz okuyun."}
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler bir eksiklik değil, bilinçli bir tercih: filigran ve ticari kullanım koşulları için şirketlerin kendi sayfalarında net bir ifade bulamadık. Bulamadığımız bilgiyi tahminle doldurmuyoruz. Bu satırlar kaynak bulundukça dolacak."
+      },
+      {
+        "tur": "baslik",
+        "metin": "En hızlı yol: hangisiyle başlamalı?"
+      },
+      {
+        "tur": "metin",
+        "metin": "İkisi de ücretsiz ve ikisinde de Türkçe yazabiliyorsunuz. Aralarındaki seçim, zaten hangi hesabınızın olduğuna bakılarak yapılabilir: Google hesabınız varsa Gemini'de ek kurulum yok; ChatGPT kullanıyorsanız aynı sohbet içinde görsel isteyebilirsiniz."
+      },
+      {
+        "tur": "metin",
+        "metin": "Google'ın Türkçe sayfası ücretsiz katmanda görsel oluşturmanın yanında düzenlemeyi de sayıyor. Yani ürettiğiniz görseli baştan yazmadan üzerinde değişiklik isteyebiliyorsunuz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Aracı açın.",
+            "metin": "Gemini için gemini.google adresi, ChatGPT için chatgpt.com. İkisinde de ücretsiz hesapla giriş yeterli."
+          },
+          {
+            "baslik": "Ne istediğinizi tek cümlede yazın.",
+            "metin": "\"Bir görsel oluştur\" demeniz yeterli değil; ne, nerede, hangi tarzda olacağını söyleyin."
+          },
+          {
+            "baslik": "Sonucu düzeltin, baştan yazmayın.",
+            "metin": "Beğenmediğiniz yeri tarif edin: \"arka planı gece yap\", \"yazıyı kaldır\". Yeniden istem yazmak yerine düzeltmek genelde daha hızlı sonuç veriyor."
+          },
+          {
+            "baslik": "Limite takılırsanız diğerine geçin.",
+            "metin": "Görsel üretme her iki araçta da ayrı kotaya tabi. Birinde kota dolduysa diğeriyle devam edebilirsiniz."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "İyi istem nasıl yazılır?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Görsel üretmede sonucu belirleyen şey aracın markası değil, istemin netliği. Dört bilgiyi vermek genelde yetiyor: konu, ortam, tarz, çerçeveleme."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Zayıf istem",
+          "Neden zayıf",
+          "Daha iyisi"
+        ],
+        "satirlar": [
+          [
+            "Bir kedi çiz",
+            "Konu var, geri kalan yok",
+            "Pencere kenarında uyuyan tekir kedi, sabah ışığı, yumuşak odak, yatay çerçeve"
+          ],
+          [
+            "Logo yap",
+            "Marka, sektör, biçim belirsiz",
+            "Bir kahve dükkânı için sade logo, tek renk, kahve çekirdeği ve fincan birleşimi, düz zemin"
+          ],
+          [
+            "Güzel bir manzara",
+            "\"Güzel\" ölçülebilir değil",
+            "Gün batımında Karadeniz yaylası, sisli, geniş açı, gerçekçi fotoğraf tarzı"
+          ]
+        ],
+        "not": "Bu satırlar örnek istemlerdir, kaynaklı bir olgu değildir."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Üretilen görseli nerede kullanabilirsiniz?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu, en çok yanlış bilgi dolaşan konu ve dürüst cevabı şu: kesin bir şey söyleyebilmek için kullandığınız aracın kendi kullanım koşullarına bakmanız gerekiyor. Koşullar araca göre değişiyor ve ücretsiz ile ücretli katmanda farklılaşabiliyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Ticari kullanım yapacaksanız aracın kullanım koşullarını okumadan yayımlamayın.",
+          "Gerçek bir kişinin yüzünü ya da tanınır bir markayı içeren görselleri, telif dışında kişilik hakkı ve marka hakkı da ilgilendirir.",
+          "Yapay zekâyla üretilmiş bir görseli haber veya bilgilendirme içeriğinde kullanıyorsanız, üretildiğini belirtmek okuyucuya karşı dürüstlüktür."
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Bu bölüm hukuki tavsiye değildir. Ticari bir işte kullanacaksanız aracın güncel kullanım koşullarını kendiniz okuyun."
+      }
     ],
     "sss": [
-      {"s": "Yapay zekâ ile ücretsiz görsel yapabilir miyim?", "c": "Evet. Google'ın Türkçe abonelik sayfası, Gemini'nin ₺0'lık ücretsiz katmanında görsel oluşturma ve düzenlemenin bulunduğunu yazıyor. OpenAI'ın yardım sayfası da ücretsiz ChatGPT kullanıcılarının görsel üretebildiğini belirtiyor."},
-      {"s": "Kaç tane görsel üretebilirim?", "c": "Kesin bir sayı yazamıyoruz. OpenAI'ın sayfası görsel üretmenin metin sohbetinden ayrı bir kullanım limiti olduğunu söylüyor ama sayı vermiyor; Google da ücretsiz katman için sayı yayımlamıyor. Sayı veren Türkçe kaynaklara temkinli yaklaşın."},
-      {"s": "Türkçe istem yazabilir miyim?", "c": "Evet. Google'ın destek sayfası Türkçeyi desteklenen diller arasında sayıyor; ChatGPT'de de Türkçe istem yazılabiliyor."},
-      {"s": "Ürettiğim görseli satabilir miyim?", "c": "Bu, kullandığınız aracın kendi kullanım koşullarına bağlı ve koşullar değişebiliyor. Ticari kullanım öncesi aracın güncel koşullarını okumanız gerekir; bu sayfada kesin bir izin ya da yasak bilgisi vermiyoruz çünkü resmî sayfalarda net bir ifade bulamadık."},
-      {"s": "Midjourney gibi ücretli bir araç şart mı?", "c": "Hayır. Ücretsiz katmanlarda görsel üretme mevcut. Ücretli planların getirdiği temel şey daha yüksek kullanım sınırı."}
+      {
+        "s": "Yapay zekâ ile ücretsiz görsel yapabilir miyim?",
+        "c": "Evet. Google'ın Türkçe abonelik sayfası, Gemini'nin ₺0'lık ücretsiz katmanında görsel oluşturma ve düzenlemenin bulunduğunu yazıyor. OpenAI'ın yardım sayfası da ücretsiz ChatGPT kullanıcılarının görsel üretebildiğini belirtiyor."
+      },
+      {
+        "s": "Kaç tane görsel üretebilirim?",
+        "c": "Kesin bir sayı yazamıyoruz. OpenAI'ın sayfası görsel üretmenin metin sohbetinden ayrı bir kullanım limiti olduğunu söylüyor ama sayı vermiyor; Google da ücretsiz katman için sayı yayımlamıyor. Sayı veren Türkçe kaynaklara temkinli yaklaşın."
+      },
+      {
+        "s": "Türkçe istem yazabilir miyim?",
+        "c": "Evet. Google'ın destek sayfası Türkçeyi desteklenen diller arasında sayıyor; ChatGPT'de de Türkçe istem yazılabiliyor."
+      },
+      {
+        "s": "Ürettiğim görseli satabilir miyim?",
+        "c": "Bu, kullandığınız aracın kendi kullanım koşullarına bağlı ve koşullar değişebiliyor. Ticari kullanım öncesi aracın güncel koşullarını okumanız gerekir; bu sayfada kesin bir izin ya da yasak bilgisi vermiyoruz çünkü resmî sayfalarda net bir ifade bulamadık."
+      },
+      {
+        "s": "Midjourney gibi ücretli bir araç şart mı?",
+        "c": "Hayır. Ücretsiz katmanlarda görsel üretme mevcut. Ücretli planların getirdiği temel şey daha yüksek kullanım sınırı."
+      }
     ],
     "kaynaklar": [
-      {"ad": "Google — Gemini abonelikleri (Türkçe)", "url": "https://gemini.google/tr/subscriptions/?hl=tr", "dogrulama": "2026-09-07"},
-      {"ad": "OpenAI Help Center — ChatGPT Free Tier FAQ", "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq", "dogrulama": "2026-09-07"},
-      {"ad": "Google Destek — Gemini'nin kullanılabildiği ülkeler ve diller", "url": "https://support.google.com/gemini/answer/13575153?hl=tr", "dogrulama": "2026-09-07"}
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT Free Tier FAQ",
+        "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "Google Destek — Gemini'nin kullanılabildiği ülkeler ve diller",
+        "url": "https://support.google.com/gemini/answer/13575153?hl=tr",
+        "dogrulama": "2026-09-07"
+      }
+    ]
+  },
+  {
+    "slug": "video",
+    "alan": "gorsel-ve-video",
+    "baslik": "Yapay Zeka ile Video Nasıl Yapılır?",
+    "ozet": "Video araçlarında asıl soru \"ücretsiz mi\" değil, \"ücretsiz sürümde indirdiğim videonun üstünde filigran olacak mı\". İki popüler aracın kendi yardım sayfaları bu konuda birbirinin tam tersini söylüyor.",
+    "cevap": "Ücretsiz başlanabilir ama araca göre sonuç değişiyor. VEED'in kendi yardım sayfası açık: hesapsız ya da ücretsiz hesapla dışa aktarılan her projede VEED.IO filigranı bulunuyor ve filigransız dışa aktarmanın tek yolu ücretli abonelik. CapCut'ın yardım sayfası ise tersini söylüyor: hazır şablon yerine normal düzenleme arayüzüyle çalışır, sona eklenen CapCut kliplerini siler ve Pro içerik kullanmazsanız ücretsiz sürümde filigransız dışa aktarabiliyorsunuz. Gemini tarafında ücretsiz plan Google Flow erişimini listeliyor, ancak video üretimi ücretli planların özelliği olarak anlatılıyor.",
+    "hedef_sorgu": "yapay zeka ile video nasıl yapılır",
+    "guncelleme": "2026-09-07",
+    "yanlis": {
+      "iddia": "Bu araçlar ücretsiz; videoyu filigransız indirebilirsiniz.",
+      "dogru": "Araca göre değişiyor ve fark büyük. VEED'in yardım sayfası \"filigransız dışa aktarmanın tek yolu ücretli abonelik\" diyor — ücretsiz hesapta filigranı kaldırmanın hiçbir yolu yok. CapCut'ta ise filigran koşullu: şablon, hazır bitiş klibi veya Pro içerik kullanırsanız çıkıyor, kullanmazsanız çıkmıyor. \"Ücretsiz video düzenleyici\" ifadesi bu ikisini aynı kefeye koyuyor; koymamak gerekiyor.",
+      "kaynak": "https://support.veed.io/en/articles/7056370-will-the-videos-i-created-have-a-veed-watermark-on-them"
+    },
+    "araclar": [
+      {
+        "ad": "CapCut",
+        "ucretsiz": "Filigransız dışa aktarma mümkün: şablon yerine normal düzenleme, hazır bitiş klibi silinmiş ve Pro içerik kullanılmamış olmalı",
+        "turkce": "",
+        "filigran": "Koşullu. Pro içerik kullanıldıysa çözünürlükten bağımsız olarak filigran kaldırma Pro gerektiriyor",
+        "ticari": "",
+        "kaynak": "https://www.capcut.com/help/video-without-watermark",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "VEED",
+        "ucretsiz": "Dışa aktarma var; ücretsiz hesapta ve hesapsız kullanımda filigran zorunlu",
+        "turkce": "Altyazı üretme ve çeviri dillerinde Türkçe var",
+        "filigran": "Her zaman. Kaldırmanın tek yolu ücretli abonelik (Lite, Pro, Enterprise)",
+        "ticari": "",
+        "kaynak": "https://support.veed.io/en/articles/7056370-will-the-videos-i-created-have-a-veed-watermark-on-them",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "Gemini / Google Flow",
+        "ucretsiz": "₺0 planda Google Flow erişimi listeleniyor; video üretimi ücretli planların özelliği olarak anlatılıyor (AI Plus 200, AI Pro 1.000 Flow kredisi)",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-07"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Önce şunu sorun: video nereye gidecek?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Araç seçimini belirleyen şey videonun ne kadar \"yapay zekâ\" olduğu değil, nerede yayımlanacağı. Kendi arşiviniz ya da bir arkadaş grubu için filigran sorun değil. Ama video bir müşteriye, bir ilana veya para kazandıran bir kanala gidecekse filigran doğrudan işi bitiren bir kısıt."
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu yüzden aşağıdaki sıralama araçların kalitesine göre değil, ücretsiz sürümün çıktısını nerede kullanabildiğinize göre kurulmuştur."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Filigran: iki aracın iki farklı politikası"
+      },
+      {
+        "tur": "metin",
+        "metin": "VEED'in yardım merkezindeki ifade koşulsuz: hesaba giriş yapmadan ya da ücretsiz hesapla dışa aktarılan tüm projelerde VEED.IO filigranı bulunuyor. Aynı sayfa filigranın taşınamayacağını ve düzenlenemeyeceğini, videonun içinde bir süre sonra başka bir bölgeye geçtiğini de yazıyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "CapCut'ta durum koşullu. Yardım sayfası filigranın üç kaynağını sayıyor: hazır şablonlar, otomatik eklenen CapCut logolu bitiş klibi ve ücretsiz sürümde kullanıldığında filigran tetikleyen Pro içerikler. Üçünden de kaçınırsanız ücretsiz sürümde filigransız dışa aktarabiliyorsunuz."
+      },
+      {
+        "tur": "metin",
+        "metin": "CapCut'ın ikinci yardım sayfası ayrıca şunu netleştiriyor: projede Pro içerik varsa çözünürlüğü 1080p'ye düşürmek filigranı kaldırmıyor. Pro içerik kullanan videolarda filigran kaldırma her durumda Pro abonelik gerektiriyor. Aynı sayfa ücretsiz dışa aktarımda süre sınırı da olduğunu, bu sınırın bölgeye göre değiştiğini belirtiyor."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Filigran ne zaman çıkar?",
+          "VEED",
+          "CapCut"
+        ],
+        "satirlar": [
+          [
+            "Hesapsız dışa aktarma",
+            "Çıkar",
+            "Şablon/Pro içerik yoksa çıkmaz"
+          ],
+          [
+            "Ücretsiz hesapla dışa aktarma",
+            "Çıkar",
+            "Şablon/Pro içerik yoksa çıkmaz"
+          ],
+          [
+            "Hazır şablon kullanınca",
+            "Çıkar",
+            "Çıkar"
+          ],
+          [
+            "Çözünürlüğü düşürünce",
+            "Değişmez",
+            "Değişmez — Pro içerik varsa yine Pro gerekir"
+          ],
+          [
+            "Ücretli abonelik",
+            "Çıkmaz",
+            "Çıkmaz"
+          ]
+        ],
+        "not": "Satırlar iki şirketin kendi yardım sayfalarındaki ifadelerden çıkarıldı; kaynaklar sayfanın sonunda."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: filigransız bir video için"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Şablonla başlamayın.",
+            "metin": "Hazır şablonlar en hızlı yol gibi görünür ama filigranın en yaygın kaynağı. Normal düzenleme arayüzünde boş bir proje açın."
+          },
+          {
+            "baslik": "Zaman çizelgesinin sonuna bakın.",
+            "metin": "Otomatik eklenen, logo taşıyan kısa bitiş klibi buradadır. Dışa aktarmadan önce silin."
+          },
+          {
+            "baslik": "Kilit simgeli içerikleri kullanmayın.",
+            "metin": "Premium çıkartma, geçiş ve efektler düzenleme sırasında çalışır ama dışa aktarmada filigran ya da abonelik ekranı çıkarır. Ücretsiz kütüphaneden eşdeğerini seçin."
+          },
+          {
+            "baslik": "Dışa aktarma ekranındaki uyarıyı okuyun.",
+            "metin": "\"Bu video CapCut Pro özellikleri kullanıyor\" uyarısı, projede hâlâ ücretli bir öğe olduğunun kesin işaretidir. İptal edip o öğeyi bulun; iptal edip devam ederseniz video filigranlı çıkar."
+          },
+          {
+            "baslik": "Ticari iş yapacaksanız aracı baştan seçin.",
+            "metin": "Ücretsiz sürümü koşulsuz filigran basan bir araçla saatlerce çalışıp sonunda abone olmak, en baştan doğru aracı seçmekten pahalıya geliyor."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Metinden video üretmek ile videoyu düzenlemek aynı şey değil"
+      },
+      {
+        "tur": "metin",
+        "metin": "Türkçe içerikte bu iki iş sürekli karıştırılıyor. CapCut ve VEED birer düzenleyici: elinizdeki görüntüyü kesiyor, altyazılıyor, sesliyor. Bir cümleden sıfırdan görüntü üretmek ayrı bir yetenek ve ücretsiz katmanlarda çok daha kısıtlı."
+      },
+      {
+        "tur": "metin",
+        "metin": "Google'ın Türkçe abonelik sayfası bu ayrımı açıkça gösteriyor: ücretsiz plan Google Flow erişimini listeliyor, ama video üretimi ücretli planların kazanımı olarak anlatılıyor — AI Plus'ta 200, AI Pro'da 1.000 Flow kredisi veriliyor ve AI Pro açıklamasında Veo 3.1 Lite'ın \"sınırlı deneme sürümü\" ifadesi geçiyor. Yani sıfırdan video üretimini ücretsiz planda sınırsız bir özellik olarak sunan Türkçe içeriklere temkinli yaklaşın."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Altyazı: ücretsiz katmanın en çok işe yarayan tarafı"
+      },
+      {
+        "tur": "metin",
+        "metin": "Otomatik altyazı, video araçlarında ücretsiz katmanın en çok karşılık verdiği iş. VEED'in desteklenen diller listesinde Türkçe hem yazıya dökme hem çeviri tarafında yer alıyor. Videonuz Türkçeyse altyazıyı otomatik çıkarıp elle düzeltmek, baştan yazmaktan hızlı oluyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Otomatik altyazıyı her zaman gözden geçirin: özel adlar ve kısaltmalar en sık hata yapılan yer.",
+          "Altyazıyı videonun içine gömmek yerine ayrı dosya olarak da indirebiliyorsanız indirin; yayımladığınız platform kendi altyazı motorunu kullanabilir.",
+          "Filigran kuralları altyazıya değil dışa aktarmaya bağlıdır: altyazı ücretsiz çalışsa bile indirdiğiniz videoda filigran çıkabilir."
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Bu sayfa hukuki tavsiye değildir. Ürettiğiniz videoyu ticari bir işte kullanacaksanız kullandığınız aracın güncel kullanım koşullarını kendiniz okuyun."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Yapay zeka ile ücretsiz video yapabilir miyim?",
+        "c": "Evet, ama \"ücretsiz\" ile \"filigransız\" aynı şey değil. CapCut'ın yardım sayfası, şablon ve Pro içerik kullanılmazsa ücretsiz sürümde filigransız dışa aktarılabildiğini yazıyor. VEED'in yardım sayfası ise ücretsiz hesapta filigranın her zaman çıktığını ve tek çözümün ücretli abonelik olduğunu söylüyor."
+      },
+      {
+        "s": "CapCut'ta filigranı nasıl kaldırırım?",
+        "c": "Şirketin kendi yardım sayfasına göre üç şeyden kaçınmak gerekiyor: hazır şablonlar, otomatik eklenen CapCut logolu bitiş klibi ve Pro içerikler. Aynı sayfa, projede Pro içerik varsa çözünürlük düşürmenin filigranı kaldırmadığını da belirtiyor."
+      },
+      {
+        "s": "VEED'in ücretsiz sürümünde filigranı kaldırmanın bir yolu var mı?",
+        "c": "Şirketin yardım sayfasına göre yok. Sayfada \"filigransız dışa aktarmanın tek yolu ücretli abonelik sahibi olmak\" yazıyor ve filigranın düzenlenemeyeceği, taşınamayacağı belirtiliyor."
+      },
+      {
+        "s": "Ücretsiz olarak sıfırdan yapay zeka videosu üretebilir miyim?",
+        "c": "Google'ın Türkçe abonelik sayfası ücretsiz planda Google Flow erişimini listeliyor, ancak video üretimini ücretli planların kazanımı olarak anlatıyor ve kredileri yalnız ücretli planlar için sayı vererek yazıyor. Ücretsiz planın Flow kredisi için sayfada bir rakam yok."
+      },
+      {
+        "s": "Türkçe altyazı otomatik çıkarılabiliyor mu?",
+        "c": "VEED'in desteklenen diller listesinde Türkçe hem yazıya dökme hem çeviri sütununda yer alıyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "VEED Yardım Merkezi — Videolarımda VEED filigranı olacak mı?",
+        "url": "https://support.veed.io/en/articles/7056370-will-the-videos-i-created-have-a-veed-watermark-on-them",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "VEED Yardım Merkezi — Altyazı ve çeviride desteklenen diller",
+        "url": "https://support.veed.io/en/articles/6971225-languages-we-support-for-subtitle-generation-and-translation",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "CapCut Yardım — Filigransız dışa aktarmak mümkün mü?",
+        "url": "https://www.capcut.com/help/video-without-watermark",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "CapCut Yardım — Dışa aktarırken neden CapCut Pro isteniyor?",
+        "url": "https://www.capcut.com/help/join-capcut-pro-for-exporting",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-07"
+      }
+    ]
+  },
+  {
+    "slug": "sunum",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile Sunum Nasıl Hazırlanır?",
+    "ozet": "Sunum araçlarının \"ücretsiz\" sözü iki farklı şey anlatıyor: Canva'da hak her ay yenileniyor, Gamma'da bir kez veriliyor ve bitince yenilenmiyor. Aradaki fark, aracı bir kez mi yoksa sürekli mi kullanacağınıza göre her şeyi değiştiriyor.",
+    "cevap": "İkisi de ücretsiz başlatıyor ama ücretsiz katmanın işleyişi taban tabana zıt. Gamma'nın kendi yardım sayfası, ücretsiz planda tüm yapay zeka işlemlerinin kredi harcadığını ve kredilerin yenilenmediğini yazıyor; bitince ya davetle kredi kazanmanız ya da ücretli plana geçmeniz gerekiyor. Canva'nın yardım sayfası ise ücretsiz planda ayda 20 kullanıma kadar hak verildiğini ve bu hakkın her ayın 1'inde 00:00 UTC'de sıfırlandığını belirtiyor. Yani tek seferlik bir sunum için ikisi de olur; her ay sunum hazırlıyorsanız yalnız biri sürdürülebilir.",
+    "hedef_sorgu": "yapay zeka ile sunum nasıl hazırlanır",
+    "guncelleme": "2026-09-07",
+    "yanlis": {
+      "iddia": "Gamma ücretsiz bir sunum aracı; istediğiniz kadar sunum hazırlayabilirsiniz.",
+      "dogru": "Hayır. Gamma'nın kendi yardım sayfası açıkça şunu yazıyor: ücretsiz planda tüm yapay zeka işlemleri kredi harcar ve krediler yenilenmez. Başlangıç kredileri bittiğinde ya davetle kredi kazanmanız ya da ücretli plana geçmeniz gerekiyor. Bu, aylık ücretsiz kota değil, bir kerelik deneme bütçesi. \"Sınırsız ücretsiz\" diyen Türkçe içerikler bu ayrımı atlıyor.",
+      "kaynak": "https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma"
+    },
+    "araclar": [
+      {
+        "ad": "Gamma",
+        "ucretsiz": "Tüm yapay zeka işlemleri kredi harcıyor; ücretsiz planda krediler YENİLENMİYOR. Bitince davetle kredi kazanmak veya ücretli plana geçmek gerekiyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "Canva",
+        "ucretsiz": "Standart VEYA Premium yapay zeka araçlarında ayda 20 kullanıma kadar; Ultra araçlara erişim yok. Hak her ayın 1'inde 00:00 UTC'de sıfırlanıyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "₺0 planda Canvas ve Gem'ler listeleniyor; dosya yükleyip çalışma rehberi üretme ücretli plan açıklamalarında geçiyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-07"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "\"Ücretsiz\" iki farklı şey anlatıyor"
+      },
+      {
+        "tur": "metin",
+        "metin": "Sunum araçlarını karşılaştırırken en çok gözden kaçan ayrım bu. Bir araç size aylık yenilenen bir kota veriyorsa, ayda birkaç sunum hazırlayan biri için gerçekten ücretsizdir. Bir araç size bir kerelik kredi veriyorsa, o bir denemedir; ücretsiz sürüm değil."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "",
+          "Gamma (ücretsiz)",
+          "Canva (ücretsiz)"
+        ],
+        "satirlar": [
+          [
+            "Hak yenileniyor mu?",
+            "Hayır — krediler yenilenmiyor",
+            "Evet — her ayın 1'inde 00:00 UTC"
+          ],
+          [
+            "Bittiğinde ne oluyor?",
+            "Davetle kredi kazanmak veya ücretli plan",
+            "Ertesi ay sıfırlanıyor"
+          ],
+          [
+            "Ne kadar?",
+            "Kredi; harcama işlemin türüne ve modele göre değişiyor",
+            "Ayda 20 kullanıma kadar (Standart VEYA Premium)"
+          ],
+          [
+            "Kapalı olan",
+            "—",
+            "Ultra yapay zeka araçları"
+          ]
+        ],
+        "not": "İki satır da şirketlerin kendi yardım sayfalarından alındı; Gamma kredi harcama oranlarının değişebileceğini not düşüyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Pratik sonuç: bir kez sunum hazırlayacaksanız Gamma'nın başlangıç kredisi işinizi görür. Her ay düzenli sunum hazırlıyorsanız yenilenen bir hak ihtiyacınız var, çünkü Gamma'nın ücretsiz kredisi bittiğinde tekrar dolmuyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Kredi nedir, ne kadar dayanır?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Gamma'nın yardım sayfası kredinin nasıl harcandığını anlatıyor: yapay zekâyla sunum üretmek slayt ve görsel başına ölçülüyor; ajanla düzenleme, yapay zekâyla kart ekleme ve yeni yerleşim denemeleri de kredi harcıyor. Uzun üretimler daha çok, gelişmiş modeller daha çok kredi harcıyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu yüzden \"kaç sunum yapabilirim\" sorusunun sabit bir cevabı yok ve sayı veren kaynaklara temkinli yaklaşmak gerekiyor. Şirketin kendisi de harcama oranlarının değişebileceğini not düşüyor. Sayfaya bir rakam yazmıyoruz çünkü şirket yazmıyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Gamma'ya göre hatalar ve açıklama istekleri için kredi düşülmüyor — yanlış çıkan bir üretim için ikinci kez ödemiyorsunuz.",
+          "Görsel üretiminde kredi maliyeti üretmeden önce ekranda gösteriliyor; pahalı modeli seçmek zorunda değilsiniz.",
+          "Ücretli planlarda krediler aylık doluyor ve ek kredi satın alınabiliyor."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Canva'da 20 kullanım neye yetiyor?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Canva'nın yardım sayfası araçları üç kademeye ayırıyor: Standart, Premium ve Ultra. Ücretsiz planda Ultra araçlara erişim yok, Standart ve Premium araçlar ise ortak bir aylık haktan düşüyor — ayda 20 kullanıma kadar."
+      },
+      {
+        "tur": "metin",
+        "metin": "Burada ücretsiz kullanıcıyı ilgilendiren ince bir ayrıntı var: Canva, Çeviri ve Magic Write gibi araçların \"bolca\" kullanılabildiğini ve haktan düşmediğini söylüyor — ama bu yalnız ücretli planlar için geçerli. Sayfa açıkça \"Canva Free'de Standart araçlar da ortak haktan düşer\" diyor. Yani ücretsiz planda hiçbir yapay zeka aracı bedava değil, sadece bazıları daha az hak harcıyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Canva ayrıca 20 rakamının bir üst sınır tahmini olduğunu belirtiyor: yalnız tek tür araç kullanırsanız, isteminiz basitse ve kendi kademesinde en az güç harcayan aracı kullanırsanız bu sayıya ulaşılıyor. Gelişmiş araçları sık kullanınca gerçek kullanım sayısı aralığın alt ucunda kalıyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: bir sunumu yapay zekâyla hazırlamak"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Önce içeriği yazın, tasarımı sonra isteyin.",
+            "metin": "Araçlar boş bir konu başlığından da slayt üretiyor ama çıkan şey genel geçer oluyor. Anlatacağınız üç ana noktayı kendi cümlelerinizle yazıp aracı onun üzerinden çalıştırın."
+          },
+          {
+            "baslik": "Slayt sayısını baştan söyleyin.",
+            "metin": "Kredi slayt başına ölçüldüğü için \"8 slayt\" demek, uzun bir sunum üretip sonra silmekten hem hızlı hem ucuz."
+          },
+          {
+            "baslik": "Görselleri en sona bırakın.",
+            "metin": "Görsel üretimi kredinin en hızlı eridiği yer. Önce metni ve yapıyı oturtun, görseli yalnız kalan slaytlar için isteyin."
+          },
+          {
+            "baslik": "Bir kez üretip elle düzeltin.",
+            "metin": "Baştan yeniden ürettirmek her seferinde yeniden kredi harcıyor. Beğenmediğiniz slaytı tek tek düzenlemek daha ekonomik."
+          },
+          {
+            "baslik": "Dışa aktarma biçimini önceden deneyin.",
+            "metin": "Sunumu nerede açacağınız önemli: bağlantı olarak paylaşacaksanız sorun yok, ama PowerPoint veya PDF olarak indirmeniz gerekiyorsa bunu kredi bitmeden deneyin."
+          }
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Bu sayfa hukuki tavsiye değildir. Sunumu ticari bir işte kullanacaksanız aracın güncel kullanım koşullarını kendiniz okuyun."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Gamma gerçekten ücretsiz mi?",
+        "c": "Başlangıç kredisi ücretsiz veriliyor, ama şirketin kendi yardım sayfasına göre ücretsiz planda krediler yenilenmiyor. Bittiğinde ya davetle kredi kazanacaksınız ya da ücretli plana geçeceksiniz. Aylık yenilenen bir ücretsiz kota değil."
+      },
+      {
+        "s": "Canva'nın ücretsiz planında ayda kaç kez yapay zeka kullanabilirim?",
+        "c": "Canva'nın yardım sayfası \"Standart VEYA Premium yapay zeka araçlarında ayda 20 kullanıma kadar\" diyor ve Ultra araçlara ücretsiz planda erişim olmadığını belirtiyor. Hak her ayın 1'inde 00:00 UTC'de sıfırlanıyor. Şirket 20 rakamının basit istemler ve en az güç harcayan araçlar için geçerli bir üst sınır olduğunu da not düşüyor."
+      },
+      {
+        "s": "Yapay zekâ ile kaç slaytlık sunum üretebilirim?",
+        "c": "Sabit bir sayı yok. Gamma kredinin slayt ve görsel başına ölçüldüğünü, uzun üretimlerin ve gelişmiş modellerin daha çok kredi harcadığını, oranların da değişebileceğini yazıyor. Kesin sayı veren kaynaklara temkinli yaklaşın."
+      },
+      {
+        "s": "Canva'da Çeviri ve Magic Write ücretsiz mi?",
+        "c": "Ücretli planlarda bu araçlar bolca kullanılabiliyor ve aylık haktan düşmüyor. Ama Canva'nın sayfası açıkça belirtiyor: Canva Free'de Standart araçlar da ortak aylık haktan düşüyor, sadece en az hak harcayanlar arasında yer alıyorlar."
+      },
+      {
+        "s": "Tek seferlik bir sunum için hangisi daha uygun?",
+        "c": "Tek seferlik iş için ikisi de yeterli. Fark her ay tekrarlayan işte ortaya çıkıyor: Canva'nın hakkı her ay sıfırlanıyor, Gamma'nın ücretsiz kredisi yenilenmiyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Gamma Yardım Merkezi — Krediler nasıl çalışır?",
+        "url": "https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Yapay zeka kullanımınızı anlamak",
+        "url": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-07"
+      }
+    ]
+  },
+  {
+    "slug": "ceviri",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile Çeviri Nasıl Yapılır?",
+    "ozet": "\"En iyi çeviri aracı hangisi\" sorusunun cevabı çevirdiğiniz dosyaya göre değişiyor. Ücretsiz DeepL hesabı Excel dosyası çeviremiyor; Google Çeviri çeviriyor. Bu ayrımı yazan Türkçe kaynak yok.",
+    "cevap": "Dosya çevirisi yapacaksanız seçim, aracın çeviri kalitesinden önce hangi dosyayı kabul ettiğine bağlı. Google'ın Türkçe destek sayfası, 10 MB'a kadar .docx, .pdf, .pptx ve .xlsx dosyalarının çevrilebildiğini, PDF'lerin en fazla 300 sayfa olabileceğini yazıyor. DeepL'in dosya biçimleri tablosunda ise ücretsiz DeepL hesabı için Word ve PowerPoint dosya başına 5 MB / 100.000 karakterle sınırlı ve Excel \"kullanılamıyor\" olarak işaretli. Yani ücretsiz katmanda Google Çeviri hem daha büyük dosya hem daha fazla biçim kabul ediyor.",
+    "hedef_sorgu": "yapay zeka ile çeviri nasıl yapılır",
+    "guncelleme": "2026-09-07",
+    "yanlis": {
+      "iddia": "Çeviride DeepL her yönden Google Çeviri'den üstündür.",
+      "dogru": "Ücretsiz katmanda dosya çevirisi söz konusuysa değil. DeepL'in kendi dosya biçimleri tablosuna göre ücretsiz DeepL hesabında Excel çevirisi kullanılamıyor, Word ve PowerPoint ise dosya başına 5 MB ve 100.000 karakterle sınırlı. Google'ın Türkçe destek sayfası aynı işte 10 MB'a kadar .docx, .pdf, .pptx ve .xlsx kabul ettiğini yazıyor. Karşılaştırmayı metin kalitesi üzerinden yapıp dosya sınırlarını atlamak, en sık yapılan hata.",
+      "kaynak": "https://support.deepl.com/hc/en-us/articles/360020582359"
+    },
+    "araclar": [
+      {
+        "ad": "Google Çeviri",
+        "ucretsiz": "10 MB'a kadar .docx, .pdf, .pptx ve .xlsx dosya çevirisi; PDF en fazla 300 sayfa",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/translate/answer/2534559?hl=tr",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "DeepL (ücretsiz hesap)",
+        "ucretsiz": "Word ve PowerPoint dosya başına 5 MB / 100.000 karakter; Excel ücretsiz hesapta kullanılamıyor",
+        "turkce": "Var (desteklenen diller listesinde)",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.deepl.com/hc/en-us/articles/360020582359",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "ChatGPT (OpenAI)",
+        "ucretsiz": "Metin sohbeti sınırsız; dosya yükleme ayrı kullanım limitine tabi",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "Canva Çeviri",
+        "ucretsiz": "Ücretsiz planda aylık 20 kullanımlık ortak haktan düşüyor; ücretli planlarda haktan düşmüyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-07"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Önce ne çevireceğinize bakın"
+      },
+      {
+        "tur": "metin",
+        "metin": "Çeviri araçlarını karşılaştıran içeriklerin neredeyse tamamı aynı şeyi ölçüyor: yapıştırılan bir paragraf ne kadar doğal çevriliyor. Oysa insanların çoğu bir paragrafı değil bir dosyayı çeviriyor — sözleşme, sunum, tablo. Ve dosya söz konusu olduğunda araçlar arasındaki fark kalite değil, kabul edilen biçim ve boyut."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Çevireceğiniz şey",
+          "Ücretsiz katmanda ne oluyor?"
+        ],
+        "satirlar": [
+          [
+            "Kısa metin, birkaç paragraf",
+            "Hepsi yapar; seçim kişisel tercihe kalır"
+          ],
+          [
+            "Word (.docx)",
+            "Google Çeviri 10 MB'a kadar; ücretsiz DeepL hesabı 5 MB / 100.000 karakter"
+          ],
+          [
+            "PowerPoint (.pptx)",
+            "Google Çeviri 10 MB'a kadar; ücretsiz DeepL hesabı 5 MB / 100.000 karakter"
+          ],
+          [
+            "Excel (.xlsx)",
+            "Google Çeviri 10 MB'a kadar; ücretsiz DeepL hesabında kullanılamıyor"
+          ],
+          [
+            "PDF",
+            "Google Çeviri 10 MB ve en fazla 300 sayfa"
+          ],
+          [
+            "Tarayıcıdan çıkmış / resim içeren PDF",
+            "Görsellerin içindeki yazı çevrilmiyor"
+          ]
+        ],
+        "not": "Satırlar iki şirketin kendi destek sayfalarından alındı; kaynaklar sayfanın sonunda."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Google Çeviri'nin yazdığı ama kimsenin aktarmadığı sınır"
+      },
+      {
+        "tur": "metin",
+        "metin": "Google'ın Türkçe destek sayfasında küçük ama işi bozan bir not var: çıktı dosyasındaki görsellerin ve taranmış PDF sayfalarının içindeki yazılar çevrilmiyor. Yani telefonla fotoğrafını çektiğiniz bir belgeyi PDF yapıp yüklerseniz elinize çevrilmemiş bir dosya geçiyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Aynı sayfa, doküman çevirisinin küçük ekranlarda ve mobil cihazlarda kullanılamadığını da belirtiyor. Dosya çevirisi için bilgisayar gerekiyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: bir dosyayı çevirmek"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Dosyanın taranmış olup olmadığına bakın.",
+            "metin": "İçindeki yazıyı fareyle seçebiliyorsanız gerçek metindir ve çevrilir. Seçemiyorsanız o bir resimdir; çeviri araçları içindeki yazıya dokunmaz."
+          },
+          {
+            "baslik": "Boyutu ve sayfa sayısını kontrol edin.",
+            "metin": "Google Çeviri'de sınır 10 MB, PDF'lerde ayrıca 300 sayfa. Büyük dosyayı bölmek, yükleyip hata almaktan hızlı."
+          },
+          {
+            "baslik": "Doğru aracı dosya türüne göre seçin.",
+            "metin": "Excel çevirecekseniz ücretsiz DeepL hesabı bu biçimi kabul etmiyor; Google Çeviri kabul ediyor."
+          },
+          {
+            "baslik": "Bilgisayardan yapın.",
+            "metin": "Google'ın sayfası doküman çevirisinin küçük ekranlarda ve mobil cihazlarda kullanılamadığını yazıyor."
+          },
+          {
+            "baslik": "Çıktıyı biçim açısından gözden geçirin.",
+            "metin": "Çeviri metni uzattığında tablo ve slayt yerleşimleri kayabiliyor; özellikle sunumlarda çevrilmiş dosyayı açıp bakın."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Gizli bilgi içeren belgeleri çevirmeden önce"
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu, çeviride en az konuşulan ama en çok önem taşıyan konu. Sözleşme, özlük dosyası, müşteri listesi gibi belgeler bir çeviri hizmetine yüklendiğinde artık sizin bilgisayarınızda değildir."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Kurumsal bir belgeyi yüklemeden önce kurumunuzun bilgi güvenliği kuralına bakın; çoğu kurumda bu izne bağlıdır.",
+          "Kişisel veri içeren belgelerde (kimlik numarası, sağlık bilgisi, maaş) yüklemeden önce veriyi çıkarmak ya da maskelemek en güvenli yol.",
+          "Sohbet tabanlı araçlarda yazdıklarınızın modeli eğitmede kullanılıp kullanılmadığı ayarlanabiliyor; hassas belge çevirmeden önce bu ayarı kontrol edin."
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Bu sayfa hukuki tavsiye değildir. Resmî bir işte kullanılacak çeviriler için yeminli tercüman gerekebilir; yapay zeka çevirisi bu gereği ortadan kaldırmaz."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Ücretsiz olarak Word dosyası çevirebilir miyim?",
+        "c": "Evet. Google'ın Türkçe destek sayfası 10 MB'a kadar .docx dosyalarının çevrilebildiğini yazıyor. DeepL'in dosya biçimleri tablosunda ücretsiz DeepL hesabı için Word sınırı dosya başına 5 MB ve 100.000 karakter olarak veriliyor."
+      },
+      {
+        "s": "Ücretsiz DeepL hesabıyla Excel çevirebilir miyim?",
+        "c": "Hayır. DeepL'in kendi dosya biçimleri tablosunda ücretsiz DeepL hesabı sütununda Excel için \"kullanılamıyor\" yazıyor. Google Çeviri ise .xlsx dosyalarını 10 MB sınırıyla kabul ediyor."
+      },
+      {
+        "s": "PDF çevirisinde sayfa sınırı var mı?",
+        "c": "Var. Google'ın Türkçe destek sayfasına göre PDF dosyaları en fazla 300 sayfa olabiliyor ve genel dosya boyutu sınırı 10 MB."
+      },
+      {
+        "s": "Taranmış belgeyi çevirebilir miyim?",
+        "c": "Dosya çevirisi bunu yapmıyor. Google'ın sayfası, çıktı dosyasındaki görsellerin ve taranmış PDF sayfalarının içindeki yazıların çevrilmediğini belirtiyor."
+      },
+      {
+        "s": "DeepL'de Türkçe destekleniyor mu?",
+        "c": "Evet, DeepL'in desteklenen diller sayfasında Türkçe yer alıyor."
+      },
+      {
+        "s": "Telefondan dosya çevirisi yapabilir miyim?",
+        "c": "Google'ın destek sayfası doküman çevirisinin küçük ekranlarda ve mobil cihazlarda kullanılamadığını yazıyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Google Destek — Dokümanları ve web sitelerini çevirme (Türkçe)",
+        "url": "https://support.google.com/translate/answer/2534559?hl=tr",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "DeepL Yardım Merkezi — Dosya biçimleri ve plan bazlı sınırlar",
+        "url": "https://support.deepl.com/hc/en-us/articles/360020582359",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "DeepL Yardım Merkezi — Desteklenen diller",
+        "url": "https://support.deepl.com/hc/en-us/articles/360019925219-Languages-included-in-DeepL-Pro",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT Free Tier FAQ",
+        "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Yapay zeka kullanımınızı anlamak",
+        "url": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-07"
+      }
+    ]
+  },
+  {
+    "slug": "seslendirme",
+    "alan": "gorsel-ve-video",
+    "baslik": "Yapay Zeka ile Seslendirme Nasıl Yapılır?",
+    "ozet": "Seslendirmede ücretsiz katmanın asıl sınırı ses kalitesi değil, lisans. ElevenLabs'ın ücretsiz planı ticari kullanım lisansı içermiyor ve yayımlarken başlıkta atıf zorunlu. Türkçe içeriklerin neredeyse hiçbiri bunu yazmıyor.",
+    "cevap": "Ücretsiz seslendirme yapılabilir ama çıkan sesi nerede kullanabileceğiniz ayrı bir soru ve cevabı çoğu kişinin sandığından katı. ElevenLabs'ın kendi sayfası açık: ücretsiz plan ticari lisans içermiyor ve hiçbir ticari amaçla kullanılamıyor; ücretsiz planda ya da hesaba girmeden üretilen içeriği yayımlarken başlıkta \"elevenlabs.io\" veya \"11.ai\" belirtmek zorunlu. Aynı sayfa, ücretli abonelik dışında üretilen içeriğin abonelikten önce de sonra da ticari kullanılamayacağını ve paylaşıldığında her zaman atıf gerektireceğini yazıyor. Türkçe destekleniyor.",
+    "hedef_sorgu": "yapay zeka ile seslendirme nasıl yapılır",
+    "guncelleme": "2026-09-07",
+    "yanlis": {
+      "iddia": "ElevenLabs ücretsiz; ürettiğiniz sesi YouTube kanalınızda ya da müşteri işinde kullanabilirsiniz.",
+      "dogru": "Kullanamazsınız. Şirketin kendi sayfası \"ücretsiz plan ticari lisans içermez ve hiçbir ticari amaçla kullanılamaz\" diyor. Üstüne, ücretsiz planda üretilen içeriği yayımlarken başlıkta \"elevenlabs.io\" veya \"11.ai\" yazmak zorunlu. Daha da önemlisi: aynı sayfa, ücretli abonelik dışında üretilen içeriğin sonradan abone olsanız bile ticari kullanılamayacağını belirtiyor — yani ücretsizken ürettiğiniz ses, abone olduktan sonra da ticari olarak kullanılamıyor.",
+      "kaynak": "https://elevenlabs.io/docs/help-center/legal/can-i-publish-the-content-i-generate-on-the-platform"
+    },
+    "araclar": [
+      {
+        "ad": "ElevenLabs",
+        "ucretsiz": "Var",
+        "turkce": "Var (desteklenen diller listesinde Türkçe yer alıyor)",
+        "filigran": "Sesin içine filigran konmuyor; bunun yerine yayımlarken başlıkta \"elevenlabs.io\" veya \"11.ai\" atfı zorunlu",
+        "ticari": "YOK — ücretsiz plan ticari lisans içermiyor ve hiçbir ticari amaçla kullanılamıyor",
+        "kaynak": "https://elevenlabs.io/docs/help-center/legal/can-i-publish-the-content-i-generate-on-the-platform",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "ChatGPT (OpenAI)",
+        "ucretsiz": "Ses özelliği var; metin sohbetinden ayrı kullanım limitine tabi",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "CapCut (videoya gömülü seslendirme)",
+        "ucretsiz": "Seslendirmeyi videoya gömüp dışa aktarırken CapCut'ın filigran kuralları geçerli oluyor",
+        "turkce": "",
+        "filigran": "Şablon, hazır bitiş klibi veya Pro içerik kullanıldıysa çıkıyor",
+        "ticari": "",
+        "kaynak": "https://www.capcut.com/help/video-without-watermark",
+        "dogrulama": "2026-09-07"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Asıl soru \"ücretsiz mi\" değil, \"nerede kullanabilirim\""
+      },
+      {
+        "tur": "metin",
+        "metin": "Seslendirme araçlarında ücretsiz katman genelde cömert görünür: karakter hakkı verilir, sesler açıktır, çıktıyı indirebilirsiniz. Kısıt teknik değil hukuki olduğu için de kimse fark etmez — ta ki üretilen ses para kazandıran bir işe girene kadar."
+      },
+      {
+        "tur": "metin",
+        "metin": "ElevenLabs'ın kendi sayfasındaki ifade tereddüde yer bırakmıyor: ücretsiz plan ticari lisans içermiyor ve hiçbir ticari amaçla kullanılamıyor. Bu, \"kaynak gösterirseniz kullanabilirsiniz\" demek de değil; atıf yükümlülüğü ticari olmayan paylaşım için geçerli."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Durum",
+          "Ticari kullanım",
+          "Atıf"
+        ],
+        "satirlar": [
+          [
+            "Ücretsiz planda üretildi",
+            "Yok",
+            "Zorunlu — başlıkta \"elevenlabs.io\" veya \"11.ai\""
+          ],
+          [
+            "Hesaba girmeden üretildi",
+            "Yok",
+            "Zorunlu"
+          ],
+          [
+            "Ücretli abonelik sırasında üretildi",
+            "Var, süresiz",
+            "Anlaşmaya bağlı"
+          ],
+          [
+            "Abonelik bittikten sonra üretildi",
+            "Yok",
+            "Zorunlu"
+          ],
+          [
+            "Beta özelliklerle üretildi",
+            "Yok — üretim ortamında da kullanılamıyor",
+            "—"
+          ]
+        ],
+        "not": "Satırlar ElevenLabs'ın yayımlama ve lisans sayfasındaki ifadelerden çıkarıldı."
+      },
+      {
+        "tur": "metin",
+        "metin": "Tablodaki en çok gözden kaçan satır sonuncudan bir öncekiyle birlikte okunanı: abonelik sırasında ürettiğiniz ses, abonelik bitse de ticari olarak kullanılmaya devam edilebiliyor. Buna karşılık aboneliğin dışında üretilen ses hiçbir zaman ticari kullanılamıyor. Yani lisansı belirleyen şey sesi ne zaman ürettiğiniz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Türkçe seslendirmede durum"
+      },
+      {
+        "tur": "metin",
+        "metin": "ElevenLabs'ın desteklenen diller listesinde Türkçe yer alıyor. Ücretsiz ChatGPT'de de ses özelliği bulunuyor; OpenAI'ın ücretsiz katman sayfası sesin metin sohbetinden ayrı bir kullanım limitine tabi olduğunu belirtiyor, ancak bir rakam vermiyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Türkçe seslendirmede en sık karşılaşılan sorun dil desteği değil, telaffuz: kısaltmalar, özel adlar ve sayılar beklenenden farklı okunabiliyor. Bunun çözümü genelde metni değiştirmek oluyor — kısaltmayı açık yazmak, sayıyı harfle yazmak."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Kısaltmaları açık yazın: \"TBMM\" yerine \"Türkiye Büyük Millet Meclisi\".",
+          "Sayıları harfle yazmayı deneyin: \"1994\" yerine \"bin dokuz yüz doksan dört\".",
+          "Noktalama, duraklamayı belirliyor; uzun cümleyi virgülle bölmek okunuşu düzeltiyor.",
+          "Özel adlarda okunuş bozuksa yazımı sese göre değiştirin — dinleyici metni görmüyor."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: yayımlanabilir bir seslendirme"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Sesi nerede kullanacağınıza baştan karar verin.",
+            "metin": "Para kazandıran bir işte kullanılacaksa ücretsiz planda üretmeyin — sonradan abone olmak o sesi ticari kullanılabilir hale getirmiyor."
+          },
+          {
+            "baslik": "Metni sese göre yazın.",
+            "metin": "Okunacak metin, okunacak şekilde yazılır: kısaltmalar açık, sayılar harfle, cümleler kısa."
+          },
+          {
+            "baslik": "Kısa bir bölümle deneyin.",
+            "metin": "Tüm metni bir kerede seslendirmek hakkı hızla tüketiyor. Önce iki cümle üretip telaffuzu kontrol edin."
+          },
+          {
+            "baslik": "Atıf yükümlülüğünü yerine getirin.",
+            "metin": "Ücretsiz planda ürettiğiniz sesi ticari olmayan bir yerde paylaşıyorsanız başlıkta \"elevenlabs.io\" veya \"11.ai\" belirtmeniz gerekiyor."
+          },
+          {
+            "baslik": "Videoya gömecekseniz dışa aktarma kurallarını da hesaba katın.",
+            "metin": "Seslendirme ücretsiz üretilse bile videoyu dışa aktardığınız aracın filigran kuralları ayrıca işliyor."
+          }
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Bu sayfa hukuki tavsiye değildir. Başka birinin sesini klonlamak, sesin sahibinin izni olmadan kişilik hakkı ihlali oluşturabilir; araçların kendi kuralları da buna izin vermeyebilir. Ticari kullanım öncesi aracın güncel koşullarını kendiniz okuyun."
+      }
+    ],
+    "sss": [
+      {
+        "s": "ElevenLabs ücretsiz planında ürettiğim sesi YouTube'da kullanabilir miyim?",
+        "c": "Şirketin kendi sayfasına göre ticari kullanım için kullanamazsınız: ücretsiz plan ticari lisans içermiyor ve hiçbir ticari amaçla kullanılamıyor. Ticari olmayan paylaşımda ise başlıkta \"elevenlabs.io\" veya \"11.ai\" atfı zorunlu."
+      },
+      {
+        "s": "Sonradan ücretli plana geçersem eski seslerim ticari olur mu?",
+        "c": "Hayır. ElevenLabs'ın sayfası, ücretli abonelik dışında üretilen içeriğin abonelikten önce de sonra da ticari kullanılamayacağını ve paylaşıldığında her zaman atıf gerektirdiğini yazıyor. Lisansı belirleyen şey sesi ne zaman ürettiğiniz."
+      },
+      {
+        "s": "Aboneliğim biterse ürettiğim sesleri kullanmaya devam edebilir miyim?",
+        "c": "Şirketin sayfasına göre abonelik sırasında ürettiğiniz içerik ticari olarak ve süresiz kullanılabiliyor. Abonelik dışında üretilenler için bu geçerli değil."
+      },
+      {
+        "s": "Türkçe seslendirme yapılabiliyor mu?",
+        "c": "Evet, ElevenLabs'ın desteklenen diller listesinde Türkçe yer alıyor."
+      },
+      {
+        "s": "Ücretsiz ChatGPT'de ses özelliği var mı?",
+        "c": "Var. OpenAI'ın ücretsiz katman sayfası ses özelliğinin bulunduğunu, ancak metin sohbetinden ayrı bir kullanım limitine tabi olduğunu belirtiyor; sayfada rakam verilmiyor."
+      },
+      {
+        "s": "Sesin içine filigran konuyor mu?",
+        "c": "ElevenLabs'ın yayımlama sayfası sesin içine bir işaret konduğundan söz etmiyor; bunun yerine yayımlarken başlıkta atıf yapılmasını şart koşuyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "ElevenLabs — Ürettiğim içeriği yayımlayabilir miyim? (lisans ve atıf)",
+        "url": "https://elevenlabs.io/docs/help-center/legal/can-i-publish-the-content-i-generate-on-the-platform",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "ElevenLabs — Desteklenen diller",
+        "url": "https://elevenlabs.io/docs/help-center/other/what-languages-do-you-support",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT Free Tier FAQ",
+        "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-07"
+      },
+      {
+        "ad": "CapCut Yardım — Filigransız dışa aktarmak mümkün mü?",
+        "url": "https://www.capcut.com/help/video-without-watermark",
+        "dogrulama": "2026-09-07"
+      }
     ]
   }
 ]

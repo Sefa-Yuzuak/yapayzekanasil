@@ -3,16 +3,48 @@
 {% block icerik %}
 <h1>{{ alan.ikon }} {{ alan.ad }}</h1>
 <p class="giris">{{ alan.aciklama }}</p>
-<p class="damga">{{ alan.rehberler|length }} rehber · son güncelleme <strong>{{ site.guncelleme_tr }}</strong></p>
+<p class="damga">
+  {% if alan.gorevler %}{{ alan.gorevler|length }} nasıl yapılır{% endif %}
+  {%- if alan.gorevler and alan.rehberler %} · {% endif -%}
+  {% if alan.rehberler %}{{ alan.rehberler|length }} rehber{% endif %}
+  · son güncelleme <strong>{{ site.guncelleme_tr }}</strong>
+</p>
+
+{% if alan.giris %}
+<div class="metin">{% for p in alan.giris %}<p>{{ p }}</p>{% endfor %}</div>
+{% endif %}
+
+{% if alan.gorevler %}
 <section class="bolum">
+  <h2>Nasıl yapılır?</h2>
+  <div class="izgara">
+    {% for g in alan.gorevler %}
+    <article class="kart">
+      <a class="kart-bag" href="{{ g.yol }}">
+        <span class="kart-alan">Nasıl yapılır</span>
+        <span class="kart-ad">{{ g.baslik }}</span>
+        <span class="kart-ozet">{{ g.ozet }}</span>
+      </a>
+      <p class="kart-alt">{{ g.okuma }} dk{% if g.araclar %} · {{ g.araclar|length }} araç karşılaştırıldı{% endif %}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if alan.rehberler %}
+<section class="bolum">
+  {% if alan.gorevler %}<h2>Bu konudaki rehberler</h2>{% endif %}
   <div class="izgara">{% for r in alan.rehberler %}{{ kart(r) }}{% endfor %}</div>
 </section>
-{% set digerleri = alanlar|selectattr("rehberler")|rejectattr("slug", "equalto", alan.slug)|list %}
+{% endif %}
+
+{% set digerleri = alanlar|selectattr("dolu")|rejectattr("slug", "equalto", alan.slug)|list %}
 {% if digerleri %}
 <section class="bolum">
   <h2>Diğer konular</h2>
   <ul class="cip-liste">
-    {% for a in digerleri %}<li><a class="cip" href="{{ a.yol }}">{{ a.ikon }} {{ a.ad }} <span class="cip-sayi">{{ a.rehberler|length }}</span></a></li>{% endfor %}
+    {% for a in digerleri %}<li><a class="cip" href="{{ a.yol }}">{{ a.ikon }} {{ a.ad }} <span class="cip-sayi">{{ a.gorevler|length + a.rehberler|length }}</span></a></li>{% endfor %}
   </ul>
 </section>
 {% endif %}

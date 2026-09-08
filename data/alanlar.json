@@ -4,6 +4,10 @@
     "ad": "Başlangıç",
     "ikon": "🚀",
     "aciklama": "Hiç kullanmadıysanız buradan başlayın: hangi araç ne işe yarar, ücretsiz sürümle nereye kadar gidilir, ilk gün ne yapılır.",
+    "giris": [
+      "Yapay zekâ araçlarına ilk kez bakan birinin karşılaştığı sorun bilgi eksikliği değil, birbiriyle çelişen bilgi bolluğu. Bu bölümdeki sayfalar tek bir kurala uyar: bir araç hakkında yazdığımız her sınır, o aracı yapan şirketin kendi sayfasından alınır ve kaynağın kontrol tarihi yazılır.",
+      "Başlarken bilmeniz gereken tek şey şu: \"ücretsiz\" kelimesi araçtan araca farklı anlama geliyor. Bir araçta aylık yenilenen bir hak, bir başkasında bir kerelik deneme bütçesi olabiliyor. Hangisi olduğunu ayırt etmek, hangi aracın daha iyi olduğunu tartışmaktan çok daha işe yarıyor."
+    ],
     "oncelik": 1
   },
   {
@@ -11,6 +15,11 @@
     "ad": "Ücret ve limitler",
     "ikon": "💳",
     "aciklama": "Hangi araç ücretsiz, ücretlisi kaç lira, ücretsiz sürümde neye izin var. Fiyatlar şirketlerin kendi sayfalarından, kontrol tarihiyle.",
+    "giris": [
+      "Fiyat ve limit bilgisi, yapay zekâ içeriğinde en hızlı bayatlayan ve en çok yanlış aktarılan bilgi. Bu bölümdeki her rakam şirketin kendi sayfasından alınır ve sayfada kontrol tarihiyle birlikte yazılır; ikinci elden aktarılan hiçbir rakam kullanılmaz.",
+      "Ücretsiz katmanı değerlendirirken sorulması gereken üç soru var ve üçü de \"kaç lira\" sorusundan daha belirleyici: Hak yenileniyor mu, yoksa bir kez mi veriliyor? Çıktıda filigran ya da zorunlu atıf var mı? Ürettiğinizi ticari bir işte kullanabiliyor musunuz? Bu üçü, iki aracın aynı fiyata çok farklı şeyler sunmasının sebebi.",
+      "Türk lirası tarafında da yaygın bir yanlış dolaşıyor: yapay zekâ araçlarının TL fiyatı olmadığı ve yurt dışı kartı gerektiği söyleniyor. Google, Gemini planlarını Türkçe sayfasında doğrudan TL olarak yayımlıyor."
+    ],
     "oncelik": 2
   },
   {
@@ -18,6 +27,10 @@
     "ad": "Günlük işler",
     "ikon": "✍️",
     "aciklama": "E-posta, dilekçe, özet, çeviri, sunum, CV. Adım adım, kopyalanabilir örneklerle.",
+    "giris": [
+      "Yapay zekânın günlük işlerde gerçekten karşılık verdiği yer, sıfırdan üretmesi değil; elinizde zaten olan bir şeyi başka bir biçime sokması. Var olan notlardan sunum, uzun bir belgeden özet, bir dildeki metinden diğeri.",
+      "Bu bölümdeki sayfalar iş bazında düzenlenmiştir, araç bazında değil. Çünkü aynı araç bir işte ücretsiz katmanda rahatça çalışırken başka bir işte ilk adımda duvara toslayabiliyor — ve hangi duvarın nerede olduğu, aracın adından okunmuyor."
+    ],
     "oncelik": 3
   },
   {
@@ -25,6 +38,10 @@
     "ad": "Görsel ve video",
     "ikon": "🎨",
     "aciklama": "Yapay zekâyla resim ve video üretmek: hangi araç, ne kadar ücretsiz, üretilen görselin hakları kimde.",
+    "giris": [
+      "Görsel, video ve ses üretiminde ücretsiz katmanın asıl sınırı çoğu zaman teknik değil hukuki. Araç sesi üretir, videoyu dışa aktarır, görseli indirtir — sorun o çıktıyı nerede kullanabileceğinizdir.",
+      "Bu bölümdeki sayfalarda iki şey ayrı ayrı yazılır: çıktıda görünür bir işaret (filigran) var mı, ve çıktıyı ticari bir işte kullanma izniniz var mı. Bunlar aynı şey değil ve birbirinden bağımsız değişebiliyor: bir araç filigran koymayıp ticari kullanımı yasaklayabiliyor, bir başkası filigranı ücretli planda kaldırırken lisans konusunda hiçbir şey söylemeyebiliyor."
+    ],
     "oncelik": 4
   },
   {
@@ -32,6 +49,11 @@
     "ad": "Güvenlik ve gizlilik",
     "ikon": "🔒",
     "aciklama": "Yazdıklarınız eğitimde kullanılıyor mu, nasıl kapatılır, hangi bilgiyi hiç yazmamalı. KVKK açısından ne değişir.",
+    "giris": [
+      "Bu konuda dolaşan iki uç iddia da yanlış. Birincisi \"yazdığınız her şey şirketin eline geçer ve engelleyemezsiniz\"; ikincisi \"hiçbir şey saklanmıyor, merak etmeyin\". Gerçek ikisinin arasında ve önemli olan tarafı bir ayar sayfasında duruyor.",
+      "Sohbet tabanlı araçlarda yazdıklarınızın modeli eğitmede kullanılıp kullanılmadığı ayarlanabiliyor. Bu ayarı kapatmak sohbet geçmişinizi silmiyor — sohbetleriniz hesabınızda kalmaya devam ediyor, yalnız eğitimde kullanılmıyor. Ayarın hesabın tamamına uygulandığını, tek tek sohbetlere değil, bilmek de işe yarıyor.",
+      "Pratik tarafta işleyen kural şu: aracın gizlilik ayarı ne olursa olsun, kuruma ait bir belgeyi veya başkasının kişisel verisini yüklemeden önce izin sorusunu sormak gerekiyor. Ayar sizin verinizi korur; başkasının verisi için sorumluluğu ortadan kaldırmaz."
+    ],
     "oncelik": 5
   },
   {
@@ -39,6 +61,10 @@
     "ad": "Öğrenci ve öğretmen",
     "ikon": "🎓",
     "aciklama": "Ödevde, derste ve sınav hazırlığında yapay zekâ: neye izin var, yapay zekâ dedektörleri gerçekten çalışıyor mu.",
+    "giris": [
+      "Okulda yapay zekâ kullanımının kuralı tek bir yerden gelmiyor: kurumun kendi yönergesi, dersin öğretmeninin koyduğu sınır ve aracın kendi kullanım koşulları üst üste biniyor. Üçü çakıştığında en dar olanı geçerli sayılıyor.",
+      "Bu bölümdeki sayfalar bir şeyin nasıl yapılacağını anlatırken neyin yapılmaması gerektiğini de yazar; çünkü burada yanlış bilginin bedeli bir aboneliğin boşa gitmesi değil, bir dersin ya da bir sınavın kaybedilmesi olabiliyor."
+    ],
     "oncelik": 6
   }
 ]
