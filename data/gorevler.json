@@ -3404,5 +3404,692 @@
         "dogrulama": "2026-09-08"
       }
     ]
+  },
+  {
+    "slug": "ses-yaziya-cevirme",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile Ses Kaydı Nasıl Yazıya Çevrilir?",
+    "ozet": "Ücretsiz yapılabiliyor, ama hangi aracı seçeceğiniz kaydın uzunluğuna bağlı: Gemini uygulamasında ücretsiz katmanda toplam ses uzunluğu 10 dakikayla sınırlı, Gemini Notebook'ta ise dakika sınırı yazmıyor. ChatGPT'nin desteklenen dosya türleri listesinde ses hiç yok.",
+    "cevap": "Ücretsiz yapılabiliyor ve Türkçe destekleniyor — ama tek bir doğru araç yok, kaydın uzunluğu seçimi belirliyor. Google'ın Gemini Uygulamaları destek sayfasına göre ücretsiz katmanda toplam ses yükleme uzunluğu en fazla 10 dakika; bunu 3 saate çıkarmak için Google AI Pro veya Ultra gerekiyor. Buna karşılık aynı şirketin Gemini Notebook (NotebookLM) aracı yerel ses dosyalarını kaynak olarak içe aktarıyor ve içe aktarırken metne çeviriyor; burada dakika sınırı yazmıyor, sınır kaynak başına 200 MB veya 500.000 kelime ve Türkçe desteklenen diller listesinde yer alıyor. Yani bir saatlik ders kaydı için ücretsiz yol Gemini Notebook'tan geçiyor.",
+    "hedef_sorgu": "yapay zeka ile ses kaydını yazıya çevirme",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Ses dosyasını ChatGPT'ye yüklersiniz, yazıya döker.",
+      "dogru": "OpenAI'nin kendi dosya yükleme sayfası desteklenen türleri \"metin dosyaları, e-tablolar, sunular ve belgeler için yaygın tüm dosya uzantıları\" diye sayıyor; ses dosyası bu listede geçmiyor. ChatGPT'deki sesli sohbet ise başka bir şey: o canlı konuşma, elinizde duran bir kaydı işlemiyor. Ücretsiz katmanda ayrıca günde 3 dosya yükleme sınırı var.",
+      "kaynak": "https://help.openai.com/en/articles/8555545-file-uploads-faq"
+    },
+    "araclar": [
+      {
+        "ad": "Gemini Notebook (NotebookLM)",
+        "ucretsiz": "Yerel ses dosyası kaynak olarak içe aktarılıyor ve içe aktarılırken metne çevriliyor; mp3, wav, m4a, aac, opus, ogg dahil 20'den fazla biçim. Kaynak başına 200 MB veya 500.000 kelime, defter başına 50 kaynak. Dakika sınırı yazmıyor",
+        "turkce": "Var — sesi içe aktarmada desteklenen diller listesinde",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini (Google uygulaması)",
+        "ucretsiz": "Toplam ses yükleme uzunluğu en fazla 10 dakika; 3 saate çıkarmak için Google AI Pro veya Ultra gerekiyor. Dosya başına 100 MB, aynı isteme en fazla 10 dosya",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/gemini/answer/14903178?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Dokümanlar — Sesle yazma",
+        "ucretsiz": "Ücretsiz, ama dosya yüklenmiyor: yalnız canlı mikrofon diktesi. Yalnızca Chrome'da çalışıyor",
+        "turkce": "Var — sesle yazmanın desteklendiği diller arasında; sesli komutlar yalnızca İngilizce",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/docs/answer/4492226?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Microsoft Word — Döküm oluşturma",
+        "ucretsiz": "Yok. Etkin Microsoft 365 aboneliği gerekiyor; abonelikte ayda en fazla 300 dakika karşıya yüklenen ses, Copilot lisansında 30.000 dakika. Yalnız yeni Edge ve Chrome'da çalışıyor",
+        "turkce": "Var — Türkçe (Türkiye) desteklenen yerel ayarlar arasında",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.microsoft.com/tr-tr/office/kay%C4%B1tlar%C4%B1n%C4%B1z%C4%B1-yaz%C4%B1ya-d%C3%B6k%C3%BCn-7fc2efec-245e-45f0-b053-2a97531ecf57",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Ses dosyası desteklenen türler arasında sayılmıyor; liste metin, e-tablo, sunu ve belgeyle sınırlı. Ücretsiz kullanıcıda günde 3 dosya yükleme",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Önce şu ikisini ayırın: dikte mi, döküm mü?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Aynı başlık altında toplanan iki farklı iş var. Dikte, siz konuşurken metnin anında yazılması. Döküm ise elinizde hazır duran bir ses dosyasının metne çevrilmesi. Araçların çoğu ikisinden yalnız birini yapıyor ve bu ayrımı bilmemek, insanların en çok vakit kaybettiği yer."
+      },
+      {
+        "tur": "metin",
+        "metin": "Google Dokümanlar'daki \"Sesle yazma\" birinci gruptan: mikrofonu dinliyor, dosya yükleyemiyorsunuz. Kaydınızı hoparlörden çalıp Dokümanlar'a dinletme fikri işe yarıyormuş gibi görünüyor ama ortam sesi karıştığı için doğruluk düşüyor ve uzun kayıtlarda mikrofon kendiliğinden kapanabiliyor. Elinizde dosya varsa doğrudan dosya kabul eden bir araca gidin."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Kayıt kaç dakika? Cevap buna göre değişiyor"
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Elinizdeki kayıt",
+          "Ücretsiz en uygun yol",
+          "Sınırı belirleyen şey"
+        ],
+        "satirlar": [
+          [
+            "10 dakikaya kadar bir ses notu",
+            "Gemini uygulaması",
+            "Ücretsiz katmanda toplam ses yükleme uzunluğu 10 dakika"
+          ],
+          [
+            "Bir saatlik ders ya da toplantı",
+            "Gemini Notebook (NotebookLM)",
+            "Dakika sınırı yazmıyor; sınır 200 MB ve 500.000 kelime"
+          ],
+          [
+            "Henüz kaydedilmemiş, canlı konuşma",
+            "Google Dokümanlar sesle yazma",
+            "Dosya değil mikrofon dinleniyor; Chrome gerekiyor"
+          ],
+          [
+            "Düzenli, kurumsal iş akışı",
+            "Microsoft Word döküm oluşturma",
+            "Ücretsiz değil; abonelikte ayda 300 dakika"
+          ],
+          [
+            "Videonun konuşmasını yazıya dökmek",
+            "Videoyu altyazı üreten bir araca verin",
+            "Altyazı araçları zaman kodlu çıktı da veriyor"
+          ]
+        ],
+        "not": "Satırlar araçların kendi destek sayfalarında yazan sınırlardan çıkarıldı; kaynaklar sayfanın sonunda."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: bir saatlik dersi ücretsiz yazıya çevirmek"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Kaydı tek dosya haline getirin.",
+            "metin": "Telefonun ses kayıt uygulamasından çıkan m4a dosyası doğrudan işe yarıyor; dönüştürmeye gerek yok. Dosyanın 200 MB'ı aşmadığından emin olun — bir saatlik konuşma kaydı genelde bunun çok altında kalıyor."
+          },
+          {
+            "baslik": "Gemini Notebook'ta yeni bir not defteri açın ve dosyayı kaynak olarak ekleyin.",
+            "metin": "Ses, içe aktarılırken metne çevriliyor ve elde edilen metin yeni bir kaynak olarak kaydediliyor. Yani çıktı bir sohbet cevabı değil, üzerinde çalışabileceğiniz bir belge oluyor."
+          },
+          {
+            "baslik": "Ses kalitesi düşükse baştan düzeltin.",
+            "metin": "Google'ın kendi sayfası ses kalitesi düşükse içe aktarmanın başarısız olabileceğini yazıyor. Uzaktan alınmış, uğultulu bir kaydı yüklemek yerine mümkünse konuşmacıya yakın bir kayıtla yeniden başlayın; hiçbir araç var olmayan sesi çıkaramıyor."
+          },
+          {
+            "baslik": "Metni okuyup özel adları düzeltin.",
+            "metin": "En sık bozulan yerler kişi ve kurum adları, teknik terimler ve sayılar. Bunları tek tek gözden geçirmek, metnin tamamını yeniden yazmaktan çok daha hızlı."
+          },
+          {
+            "baslik": "Sonra özetletin, önce değil.",
+            "metin": "Ham dökümü elinizde tuttuktan sonra özet, madde listesi ya da yapılacaklar çıkarmak kolay. Ters sırada çalışırsanız — yani doğrudan özet isterseniz — atlanan yeri fark edecek bir dayanağınız kalmıyor."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Çıkan metni olduğu gibi kullanmayın"
+      },
+      {
+        "tur": "metin",
+        "metin": "Döküm, konuşmanın kaydıdır; yazının değil. İçinde yarım kalmış cümleler, tekrarlar ve \"şey\", \"yani\" gibi doldurmalar olur. Bu bir hata değil, konuşma dilinin kendisi. Ama bir tutanağa, rapora ya da yazıya doğrudan yapıştırılırsa okunmuyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Konuşmacı birden fazlaysa metni önce konuşmacılara ayırın; sonra düzenleyin.",
+          "Rakam, tarih ve tutarları kayda dönüp bir kez daha dinleyerek doğrulayın — döküm araçlarının en sık yanıldığı yer burası.",
+          "Özel adları bir kez düzelttikten sonra bul-değiştir ile tüm metinde uygulayın.",
+          "Ham dökümü silmeyin. Düzenlenmiş metinle arasında anlaşmazlık çıkarsa dayanağınız o olur."
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Bir toplantıyı ya da görüşmeyi kaydetmeden önce katılanları bilgilendirin. Kaydın içinde başka kişilerin sesi, adı, sağlık ya da iş bilgisi geçebiliyor; bu kaydı bir buluta yüklediğinizde artık yalnız kendi verinizi yüklemiş olmuyorsunuz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Ücretsiz katman kaydınızla ne yapıyor?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Kısa cevap: aracına göre değişiyor ve ücretsiz katmanda kural genellikle ücretli katmandakinden gevşek. Hassas bir görüşme kaydını yüklemeden önce kullandığınız aracın veri ayarına bakın — ChatGPT tarafında \"Modeli herkes için iyileştir\" ayarı kapatılabiliyor, Google tarafında ise kurumsal hesapla kişisel hesabın kuralları aynı değil. Sitedeki veri rehberleri bu ayrımı ayrıntısıyla anlatıyor."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Ses kaydını yazıya çevirmek ücretsiz mi?",
+        "c": "Evet, ücretsiz yolu var. Google'ın Gemini Notebook aracı yerel ses dosyalarını kaynak olarak içe aktarıyor ve içe aktarırken metne çeviriyor; ücretsiz kullanıcılar için defter başına 50 kaynak, kaynak başına 200 MB veya 500.000 kelime sınırı geçerli ve dakika sınırı yazmıyor."
+      },
+      {
+        "s": "Türkçe ses kaydı destekleniyor mu?",
+        "c": "Evet. Google'ın Gemini Notebook destek sayfasındaki \"sesi içe aktarma işlemi için desteklenen diller\" listesinde Türkçe yer alıyor. Microsoft'un döküm oluşturma sayfasında da Türkçe (Türkiye) destekleniyor, ancak orası abonelik istiyor."
+      },
+      {
+        "s": "Bir saatlik toplantı kaydını Gemini'a yükleyebilir miyim?",
+        "c": "Ücretsiz katmanda hayır. Google'ın Gemini Uygulamaları sayfasına göre ücretsiz katmanda toplam ses yükleme uzunluğu en fazla 10 dakika; 3 saate çıkarmak için Google AI Pro veya Ultra gerekiyor. Uzun kayıt için Gemini Notebook'u kullanın."
+      },
+      {
+        "s": "ChatGPT ses dosyasını yazıya döker mi?",
+        "c": "OpenAI'nin dosya yükleme sayfasında desteklenen türler metin, e-tablo, sunu ve belge olarak sayılıyor; ses dosyası bu listede geçmiyor. ChatGPT'deki sesli sohbet canlı konuşma içindir, elinizdeki kaydı işlemez."
+      },
+      {
+        "s": "Google Dokümanlar'a ses dosyası yükleyebilir miyim?",
+        "c": "Hayır. Dokümanlar'daki \"Sesle yazma\" özelliği mikrofonu dinliyor, dosya kabul etmiyor. Ayrıca yalnızca Chrome'da çalışıyor ve sesli düzenleme komutları yalnızca İngilizce kullanılabiliyor."
+      },
+      {
+        "s": "Döküm ne kadar doğru çıkıyor?",
+        "c": "Konuşma net ve mikrofon yakınsa günlük iş için yeterli çıkıyor; ama özel adlar, teknik terimler ve rakamlar sık bozuluyor. Google'ın kendi sayfası da ses kalitesi düşükse içe aktarmanın tamamen başarısız olabileceğini yazıyor. Çıkan metni yayımlamadan önce bu üç noktayı kaydı dinleyerek doğrulayın."
+      },
+      {
+        "s": "Toplantı kaydını yüklemek sakıncalı mı?",
+        "c": "Kayıtta yalnız sizin sesiniz yoksa dikkat gerekiyor. Kaydetmeden önce katılanları bilgilendirin ve kişisel bilgi geçen bölümleri yüklemeden önce çıkarmayı düşünün. Kurumunuzun verdiği hesapla kişisel hesabınızın veri kuralları da aynı olmayabiliyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Google Destek — Gemini Notebook: kaynak ekleme, ses biçimleri ve desteklenen diller (Türkçe)",
+        "url": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Gemini Uygulamaları'na dosya yükleme ve sınırlar (Türkçe)",
+        "url": "https://support.google.com/gemini/answer/14903178?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Google Dokümanlar'da sesle yazma (Türkçe)",
+        "url": "https://support.google.com/docs/answer/4492226?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Microsoft Destek — Kayıtlarınızı yazıya dökün (Türkçe)",
+        "url": "https://support.microsoft.com/tr-tr/office/kay%C4%B1tlar%C4%B1n%C4%B1z%C4%B1-yaz%C4%B1ya-d%C3%B6k%C3%BCn-7fc2efec-245e-45f0-b053-2a97531ecf57",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — Dosya yükleme SSS",
+        "url": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "ders-plani",
+    "alan": "ogrenci-ve-ogretmen",
+    "baslik": "Yapay Zeka ile Ders Planı Nasıl Hazırlanır?",
+    "ozet": "Ücretsiz yapılabiliyor ve öğretmenlik belgesi olan için Canva'nın tüm premium özellikleri açılıyor — ama yalnız K-12 için. Üniversitede ders veriyorsanız Canva'nın kendi uygunluk sayfası sizi kapsam dışı bırakıyor.",
+    "cevap": "Ücretsiz yapılabiliyor ve öğretmenler için ayrıca bir hak var: Canva'nın kendi sayfasına göre Eğitim İçin Canva, uygun K-12 öğretmen ve öğrencilerine tüm premium özellikleriyle ücretsiz ve herhangi bir ülkeyle sınırlı değil. Ama iki sınır önemli. Birincisi kapsam: Canva bu planın şu anda yükseköğretim öğretmen ve kurumlarını (üniversite ve kolejler) kapsamadığını açıkça yazıyor. İkincisi veri: planın içine öğrenci adı, notu veya durumu yazacaksanız, hangi hesapla çalıştığınız ve o hesabın veri ayarı önem kazanıyor. Ders planının iskeletini kurmak için ücretsiz sohbet araçları da yeterli — asıl fark, plana kendi müfredatınızı kaynak olarak bağlayıp bağlamadığınızda ortaya çıkıyor.",
+    "hedef_sorgu": "yapay zeka ile ders planı hazırlama",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Eğitim İçin Canva bütün öğretmenlere ücretsiz.",
+      "dogru": "Canva'nın uygunluk sayfası kapsamı dar tutuyor: plan şu anda yalnız K-12 (okul öncesinden liseye) öğretmen ve kurumları için geçerli, yükseköğretim öğretmen ve kurumlarını kapsamıyor. Ayrıca hâlihazırda öğretmenlik pozisyonunda olmayan sertifikalı öğretmenler, K-12 öğrencilerinin velileri ve bir K-12 kurumunda lisanslı ya da çalışan olmayan ev okulu eğitmenleri uygun sayılmıyor. Doğrulama kalıcı da değil: Canva tüm Eğitim kullanıcılarından 3 yılda bir belgelerini yenilemesini istiyor. Türkiye, yalnız öğretmenlik lisansı göstermenin yeterli olduğu ülkeler listesinde de yok — kurumun akreditasyonunu veya görevinizi gösteren bir belge isteniyor.",
+      "kaynak": "https://www.canva.com/education/eligibility-guidelines/"
+    },
+    "araclar": [
+      {
+        "ad": "Eğitim İçin Canva",
+        "ucretsiz": "Uygun K-12 öğretmen ve öğrencilerine tüm premium özellikler ücretsiz, ülke sınırı yok. Yükseköğretim kapsam dışı. Doğrulama 3 yılda bir yenileniyor",
+        "turkce": "Yardım sayfası Türkçe yayımlanıyor",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/tr_tr/help/about-canva-for-education/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva (normal ücretsiz plan)",
+        "ucretsiz": "Standart VEYA Premium yapay zeka araçlarında ayda 20 kullanıma kadar; hak her ayın 1'inde 00:00 UTC'de sıfırlanıyor",
+        "turkce": "",
+        "filigran": "Premium öğe kullanılırsa ücretsiz planda filigran çıkıyor",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini Notebook (NotebookLM)",
+        "ucretsiz": "Defter başına 50 kaynak; kaynak başına 500.000 kelime veya 200 MB. Müfredat, kazanım listesi ve ders kitabı aynı deftere konulabiliyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Metin sohbeti sınırsız (kötüye kullanım korumalarına tabi); dosya yükleme günde 3",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT — veri ayarı",
+        "ucretsiz": "\"Modeli herkes için iyileştir\" kapatılabiliyor; kapatınca sohbetler kalıyor ama eğitimde kullanılmıyor. Ayar tüm hesaba uygulanıyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "İyi bir plan, iyi bir istemden değil; iyi bir kaynaktan çıkıyor"
+      },
+      {
+        "tur": "metin",
+        "metin": "Bir sohbet aracına \"9. sınıf fizik, kuvvet ve hareket, 40 dakikalık ders planı yaz\" dediğinizde makul görünen bir plan geliyor. Sorun şu: o plan sizin müfredatınıza değil, modelin genel bilgisine dayanıyor. Kazanım numaraları uymuyor, ders kitabınızdaki sıra farklı olabiliyor, önerdiği etkinlik sizin sınıf mevcudunuza göre değil."
+      },
+      {
+        "tur": "metin",
+        "metin": "Fark, kendi kaynağınızı yükleyip planı ona bağladığınızda çıkıyor. Kazanım listesini, ders kitabının ilgili bölümünü ve varsa okulunuzun yıllık planını tek bir yere koyup planı bunlardan çıkarttığınızda, elinize teslim edilebilir bir belge geliyor. Gemini Notebook'ta ücretsiz kullanıcılar defter başına 50 kaynak ekleyebiliyor; bir dönemin tamamı için fazlasıyla yeterli."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Hangi işi hangi araca vermeli?"
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Yapmak istediğiniz",
+          "Uygun araç",
+          "Neden"
+        ],
+        "satirlar": [
+          [
+            "Kazanıma bağlı plan iskeleti",
+            "Gemini Notebook",
+            "Cevap yüklediğiniz müfredattan geliyor, genel bilgiden değil"
+          ],
+          [
+            "Etkinlik ve soru fikri üretmek",
+            "Ücretsiz sohbet araçları",
+            "Çeşitlilik burada işe yarıyor; kaynak bağı şart değil"
+          ],
+          [
+            "Sunum, afiş, çalışma kâğıdı tasarımı",
+            "Eğitim İçin Canva",
+            "Uygunsanız premium şablon ve öğeler ücretsiz açılıyor"
+          ],
+          [
+            "Tasarımı ücretsiz Canva hesabıyla yapmak",
+            "Canva ücretsiz plan",
+            "Ayda 20 yapay zeka kullanımı; premium öğede filigran çıkıyor"
+          ],
+          [
+            "Öğrenci adı, notu, durumu geçen belge",
+            "Hiçbiri — önce veri ayarına bakın",
+            "Bu veriler sizin değil, öğrencinin"
+          ]
+        ],
+        "not": "Satırlar araçların kendi destek ve uygunluk sayfalarındaki ifadelerden çıkarıldı."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: bir haftalık ders planı"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Önce kazanımı yazın, konuyu değil.",
+            "metin": "\"Kuvvet ve hareket\" bir konu; \"öğrenci sürtünme kuvvetinin yönünü çizerek gösterir\" bir kazanım. Plan ikincisinden çıkarsa ölçülebilir oluyor. Kazanım listenizi elle yazmak yerine resmî belgeden kopyalayıp kaynak olarak yükleyin."
+          },
+          {
+            "baslik": "Sınıfın gerçek koşullarını baştan söyleyin.",
+            "metin": "Ders süresi, mevcut, seviye farkı, elinizdeki malzeme. Bunları yazmadığınızda gelen plan 24 kişilik, projeksiyonlu, laboratuvarlı bir sınıf varsayıyor. Kısıtı en baştan vermek, sonradan düzeltmekten hızlı."
+          },
+          {
+            "baslik": "Planı bölümlere ayırtın.",
+            "metin": "Giriş, işleniş, etkinlik, ölçme, ödev. Tek bir metin yerine bölümler halinde isteyin; sonra hangi bölümü beğenmediyseniz yalnız onu yeniden ürettirirsiniz. Baştan sona yeniden yazdırmak hem yavaş hem de beğendiğiniz kısmı kaybettiriyor."
+          },
+          {
+            "baslik": "Ölçmeyi planla birlikte isteyin.",
+            "metin": "Kazanımı ölçmeyen bir plan yarım kalıyor. Her kazanım için bir çıkış sorusu ya da kısa bir uygulama isteyin; bu, planın gerçekten ölçülebilir yazılıp yazılmadığını da test ediyor."
+          },
+          {
+            "baslik": "Kaynağa dönüp doğrulayın.",
+            "metin": "Gelen planı kazanım listesiyle yan yana koyun. Uymayan, atlanan ya da uydurulmuş kazanım varsa burada görünür. Bu adım atlanırsa plan iyi görünür ama denetimde tutmaz."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Öğrenci verisi: burada dikkatli olun"
+      },
+      {
+        "tur": "metin",
+        "metin": "Ders planı hazırlarken çoğu zaman kimsenin kişisel bilgisi geçmez. Ama iş bireyselleştirilmiş plana, veli görüşme notuna ya da sınıf listesine geldiğinde tablo değişiyor: o bilgiler size ait değil, öğrencinin. Bunları bir yapay zeka aracına yazmadan önce iki şeye bakın — kurumunuzun kuralı ve hesabınızın veri ayarı."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Ad yerine \"öğrenci A\", \"öğrenci B\" kullanın; plan aynı derecede işe yarıyor.",
+          "Sağlık, aile durumu ve tanı bilgisini hiç yazmayın; bunlar özel nitelikli veri sayılıyor.",
+          "Kurumunuzun verdiği hesapla kişisel hesabınızın veri kuralları aynı değil; hangisiyle oturum açtığınıza bakın.",
+          "ChatGPT tarafında \"Modeli herkes için iyileştir\" ayarı kapatılabiliyor ve ayar tüm hesaba uygulanıyor.",
+          "Sınıf listesi, not çizelgesi gibi dosyaları yüklemek yerine ihtiyacınız olan tek satırı elle yazın."
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Ürettiğiniz materyali paylaşacaksanız içindeki görsellerin lisansına da bakın. Canva'nın ücretsiz planında premium bir öğe kullanıldığında tasarımda filigran çıkıyor; filigranı kaldırmak öğenin lisansını almak anlamına geliyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Yapay zekânın hazırladığı planı kendi planınız sayabilir misiniz?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Pratikte evet, ama sorumluluk sizde kalıyor. Kazanım yanlışsa, etkinlik sınıfa uygun değilse ya da bir bilgi hatalıysa bunu savunacak olan siz olacaksınız. Bu yüzden plan üretmek işin başlangıcı: bitiş, kaynağa dönüp her satırı doğrulamak. Aracın çıktısını okumadan teslim etmek, hazır bir planı okumadan uygulamaktan farksız."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Eğitim İçin Canva Türkiye'de kullanılabiliyor mu?",
+        "c": "Canva'nın kendi sayfasına göre plan dünyanın her yerinde kullanılabiliyor ve herhangi bir ülkeyle sınırlı değil. Ancak Türkiye, yalnız öğretmenlik lisansı göstermenin yeterli olduğu ülkeler listesinde yer almıyor; kurumun akredite bir K-12 kurumu olduğunu veya orada görevli olduğunuzu gösteren bir belge isteniyor."
+      },
+      {
+        "s": "Üniversitede ders veriyorum, Eğitim İçin Canva'yı kullanabilir miyim?",
+        "c": "Hayır. Canva'nın uygunluk sayfası planın şu anda yalnız K-12 öğretmen ve kurumları için geçerli olduğunu, yükseköğretim öğretmen ve kurumlarını (üniversite ve kolejler) kapsamadığını yazıyor."
+      },
+      {
+        "s": "Ücretsiz Canva hesabıyla ders materyali hazırlayabilir miyim?",
+        "c": "Evet, ama iki sınır var. Canva'nın yardım sayfasına göre ücretsiz planda Standart veya Premium yapay zeka araçlarında ayda 20 kullanıma kadar hak veriliyor ve bu hak her ayın 1'inde sıfırlanıyor. Ayrıca premium bir öğe kullanırsanız tasarımda filigran çıkıyor."
+      },
+      {
+        "s": "Ders planına öğrenci adı yazabilir miyim?",
+        "c": "Yazmamak daha güvenli. Öğrenci adı, notu ve durumu size değil öğrenciye ait bilgi. Plan \"öğrenci A\", \"öğrenci B\" ile de aynı işi görüyor. Kurumunuzun kuralına ve kullandığınız hesabın veri ayarına bakmadan bu bilgileri girmeyin."
+      },
+      {
+        "s": "Kendi müfredatımı nasıl bağlarım?",
+        "c": "Kazanım listesini, ders kitabının ilgili bölümünü ve yıllık planı kaynak olarak yükleyip planı bunlardan çıkarttırarak. Gemini Notebook'ta ücretsiz kullanıcılar defter başına 50 kaynak ekleyebiliyor; her kaynak 500.000 kelimeye veya 200 MB'a kadar olabiliyor."
+      },
+      {
+        "s": "Gelen planı doğrudan kullanabilir miyim?",
+        "c": "Okumadan kullanmayın. Kazanım numarası uymayabiliyor, önerilen etkinlik sınıfınızın koşullarına göre olmayabiliyor ve bilgi hatası çıkabiliyor. Planı kazanım listesiyle yan yana koyup doğrulamak, üretmekten daha kısa sürüyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Canva Yardım Merkezi — Eğitim İçin Canva hakkında (Türkçe)",
+        "url": "https://www.canva.com/tr_tr/help/about-canva-for-education/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva — Eğitim uygunluk koşulları ve kabul edilen belgeler",
+        "url": "https://www.canva.com/education/eligibility-guidelines/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Yapay zeka kullanımınızı anlamak",
+        "url": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Gemini Notebook: kaynak ekleme, türler ve sınırlar (Türkçe)",
+        "url": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — Veri kontrolleri SSS",
+        "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "sosyal-medya",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile Sosyal Medya İçeriği Nasıl Hazırlanır?",
+    "ozet": "Metni ve görseli ücretsiz üretmek mümkün. Asıl mesele yayınlarken: YouTube, yapay zekayla üretilmiş fotogerçekçi içeriğin bildirilmesini zorunlu tutuyor — ama senaryo, başlık ve küçük resim için bildirim istemiyor.",
+    "cevap": "Metin ve görsel tarafı ücretsiz katmanda büyük ölçüde yapılabiliyor: Canva'nın ücretsiz planı ayda 20 yapay zeka kullanımı veriyor, Google'ın ₺0 planında görüntü oluşturma ve düzenleme yer alıyor, ücretsiz sohbet araçlarında metin sohbeti sınırsız. Asıl karar yayınlarken veriliyor. YouTube kendi sayfasında, yapay zekayla üretilmiş veya anlamlı biçimde değiştirilmiş fotogerçekçi içeriğin bildirilmesini zorunlu tutuyor ve bildirilen video izleyiciye etiketle gösteriliyor. Buna karşılık gerçekçi olmayan ya da animasyon içerik, yalnız estetik amaçlı küçük düzenlemeler ve senaryo, başlık, küçük resim gibi prodüksiyon desteği bildirim gerektirmiyor.",
+    "hedef_sorgu": "yapay zeka ile sosyal medya içeriği hazırlama",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Yapay zekayla ürettiğim her paylaşımı etiketlemem gerekiyor.",
+      "dogru": "YouTube'un kendi sayfası tersini söylüyor. Zorunluluk, gerçekte olmamış bir olayı gerçekmiş gibi gösterebilecek fotogerçekçi içerik için. Tamamen animasyonlu bir videodaki yapay zeka sahnesi, yalnız estetik amaçlı küçük düzenlemeler ve videonun akış planını, senaryosunu, küçük resmini, başlığını veya infografiğini üretmek gibi prodüksiyon desteği bildirim gerektirmiyor. Yani metnini yapay zekaya yazdırdığınız bir paylaşım için etiket aramanıza gerek yok; gerçek bir şehre yaklaşan sahte bir kasırga görüntüsü içinse gerekiyor.",
+      "kaynak": "https://support.google.com/youtube/answer/14328491?hl=tr"
+    },
+    "araclar": [
+      {
+        "ad": "Canva (ücretsiz plan)",
+        "ucretsiz": "Standart VEYA Premium yapay zeka araçlarında ayda 20 kullanıma kadar; hak her ayın 1'inde 00:00 UTC'de sıfırlanıyor. Ultra araçlara erişim yok",
+        "turkce": "",
+        "filigran": "Premium öğe kullanılırsa ücretsiz planda filigran çıkıyor",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Magic Write",
+        "ucretsiz": "Canva Free'de aylık 20 kullanımlık ortak haktan düşüyor; ücretli planlarda haktan düşmüyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "₺0 planda görüntü oluşturma ve düzenleme var; 3.6 Flash erişimi, 3.1 Pro'ya kısmi erişim ve Canvas listeleniyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Metin sohbeti sınırsız (kötüye kullanım korumalarına tabi); dosya yükleme günde 3",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Ne zaman bildirmek zorundasınız, ne zaman değil?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Bu sayfadaki tek doğrulanmış kural YouTube'a ait; şirketin kendi destek sayfasından alındı. Diğer platformların kuralını kendi sayfalarından net bir ifadeyle teyit edemediğimiz için buraya yazmıyoruz. Yayın yaptığınız her platformun kendi yardım sayfasına bakmak, ikinci elden aktarılan bilgiye güvenmekten daha güvenli."
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Ne yaptınız?",
+          "YouTube'da bildirim",
+          "Sayfadaki gerekçe"
+        ],
+        "satirlar": [
+          [
+            "Senaryoyu, başlığı, küçük resmi yapay zekayla ürettiniz",
+            "Gerekmiyor",
+            "Prodüksiyon desteği sayılıyor"
+          ],
+          [
+            "Tamamen animasyon bir videoda yapay zeka sahnesi kullandınız",
+            "Gerekmiyor",
+            "Gerçekçi olmayan içerik kapsam dışı"
+          ],
+          [
+            "Görüntüye yalnız estetik amaçlı küçük düzenleme yaptınız",
+            "Gerekmiyor",
+            "İzleyiciyi gerçekte ne olduğu konusunda yanıltmıyor"
+          ],
+          [
+            "Gerçek bir yerin yapay zekayla üretilmiş ek görüntülerini eklediniz",
+            "Gerekiyor",
+            "Fotogerçekçi ve gerçekte olmamış"
+          ],
+          [
+            "Gerçek kişilerin yapmadığı bir olayı gerçekçi biçimde ürettiniz",
+            "Gerekiyor",
+            "Gerçekte meydana gelmemiş gerçekçi sahne"
+          ],
+          [
+            "Yapay zekayla üretilmiş müzik kullandınız",
+            "Gerekiyor",
+            "Sayfada açıklama gerektiren örnekler arasında sayılıyor"
+          ]
+        ],
+        "not": "Satırlar YouTube'un \"Üretken yapay zeka içeriklerinin kullanımını açıklama\" destek sayfasındaki örneklerden çıkarıldı."
+      },
+      {
+        "tur": "metin",
+        "metin": "Bildirim yükleme sırasında yapılıyor: YouTube Studio'da özellikler bölümünde \"Yapay zeka kullanımı\" altında içerik açıklama şartlarını karşılıyorsa \"Evet\" seçiliyor. Seçtiğinizde video izleyiciye etiketli gösteriliyor; fotogerçekçi içerikte etiket oynatıcının üzerinde de görünebiliyor, fotogerçekçi olmayan içerikte genişletilmiş açıklama alanında kalıyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Ayda 20 kullanım nasıl harcanmaz?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Canva'nın ücretsiz planındaki aylık 20 kullanım hakkı ortak bir havuz: Magic Write ile yazdığınız metin de, ürettiğiniz görsel de aynı haktan düşüyor. Sosyal medya için düzenli üretim yapıyorsanız bu hak ayın ilk haftasında bitiyor. Hak her ayın 1'inde 00:00 UTC'de sıfırlanıyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Metni ücretsiz sohbet araçlarında üretip Canva'yı yalnız tasarım için kullanın; metin sohbeti orada haktan düşmüyor.",
+          "Bir gönderi için tek tek istem yazmak yerine aylık planı tek seferde çıkarın; deneme yanılma en çok hak harcayan şey.",
+          "Görsel üretimini Google'ın ₺0 planındaki görüntü oluşturmaya kaydırın, tasarımı Canva'da birleştirin.",
+          "Premium öğeye dokunmadan çalışın; ücretsiz planda premium öğe kullanılan tasarımda filigran çıkıyor."
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: bir haftalık içerik"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Önce ne anlatacağınızı yazın.",
+            "metin": "\"Bana sosyal medya gönderisi yaz\" isteminden çıkan şey herkesin çıkardığı şeyle aynı oluyor. Kendi işinize ait somut bir bilgiyle başlayın: bu hafta ne yaptınız, ne öğrendiniz, hangi soruyu sık alıyorsunuz."
+          },
+          {
+            "baslik": "Tek fikri farklı biçimlere çevirin.",
+            "metin": "Aynı fikirden kısa video senaryosu, bir görsel gönderi metni ve bir uzun paylaşım çıkarın. Üç ayrı fikir üretmek yerine bir fikri üç biçime taşımak hem daha hızlı hem daha tutarlı."
+          },
+          {
+            "baslik": "Görseli sonra üretin.",
+            "metin": "Metin netleşmeden görsel üretmek en çok deneme yanılma gerektiren yol. Metin hazırsa görsel isteminiz de netleşiyor ve tek seferde tutma ihtimali artıyor."
+          },
+          {
+            "baslik": "Yayın öncesi bildirim kontrolü yapın.",
+            "metin": "Ürettiğiniz görüntü gerçek bir yeri, kişiyi veya olayı fotogerçekçi biçimde gösteriyorsa yükleme ekranında bildirin. Karar verirken ölçü şu: izleyici bunu gerçek sanabilir mi?"
+          },
+          {
+            "baslik": "Kendi sesinizi geri koyun.",
+            "metin": "Üretilen metin dilbilgisi açısından temiz ama kimseye ait değil. Kendi cümlenizi, kendi örneğinizi ve varsa rakamınızı ekleyin; hesabınızı diğerlerinden ayıran tek şey bu."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Müşteri için üretiyorsanız iki soru daha var"
+      },
+      {
+        "tur": "metin",
+        "metin": "Kendi hesabınız için ürettiğinizde tek muhatap sizsiniz. Bir müşteriye teslim ediyorsanız iki şey netleşmeli: çıktının ticari kullanım hakkı ve içindeki stok öğelerin lisansı. Bunlar araca göre değişiyor ve ücretsiz katmanın verdiği hak, ücretli katmanınkiyle aynı olmuyor."
+      },
+      {
+        "tur": "uyari",
+        "metin": "Logo işi bu sayfanın kapsamı dışında ve kuralı farklı: stok içerikle yapılan tasarımlar marka tesciline uygun olmuyor. Bir müşteriye logo teslim edecekseniz sitedeki logo sayfasına bakın."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Yapay zekayla ürettiğim gönderiyi etiketlemek zorunda mıyım?",
+        "c": "YouTube'un kendi sayfasına göre zorunluluk fotogerçekçi içerik için: yapay zekayla üretilmiş veya anlamlı biçimde değiştirilmiş, gerçekte olmamış ama gerçekçi görünen içerik bildirilmeli. Senaryo, başlık, küçük resim üretmek gibi prodüksiyon desteği ve gerçekçi olmayan animasyon içerik bildirim gerektirmiyor."
+      },
+      {
+        "s": "Bildirimi nereden yapıyorum?",
+        "c": "YouTube Studio'da yükleme sırasında, özellikler bölümünde \"Yapay zeka kullanımı\" altından. İçeriğiniz açıklama şartlarını karşılıyorsa \"Evet\" seçiyorsunuz ve video izleyiciye etiketli gösteriliyor."
+      },
+      {
+        "s": "Bildirmezsem ne olur?",
+        "c": "YouTube bildirimi zorunlu tuttuğunu kendi sayfasında yazıyor. Bunun yaptırımına dair net bir ifadeyi aynı sayfada bulamadığımız için burada bir sonuç yazmıyoruz; platformun politika sayfalarına bakmanız gerekiyor."
+      },
+      {
+        "s": "Ücretsiz Canva ile kaç gönderi hazırlayabilirim?",
+        "c": "Tasarımın kendisinde sınır yok; sınır yapay zeka araçlarında. Canva'nın yardım sayfasına göre ücretsiz planda Standart veya Premium yapay zeka araçlarında ayda 20 kullanıma kadar hak veriliyor ve bu hak her ayın 1'inde 00:00 UTC'de sıfırlanıyor. Magic Write ile yazılan metin de aynı haktan düşüyor."
+      },
+      {
+        "s": "Görsellerde filigran çıkar mı?",
+        "c": "Canva'nın ücretsiz planında premium bir öğe kullanırsanız tasarımda filigran çıkıyor. Filigranı kaldırmak, o öğenin lisansını satın almak anlamına geliyor. Ücretsiz kütüphanedeki öğelerle çalışırsanız filigran çıkmıyor."
+      },
+      {
+        "s": "Müşteri için ürettiğim içeriği satabilir miyim?",
+        "c": "Bu araca ve kullandığınız öğelere göre değişiyor, tek bir cevabı yok. Teslim etmeden önce hem aracın ticari kullanım hükümlerine hem de tasarımın içindeki stok görsel ve müziğin lisansına bakın. Logo işi ayrı bir konu: stok içerikle yapılan tasarımlar marka tesciline uygun olmuyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "YouTube Yardım — Üretken yapay zeka içeriklerinin kullanımını açıklama (Türkçe)",
+        "url": "https://support.google.com/youtube/answer/14328491?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Yapay zeka kullanımınızı anlamak",
+        "url": "https://www.canva.com/help/ai-access/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Canva Yardım Merkezi — Tasarımımda filigran veya Canva logosu var",
+        "url": "https://www.canva.com/help/watermarks-design/",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google — Gemini abonelikleri (Türkçe)",
+        "url": "https://gemini.google/tr/subscriptions/?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT Free Tier FAQ",
+        "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ]
   }
 ]
