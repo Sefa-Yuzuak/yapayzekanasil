@@ -4091,5 +4091,696 @@
         "dogrulama": "2026-09-08"
       }
     ]
+  },
+  {
+    "slug": "odev",
+    "alan": "ogrenci-ve-ogretmen",
+    "baslik": "Yapay Zeka ile Ödev Nasıl Yapılır?",
+    "ozet": "Yapay zeka dedektörlerinin güvenilmez olduğunu söyleyen taraf OpenAI'nin kendisi: kendi eğittikleri dedektör, Shakespeare'i ve Bağımsızlık Bildirgesi'ni \"yapay zeka üretimi\" diye işaretlemiş. Bu, yakalanmazsınız demek değil — tam tersi.",
+    "cevap": "Ödevde yapay zeka kullanmanın tek bir kuralı yok: kurumunuzun yönergesi, dersin öğretmeninin koyduğu sınır ve aracın kendi koşulları üst üste biniyor ve çakıştığında en dar olanı geçerli sayılıyor. Teknik tarafta bilinmesi gereken iki şey var. Birincisi yaş: OpenAI'nin kendi sayfasına göre kullanıcıların en az 13 yaşında olması, 13-18 arasındakilerin ise ebeveyn veya vasi izni alması gerekiyor; Google da kişisel ya da okul hesabında Gemini için en az 13 yaş şartı koyuyor. İkincisi dedektörler: OpenAI kendi sayfasında bu araçların kendi deneyimlerinde güvenilir olmadığını, eğittikleri dedektörün insan yazısı metinleri yapay zeka ürünü diye işaretlediğini yazıyor. Bu bilgi kopya çekmeyi kolaylaştırmıyor; yanlış suçlanma ihtimalinin gerçek olduğunu gösteriyor.",
+    "hedef_sorgu": "yapay zeka ile ödev nasıl yapılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Metni ChatGPT'ye gösterip \"bunu sen mi yazdın?\" diye sorunca anlıyor.",
+      "dogru": "OpenAI'nin eğitimciler için hazırladığı sayfa bunu açıkça çürütüyor: ChatGPT'nin hangi içeriğin yapay zeka üretimi olduğuna dair bir \"bilgisi\" yok. \"Bu denemeyi sen mi yazdın?\" ya da \"bu yapay zeka tarafından yazılmış olabilir mi?\" gibi sorulara bazen uydurma cevaplar veriyor ve bu cevaplar rastgele, gerçekte hiçbir dayanağı yok. Aynı sayfa dedektörler için de \"bizim deneyimimizde hayır\" diyor: OpenAI kendi dedektörünü eğitmeye çalıştığında araç, Shakespeare ve Bağımsızlık Bildirgesi gibi insan yazısı metinleri yapay zeka üretimi olarak işaretlemiş. Ayrıca bu araçların ana dili İngilizce olmayan öğrencileri ve kalıplı ya da kısa yazan öğrencileri orantısız etkilediğine dair işaretler bulunmuş.",
+      "kaynak": "https://help.openai.com/en/articles/8313351-how-can-educators-respond-to-students-presenting-ai-generated-content-as-their-own"
+    },
+    "araclar": [
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Metin sohbeti sınırsız; dosya yükleme günde 3. Yaş şartı: en az 13, 13-18 arası ebeveyn veya vasi izniyle",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "Çıktının sahibi kullanıcı — ücretsiz ya da ücretli planda üretilmiş olmasından bağımsız",
+        "kaynak": "https://help.openai.com/en/articles/8313351-how-can-educators-respond-to-students-presenting-ai-generated-content-as-their-own",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "₺0 planda 3.6 Flash erişimi, 3.1 Pro'ya kısmi erişim ve Canvas listeleniyor. Kişisel veya okul hesabında en az 13 yaş, iş hesabında en az 18 yaş",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/gemini/answer/13278668?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini Notebook (NotebookLM)",
+        "ucretsiz": "Defter başına 50 kaynak, kaynak başına 500.000 kelime veya 200 MB. Cevabın yalnız yüklediğiniz kaynaktan gelmesini sağlıyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Yapay zeka dedektörleri",
+        "ucretsiz": "OpenAI kendi sayfasında bu araçların kendi deneyimlerinde yeterince güvenilir olmadığını yazıyor; kendi eğittikleri dedektör insan yazısı metinleri işaretlemiş",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/8313351-how-can-educators-respond-to-students-presenting-ai-generated-content-as-their-own",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Bu sayfa ödevi sizin yerinize yazdırmayı anlatmıyor"
+      },
+      {
+        "tur": "metin",
+        "metin": "Sebebi ahlak dersi vermek değil, işe yaramaması. Yapay zekaya yazdırılan ödev iki yerde tökezliyor: derste işlenen tanımla örtüşmüyor, çünkü model sizin dersinizi görmedi; ve sınıf içi bir soruda ya da sözlüde savunulamıyor, çünkü metni siz kurmadınız. Bu sayfa yapay zekayı ödev sürecinde nasıl kullanacağınızı anlatıyor — teslim edilen metnin yazarı siz kalmak şartıyla."
+      },
+      {
+        "tur": "metin",
+        "metin": "Kuralın tek bir kaynağı da yok. Kurumunuzun yönergesi, dersin öğretmeninin koyduğu sınır ve kullandığınız aracın koşulları aynı anda geçerli. Üçü çakıştığında en dar olanı uygulanır. Bu yüzden ilk adım araç seçmek değil, dersin kuralını öğrenmek."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Dedektörler meselesi: kaynağı şirketin kendisi"
+      },
+      {
+        "tur": "metin",
+        "metin": "Türkçe internette bu konu ya \"asla yakalanmazsınız\" ya da \"kesin yakalanırsınız\" diye anlatılıyor. İkisi de yanlış ve doğru cevabı veren taraf, aracın üreticisi. OpenAI'nin eğitimciler için hazırladığı sayfa dedektörlerin kendi deneyimlerinde yeterince güvenilir olmadığını, çünkü öğretmenlerin bu araçlara dayanarak öğrenciler hakkında kalıcı sonuçları olabilecek yargılara varabileceğini yazıyor."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "OpenAI kendi dedektörünü eğitmeye çalıştığında araç, Shakespeare ve Bağımsızlık Bildirgesi gibi insan yazısı metinleri yapay zeka üretimi olarak işaretlemiş.",
+          "Aynı sayfa bu araçların ana dili İngilizce olmayan öğrencileri ve kalıplı ya da kısa yazan öğrencileri orantısız etkileyebildiğine dair işaretler bulunduğunu yazıyor.",
+          "Sayfa açıkça \"bu araçlar yapay zeka üretimi içeriği doğru şekilde tespit edemiyor\" diyor; edebilseler bile küçük düzenlemelerle atlatılabildiğini ekliyor.",
+          "ChatGPT'nin hangi metnin yapay zeka ürünü olduğuna dair bir bilgisi yok; \"bunu sen mi yazdın\" sorusuna verdiği cevaplar rastgele."
+        ]
+      },
+      {
+        "tur": "metin",
+        "metin": "Buradan çıkan sonuç \"rahat olun\" değil. Tersine: yanlış pozitif gerçek bir ihtimal olduğu için, tamamen kendi yazdığınız bir ödev de işaretlenebilir. Bu yüzden korunma yolu yakalanmamak değil, sürecinizi belgelemek."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Yapay zekayı ödevin neresinde kullanmalı?"
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Ödevin aşaması",
+          "Yapay zeka ne yapabilir?",
+          "Neden sorun değil"
+        ],
+        "satirlar": [
+          [
+            "Konuyu anlamak",
+            "Anlamadığınız kavramı farklı bir örnekle açıklatmak",
+            "Teslim edilen metne girmiyor"
+          ],
+          [
+            "Kaynak taraması",
+            "Yüklediğiniz kaynaktan soru sormak, özet çıkarmak",
+            "Cevap kaynağınızdan geliyor, uydurmadan"
+          ],
+          [
+            "Plan kurmak",
+            "Başlıkları ve akışı tartışmak",
+            "Cümleleri siz yazıyorsunuz"
+          ],
+          [
+            "Yazmak",
+            "Sizin taslağınızı gözden geçirtmek",
+            "Metin sizin kalıyor"
+          ],
+          [
+            "Yazdırmak",
+            "Ödevin tamamını ürettirip teslim etmek",
+            "Burası sınır — hem kural hem işe yaramama sorunu"
+          ],
+          [
+            "Kontrol",
+            "Yazım, tutarlılık ve eksik başlık kontrolü",
+            "Düzelten siz oluyorsunuz"
+          ]
+        ],
+        "not": "Sınır satırı kurumdan kuruma değişebilir; kesin kuralı dersin yönergesi belirler."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: kaynağa bağlı bir ödev süreci"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Önce dersin kuralını yazın.",
+            "metin": "Yapay zeka kullanımı yasak mı, beyana mı tabi, serbest mi? Öğretmene sormak, sonradan tartışmaya girmekten her durumda ucuz. Cevabı bir yere not edin."
+          },
+          {
+            "baslik": "Kaynaklarınızı tek yerde toplayın.",
+            "metin": "Ders notu, makale, kitap bölümü. Kaynak temelli çalıştığınızda cevaplar sizin kaynağınızdan geliyor; kaynaksız sorduğunuzda modelin genel bilgisinden geliyor ve dersinizin tanımıyla örtüşmeyebiliyor."
+          },
+          {
+            "baslik": "İlk taslağı kendiniz yazın.",
+            "metin": "Kötü bile olsa. Yapay zekaya ilk taslağı yazdırmak, sonrasındaki her cümleyi onun kurgusuna bağlıyor. Kendi taslağınız varsa araç düzeltmen olur, yazarınız değil."
+          },
+          {
+            "baslik": "Geri bildirim isteyin, yeniden yazım değil.",
+            "metin": "\"Bunu düzelt\" yerine \"bu paragrafta hangi iddia kanıtsız kalmış?\" diye sorun. Birincisi metni elinizden alıyor, ikincisi size iş bırakıyor."
+          },
+          {
+            "baslik": "Kullandıysanız yazın.",
+            "metin": "Çoğu kurumda yapay zeka kullanımı yasak değil, beyana tabi. OpenAI'nin sayfası da öğretmenlerin öğrencilerden ChatGPT konuşmalarını paylaşmasını istemesini işe yarayan bir yaklaşım olarak anlatıyor — sürecinizi göstermek, savunmanın en güçlü hali."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Yaş sınırı: çoğu kişinin atladığı madde"
+      },
+      {
+        "tur": "metin",
+        "metin": "OpenAI'nin sayfası kullanıcıların en az 13 yaşında olması, 13 ile 18 arasındakilerin ise ebeveyn veya vasi izniyle kullanması gerektiğini yazıyor ve bu şart yerine getirilmediğinde durumun kullanım koşullarına aykırı olabileceğini belirtiyor. Google tarafında da Gemini için kişisel ya da okul hesabında en az 13 yaş (veya ülkenizdeki uygun yaş), iş hesabında en az 18 yaş şartı var; Family Link yöneten bir veli 13 yaş altındaki kullanıcıların erişimini kapatabiliyor."
+      },
+      {
+        "tur": "uyari",
+        "metin": "Ödev metnine kendi adınız dışında kimsenin bilgisini yazmayın. Grup ödevlerinde arkadaşlarınızın adı, bir röportaj ödevinde görüştüğünüz kişinin bilgileri geçebiliyor; bunlar sizin paylaşma yetkinizde olan veriler değil."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Kendi yazdığınız ödev işaretlenirse ne yaparsınız?"
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Taslakları saklayın. Sürüm geçmişi olan bir yazı aracında çalışmak tek başına güçlü bir dayanak.",
+          "Aldığınız notları, kaynak listenizi ve arama geçmişinizi atmayın.",
+          "Dedektör çıktısının kesin kanıt olmadığını, üreticinin kendi sayfasında bunu yazdığını gösterebilirsiniz.",
+          "Tartışmayı suçlama-savunma değil, süreç gösterme zeminine taşıyın: nasıl kurduğunuzu anlatmak, ne yapmadığınızı ispatlamaktan kolay."
+        ]
+      }
+    ],
+    "sss": [
+      {
+        "s": "Yapay zeka dedektörleri gerçekten çalışıyor mu?",
+        "c": "OpenAI'nin eğitimciler için hazırladığı sayfa \"kısaca, bizim deneyimimizde hayır\" diyor. Kendi dedektörlerini eğitmeye çalıştıklarında aracın Shakespeare ve Bağımsızlık Bildirgesi gibi insan yazısı metinleri yapay zeka üretimi olarak işaretlediğini yazıyorlar. Aynı sayfa bu araçların doğru tespit yapamadığını, yapabilseler bile küçük düzenlemelerle atlatılabildiğini belirtiyor."
+      },
+      {
+        "s": "ChatGPT'ye bir metni gösterip yapay zeka mı diye sorabilir miyim?",
+        "c": "Sorabilirsiniz ama cevabına güvenmeyin. OpenAI'nin sayfası ChatGPT'nin hangi içeriğin yapay zeka üretimi olduğuna dair bir bilgisi olmadığını, bu tür sorulara bazen uydurma cevaplar verdiğini ve bu cevapların rastgele olduğunu, gerçekte hiçbir dayanağı bulunmadığını yazıyor."
+      },
+      {
+        "s": "Kaç yaşında kullanabilirim?",
+        "c": "OpenAI'nin sayfasına göre kullanıcıların en az 13 yaşında olması, 13-18 arasındakilerin ebeveyn veya vasi izni alması gerekiyor. Google tarafında Gemini için kişisel veya okul hesabında en az 13 yaş (veya ülkenizdeki uygun yaş), iş hesabında en az 18 yaş şartı var."
+      },
+      {
+        "s": "Ödevde yapay zeka kullanmak kopya mı?",
+        "c": "Tek bir cevabı yok; kural kurumun yönergesinden, dersin öğretmeninden ve aracın koşullarından birlikte çıkıyor ve çakışırsa en dar olanı geçerli. Çoğu kurumda kullanım yasak değil, beyana tabi. En sağlam yol kuralı derse başlarken öğrenmek ve kullandıysanız yazmak."
+      },
+      {
+        "s": "Ödevimi yapay zekaya yazdırırsam öğretmen anlar mı?",
+        "c": "Dedektörle kesin olarak kanıtlanamıyor, ama mesele bu değil. Yazdırılmış ödev dersin tanımıyla örtüşmüyor, kaynakları uydurma olabiliyor ve sözlü bir soruda savunulamıyor. Riski dedektör değil, metnin sizin olmaması yaratıyor."
+      },
+      {
+        "s": "Kendi yazdığım ödev yapay zeka çıkarsa ne yaparım?",
+        "c": "Bu gerçek bir ihtimal: OpenAI'nin kendi araştırması dedektörlerin insan yazısı metinleri işaretlediğini, özellikle ana dili İngilizce olmayan ve kalıplı yazan öğrencileri orantısız etkileyebildiğini gösteriyor. Taslaklarınızı, notlarınızı ve sürüm geçmişinizi saklayın; süreci gösterebilmek en güçlü dayanak."
+      },
+      {
+        "s": "Yapay zekayla yazdığım metnin sahibi kim?",
+        "c": "OpenAI kendi sayfasında, içerik politikası ve şartlara tabi olarak ChatGPT ile ürettiğiniz çıktının sahibinin siz olduğunu yazıyor. Ama bu telif sorusunu çözüyor, akademik dürüstlük sorusunu değil: hakkın sizde olması, o metni kendi yazınız diye teslim edebileceğiniz anlamına gelmiyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "OpenAI Help Center — Eğitimciler yapay zeka üretimi içeriğe nasıl yanıt verebilir?",
+        "url": "https://help.openai.com/en/articles/8313351-how-can-educators-respond-to-students-presenting-ai-generated-content-as-their-own",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Gemini Uygulamaları'nı kullanma koşulları ve yaş şartı (Türkçe)",
+        "url": "https://support.google.com/gemini/answer/13278668?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Gemini Notebook: kaynak ekleme, türler ve sınırlar (Türkçe)",
+        "url": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT nedir? (çıktı sahipliği)",
+        "url": "https://help.openai.com/en/articles/6783457-what-is-chatgpt",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "kod",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile Kod Nasıl Yazılır?",
+    "ozet": "Ücretsiz katmanda tek dosya değil, koca bir depo yükleyebiliyorsunuz: Google'ın kendi sayfasına göre bir sohbete en fazla 5.000 dosyalık ve 100 MB'ı aşmayan tek bir kod klasörü veya GitHub deposu eklenebiliyor.",
+    "cevap": "Ücretsiz katmanda gerçekten yapılabiliyor ve sınır çoğu kişinin sandığından geniş. Google'ın Gemini Uygulamaları destek sayfasına göre bir sohbete, en fazla 5.000 dosya içeren ve boyutu 100 MB'ı aşmayan tek bir kod klasörü veya GitHub deposu yüklenebiliyor — yani tek bir dosyayı yapıştırmak yerine projenin bütününü bağlama verebiliyorsunuz. OpenAI tarafında ücretsiz katmanda günlük metin sohbeti sınırsız, dosya yükleme ise günde 3 ile sınırlı. Çıktının kullanımı konusunda ise OpenAI kendi sayfasında net: ürettiğiniz çıktının sahibi sizsiniz ve bu, ücretsiz ya da ücretli planda üretilmiş olmasından bağımsız.",
+    "hedef_sorgu": "yapay zeka ile kod nasıl yazılır",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Ücretsiz katmanda ürettiğim kodu ticari projede kullanamam.",
+      "dogru": "OpenAI'nin kendi sayfası tersini yazıyor: içerik politikası ve şartlara tabi olarak ChatGPT ile ürettiğiniz çıktının sahibi sizsiniz — yeniden basma, satma ve ürünleştirme hakkı dahil — ve bu, ücretsiz ya da ücretli planda üretilmiş olmasından bağımsız. Bu kural üretken medya araçlarındaki desenden ayrılıyor: müzik ve seslendirme tarafında ücretsiz katman çıktıyı veriyor ama ticari hakkı vermiyor. Ancak bu, kodun her açıdan sorunsuz olduğu anlamına gelmiyor — çıktının bir başkasının lisanslı kodunu tekrar üretip üretmediği ayrı bir soru ve onu size hiçbir şirket garanti etmiyor.",
+      "kaynak": "https://help.openai.com/en/articles/6783457-what-is-chatgpt"
+    },
+    "araclar": [
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "Bir sohbete en fazla 5.000 dosya içeren ve 100 MB'ı aşmayan tek bir kod klasörü veya GitHub deposu yüklenebiliyor. ₺0 planda 3.6 Flash erişimi, 3.1 Pro'ya kısmi erişim ve Canvas listeleniyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/gemini/answer/14903178?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Metin sohbeti sınırsız (kötüye kullanım korumalarına tabi); dosya yükleme günde 3, dosya başına mutlak sınır 512 MB",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "Çıktının sahibi kullanıcı — ücretsiz ya da ücretli planda üretilmiş olmasından bağımsız",
+        "kaynak": "https://help.openai.com/en/articles/6783457-what-is-chatgpt",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT — veri analizi (yetenek sınırı)",
+        "ucretsiz": "Dış web isteği veya API çağrısı YAPAMIYOR; dışarıdaki veriye bağlı bir işte veriyi önce yüklemek gerekiyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT — veri ayarı",
+        "ucretsiz": "\"Modeli herkes için iyileştir\" kapatılabiliyor; kapatınca sohbetler kalıyor ama eğitimde kullanılmıyor. Ayar tüm hesaba uygulanıyor",
+        "turkce": "",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Tek dosya yapıştırmayı bırakın, projeyi verin"
+      },
+      {
+        "tur": "metin",
+        "metin": "Yapay zekadan kod isteyenlerin çoğu tek bir fonksiyonu kopyalayıp yapıştırıyor ve gelen cevabın projeye uymamasına şaşırıyor. Uymamasının sebebi modelin yetersizliği değil, sorunun eksik sorulması: proje yapısını, kullandığınız kütüphaneleri ve mevcut adlandırmayı görmeden verilen cevap ancak genel geçer olabiliyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Google'ın kendi sayfasına göre Gemini Uygulamaları'na tek bir kod klasörü ya da GitHub deposu yüklenebiliyor: en fazla 5.000 dosya ve toplamda 100 MB. Bir klasör yüklendiğinde içindeki dosyaların her biri istem başına 10 dosyalık sınıra dahil edilmiyor, klasör tek yükleme sayılıyor. Küçük ve orta ölçekli projelerin büyük kısmı bu sınırın altında kalıyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Hangi işte gerçekten işe yarıyor?"
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "İş",
+          "Ne kadar işe yarıyor?",
+          "Dikkat edilecek"
+        ],
+        "satirlar": [
+          [
+            "Hata mesajını çözmek",
+            "En verimli kullanım",
+            "Hata metnini kısaltmadan verin"
+          ],
+          [
+            "Var olan kodu açıklatmak",
+            "Çok verimli",
+            "Açıklama doğru görünse de kodu okuyarak teyit edin"
+          ],
+          [
+            "Test yazdırmak",
+            "Verimli",
+            "Testin gerçekten başarısız olabildiğini bir kez doğrulayın"
+          ],
+          [
+            "Küçük bir işlevi sıfırdan yazdırmak",
+            "Verimli",
+            "Kütüphane sürümünüzü söyleyin; eski API önerebiliyor"
+          ],
+          [
+            "Dış veriye bağlı analiz",
+            "Sınırlı",
+            "ChatGPT veri analizi dış web isteği veya API çağrısı yapamıyor"
+          ],
+          [
+            "Mimari kararı vermek",
+            "Zayıf",
+            "Bağlamı bilmediği için makul ama yanlış öneri verebiliyor"
+          ]
+        ],
+        "not": "\"Dış veriye bağlı analiz\" satırı OpenAI'nin veri analizi yardım sayfasındaki açık ifadeye dayanıyor; diğer satırlar araçların sınırlarından çıkarılmış değerlendirmedir."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Adım adım: bir hatayı yapay zekayla çözmek"
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Hata metnini olduğu gibi verin.",
+            "metin": "Yığın izini kısaltmayın, satır numaralarını silmeyin. En çok bilgi taşıyan kısım genelde insanların gereksiz sanıp attığı orta bölüm."
+          },
+          {
+            "baslik": "Ortamı söyleyin.",
+            "metin": "Dil ve sürüm, işletim sistemi, kullandığınız kütüphanenin sürümü. Bunlar yazılmadığında gelen çözüm çoğu zaman kütüphanenin eski ya da yeni bir sürümüne ait oluyor ve çalışmıyor."
+          },
+          {
+            "baslik": "Denediklerinizi listeleyin.",
+            "metin": "\"Şunu denedim, şu oldu\" demek, aynı öneriyi tekrar almanızı engelliyor ve modeli gerçekten yeni bir yola itiyor."
+          },
+          {
+            "baslik": "Çözümü uygulamadan önce anlamayı isteyin.",
+            "metin": "\"Bu satır neyi değiştiriyor?\" diye sorun. Anlamadığınız bir düzeltmeyi projeye koymak, hatayı taşımaktan başka bir şey değil."
+          },
+          {
+            "baslik": "Çalıştığını kendi testinizle doğrulayın.",
+            "metin": "Modelin \"bu sorunu çözer\" demesi bir kanıt değil. Hatanın tekrar üretilebildiği en küçük durumu elinizde tutun ve düzeltmeden sonra onu çalıştırın."
+          }
+        ]
+      },
+      {
+        "tur": "baslik",
+        "metin": "Depoyu yüklemeden önce iki şeyi temizleyin"
+      },
+      {
+        "tur": "metin",
+        "metin": "Bir kod klasörünü olduğu gibi yüklemek pratik ama içinde ne olduğunu bilmeden yapılırsa pahalıya patlıyor. Depolarda en sık unutulan iki şey var: yapılandırma dosyalarındaki anahtarlar ve örnek veri dosyalarındaki gerçek kayıtlar."
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Ortam dosyalarını, anahtar ve parola içeren yapılandırmaları klasörden çıkarın; yüklenen içerik sizin cihazınızdan ayrılıyor.",
+          "Örnek veri klasörlerine bakın: müşteri adı, e-posta ve telefon içeren test dosyaları çok yaygın.",
+          "ChatGPT tarafında \"Modeli herkes için iyileştir\" ayarını kapatmak sohbetleri silmiyor ama eğitimde kullanılmasını durduruyor ve ayar tüm hesaba uygulanıyor.",
+          "İş yerinin verdiği hesapla kişisel hesabınızın veri kuralları aynı olmayabiliyor; hangisiyle oturum açtığınıza bakın.",
+          "Bir sızıntı olduğunu düşünüyorsanız anahtarı sohbetten silmek yetmez — anahtarı yenileyin."
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Üretilen kodun bir başkasının lisanslı kodunu tekrar üretip üretmediğini hiçbir şirket garanti etmiyor. Kapalı kaynak bir ürüne, kaynağını bilmediğiniz uzun bir kod bloğunu olduğu gibi almadan önce bunu düşünün."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Kodun sahibi kim?"
+      },
+      {
+        "tur": "metin",
+        "metin": "OpenAI'nin kendi sayfasına göre içerik politikası ve şartlara tabi olarak ChatGPT ile ürettiğiniz çıktının sahibi sizsiniz; yeniden basma, satma ve ürünleştirme hakkı dahil ve bu ücretsiz ya da ücretli planda üretilmiş olmasından bağımsız. Bu, sitedeki diğer araçların çoğundan ayrılan bir kural: müzik ve seslendirme tarafında ücretsiz katman çıktıyı veriyor ama ticari hakkı vermiyor ve sonradan abone olmak geçmişi düzeltmiyor. Yani \"ücretsiz katman hak vermez\" genellemesi kod tarafında geçerli değil."
+      }
+    ],
+    "sss": [
+      {
+        "s": "Ücretsiz katmanda kod yazdırabilir miyim?",
+        "c": "Evet. OpenAI'nin sayfasına göre ücretsiz katmanda günlük metin sohbeti sınırsız, dosya yükleme günde 3 ile sınırlı. Google tarafında ise ₺0 planda 3.6 Flash erişimi ve 3.1 Pro'ya kısmi erişim listeleniyor."
+      },
+      {
+        "s": "Tüm projemi yükleyebilir miyim?",
+        "c": "Google'ın Gemini Uygulamaları destek sayfasına göre bir sohbete en fazla 5.000 dosya içeren ve boyutu 100 MB'ı aşmayan tek bir kod klasörü veya GitHub deposu yüklenebiliyor. Küçük ve orta ölçekli projelerin çoğu bu sınırın altında kalıyor."
+      },
+      {
+        "s": "Ürettiğim kodu satabilir miyim?",
+        "c": "OpenAI kendi sayfasında, içerik politikası ve şartlara tabi olarak ChatGPT ile ürettiğiniz çıktının sahibinin siz olduğunu, buna yeniden basma, satma ve ürünleştirme hakkının dahil olduğunu ve bunun ücretsiz ya da ücretli planda üretilmiş olmasından bağımsız olduğunu yazıyor."
+      },
+      {
+        "s": "Kod bir başkasının lisanslı kodunu tekrarlıyor olabilir mi?",
+        "c": "Bu ihtimali ortadan kaldıran bir garanti bulamadık. Şirketlerin sayfalarında çıktının sahipliğine dair ifadeler var, ancak çıktının başka bir eseri yeniden üretmediğine dair bir taahhüt yok. Kaynağını bilmediğiniz uzun kod bloklarını olduğu gibi almak yerine anlayıp yeniden yazmak daha güvenli."
+      },
+      {
+        "s": "ChatGPT internetten veri çekip analiz edebilir mi?",
+        "c": "Veri analizi tarafında hayır. OpenAI'nin yardım sayfası bu aracın dış web isteği veya API çağrısı yapamadığını yazıyor; dışarıdaki bir veriye bağlı analiz için veriyi önce kendiniz yüklemeniz gerekiyor."
+      },
+      {
+        "s": "Kod deposunu yüklemek güvenli mi?",
+        "c": "Yüklemeden önce temizlik gerekiyor. Ortam dosyaları, anahtarlar ve gerçek kayıt içeren örnek veriler depolarda çok sık unutuluyor. ChatGPT tarafında \"Modeli herkes için iyileştir\" ayarı kapatılabiliyor; kapatınca sohbetler kalıyor ama eğitimde kullanılmıyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Google Destek — Gemini Uygulamaları'na dosya ve kod yükleme, sınırlar (Türkçe)",
+        "url": "https://support.google.com/gemini/answer/14903178?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT nedir? (çıktı sahipliği)",
+        "url": "https://help.openai.com/en/articles/6783457-what-is-chatgpt",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — ChatGPT ile veri analizi",
+        "url": "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — Veri kontrolleri SSS",
+        "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ]
+  },
+  {
+    "slug": "fotograftan-yazi",
+    "alan": "gunluk-isler",
+    "baslik": "Yapay Zeka ile Fotoğraftaki Yazı Nasıl Metne Çevrilir?",
+    "ozet": "Aynı uygulamanın iki sekmesi zıt davranıyor: Google Çeviri'nin Resim sekmesi fotoğraftaki yazıyı okuyor, ama Doküman sekmesi görsel içindeki ve taranmış PDF'teki yazıyı çevirmiyor. Taranmış belgeyi doküman olarak yüklerseniz elinize hiçbir şey geçmiyor.",
+    "cevap": "Ücretsiz yapılabiliyor, ama hangi kapıdan girdiğiniz sonucu tamamen değiştiriyor. Google'ın kendi destek sayfası, Çeviri'nin resim özelliğiyle tabelaların ve el yazısı notların çevrilebildiğini, çevrilmiş metnin kopyalanabildiğini ya da çevrilmiş görselin indirilebildiğini yazıyor. Aynı şirketin doküman çevirisi sayfası ise tam tersini söylüyor: görsellerin içindeki ve taranmış PDF belgelerindeki metin çevrilmiyor. Yani telefonla çekilmiş bir belgeyi \"doküman\" olarak yüklerseniz sonuç boş çıkıyor; aynı dosyayı resim olarak verdiğinizde okunuyor. Gemini ve ChatGPT tarafında da görsel yükleyip içindeki yazıyı çıkartmak mümkün.",
+    "hedef_sorgu": "fotoğraftaki yazıyı metne çevirme yapay zeka",
+    "guncelleme": "2026-09-08",
+    "yanlis": {
+      "iddia": "Taranmış PDF'i Google Çeviri'ye yükleyince çevrilir.",
+      "dogru": "Çevrilmez. Google'ın doküman çevirisi destek sayfası, görsellerin içindeki metnin ve taranmış PDF belgelerindeki metnin çevrilmediğini açıkça yazıyor. Taranmış bir PDF, teknik olarak sayfa sayfa fotoğraftan ibaret; içinde seçilebilir metin yok. Doküman çevirisi metni arıyor, bulamıyor ve size neredeyse boş bir dosya dönüyor. Aynı sayfaları resim olarak verdiğinizde ise Çeviri'nin resim özelliği bunları okuyabiliyor.",
+      "kaynak": "https://support.google.com/translate/answer/2534559?hl=tr"
+    },
+    "araclar": [
+      {
+        "ad": "Google Çeviri — Resim",
+        "ucretsiz": "Kamerayla veya yüklenen görselle çalışıyor; tabela ve el yazısı notlar örnek veriliyor. Çevrilmiş metin kopyalanabiliyor, çevrilmiş görsel indirilebiliyor",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/translate/answer/6142483?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Çeviri — Doküman",
+        "ucretsiz": "10 MB'a kadar docx, pdf, pptx, xlsx; PDF en fazla 300 sayfa. Görsel içindeki ve taranmış PDF'teki metin ÇEVRİLMİYOR",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/translate/answer/2534559?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini (Google)",
+        "ucretsiz": "Fotoğraf ve diğer dosya türleri yüklenip içeriği hakkında yanıt alınabiliyor; dosya başına 100 MB, aynı isteme en fazla 10 dosya",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/gemini/answer/14903178?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Gemini Notebook (NotebookLM)",
+        "ucretsiz": "Resim dosyaları kaynak olarak destekleniyor: jpg, png, webp, heic, tif, bmp, gif ve diğerleri. Defter başına 50 kaynak",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "ChatGPT (ücretsiz)",
+        "ucretsiz": "Görsel yükleme var; görsel başına 20 MB. Ücretsiz kullanıcıda günde 3 dosya yükleme",
+        "turkce": "Var",
+        "filigran": "",
+        "ticari": "",
+        "kaynak": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ],
+    "bolumler": [
+      {
+        "tur": "uyari",
+        "metin": "Tablodaki boş hücreler eksiklik değil: o bilgiyi şirketin kendi sayfasında net bir ifadeyle bulamadık. Bulamadığımızı tahminle doldurmuyoruz."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Neden aynı uygulama bir yerde okuyup başka yerde okumuyor?"
+      },
+      {
+        "tur": "metin",
+        "metin": "Google Çeviri'nin resim özelliği görselin içindeki yazıyı bulmak için çalışıyor; doküman çevirisi ise dosyanın içinde hazır duran metni arıyor. Taranmış bir PDF'in içinde metin yok — sayfalar aslında fotoğraf. Bu yüzden doküman çevirisi bakıyor, bulamıyor ve boşa dönüyor. Google bunu kendi sayfasında \"görsellerin içindeki ve taranmış PDF belgelerindeki metin çevrilmez\" diye yazıyor."
+      },
+      {
+        "tur": "metin",
+        "metin": "Pratik sonuç şu: elinizdeki dosyanın uzantısına değil, içinde seçilebilir metin olup olmadığına bakın. PDF'i açıp bir cümleyi fareyle seçebiliyorsanız doküman yolu çalışır. Seçemiyorsanız o dosya bir görsel yığını demektir ve resim yolundan gitmeniz gerekir."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Hangi dosya hangi yoldan gitmeli?"
+      },
+      {
+        "tur": "tablo",
+        "basliklar": [
+          "Elinizdeki",
+          "Gideceğiniz yol",
+          "Sebebi"
+        ],
+        "satirlar": [
+          [
+            "Telefonla çekilmiş belge fotoğrafı",
+            "Çeviri'nin resim özelliği ya da bir sohbet aracına yükleme",
+            "İçinde seçilebilir metin yok"
+          ],
+          [
+            "Taranmış PDF",
+            "Sayfaları görsel olarak verin",
+            "Doküman çevirisi taranmış PDF'i çevirmiyor"
+          ],
+          [
+            "Metni seçilebilen PDF",
+            "Doküman çevirisi",
+            "10 MB'a kadar, en fazla 300 sayfa"
+          ],
+          [
+            "Tabela, menü, etiket fotoğrafı",
+            "Çeviri'nin resim özelliği",
+            "Sayfada tabela örnek olarak veriliyor"
+          ],
+          [
+            "El yazısı not",
+            "Çeviri'nin resim özelliği",
+            "Sayfada el yazısı notlar örnek olarak veriliyor"
+          ],
+          [
+            "Çok sayfalı belge, düzenli iş",
+            "Kaynak olarak bir not defterine yükleyin",
+            "Resim biçimleri kaynak olarak destekleniyor"
+          ]
+        ],
+        "not": "Satırlar Google'ın resim çevirisi, doküman çevirisi ve Gemini Notebook destek sayfalarındaki ifadelerden çıkarıldı."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Sonucu belirleyen şey araç değil, fotoğraf"
+      },
+      {
+        "tur": "metin",
+        "metin": "Google'ın kendi sayfası bunu doğrudan söylüyor: çevirinin doğruluğu metnin ne kadar net olduğuna bağlı; küçük yazılmış, net olmayan veya stilize edilmiş metinlerin çevirisi çok doğru olmayabiliyor. Aynı şey metin çıkarma için de geçerli. Kötü bir fotoğrafı daha iyi bir araca vermek işe yaramıyor; iyi bir fotoğraf çekmek her araçta sonucu düzeltiyor."
+      },
+      {
+        "tur": "adim",
+        "adimlar": [
+          {
+            "baslik": "Belgeyi düz bir zemine koyun ve tam tepeden çekin.",
+            "metin": "Açılı çekilen sayfada satırlar yamuluyor ve kenarlar bulanıklaşıyor. Telefonu sayfaya paralel tutmak tek başına en büyük farkı yaratıyor."
+          },
+          {
+            "baslik": "Gölgeyi kendinizden uzaklaştırın.",
+            "metin": "En sık yapılan hata, ışığa sırtını dönüp kendi gölgesini sayfaya düşürmek. Yan taraftan gelen ışık, tepeden gelenden daha iyi sonuç veriyor."
+          },
+          {
+            "baslik": "Sayfayı kadraja tam sığdırın, yakınlaştırmayın.",
+            "metin": "Dijital yakınlaştırma çözünürlüğü düşürüyor. Kadrajı sayfaya yaklaştırın ama parmakla büyütmeyin; kırpmayı sonra yapın."
+          },
+          {
+            "baslik": "Çok sayfalıysa tek tek çekin.",
+            "metin": "İki sayfayı aynı kareye sığdırmak, her iki sayfanın da yazısını küçültüyor. Ayrı ayrı çekilen sayfalar her araçta daha iyi okunuyor."
+          },
+          {
+            "baslik": "Çıkan metni rakamlar üzerinden doğrulayın.",
+            "metin": "Sayı, tarih ve özel adlar en sık bozulan yerler. Tüm metni yeniden okumak yerine bu üçünü kontrol etmek çoğu hatayı yakalıyor."
+          }
+        ]
+      },
+      {
+        "tur": "uyari",
+        "metin": "Kimlik, reçete, sözleşme, banka evrakı gibi belgelerin fotoğrafını yüklerken iki kez düşünün. Bunlar sizin olsa bile içlerinde başkalarının bilgisi geçebiliyor ve yüklenen dosya cihazınızdan ayrılıyor. Yalnız ihtiyacınız olan bölümü kırpıp yüklemek çoğu durumda yeterli oluyor."
+      },
+      {
+        "tur": "baslik",
+        "metin": "Metni çıkardıktan sonra"
+      },
+      {
+        "tur": "madde",
+        "maddeler": [
+          "Ham metni saklayın; biçimlendirmeye başlamadan önce bir kopyası dursun.",
+          "Tablo içeren bir belgede sütun hizası genelde bozuluyor; tabloyu elle yeniden kurmak düzeltmekten hızlı.",
+          "Türkçe karakterler bozuk çıkıyorsa fotoğrafın çözünürlüğüne bakın; sorun çoğu zaman araçta değil kaynakta.",
+          "Belge çeviri için okunduysa hem özgün metni hem çeviriyi saklayın; çeviri hatası ancak ikisi yan yanayken görülüyor."
+        ]
+      }
+    ],
+    "sss": [
+      {
+        "s": "Fotoğraftaki yazıyı metne çevirmek ücretsiz mi?",
+        "c": "Evet. Google Çeviri'nin resim özelliği ücretsiz çalışıyor; Google'ın sayfasına göre kamerayla tabela ve el yazısı notlar çevrilebiliyor, çevrilmiş metin kopyalanabiliyor veya çevrilmiş görsel indirilebiliyor. Ücretsiz sohbet araçlarına da görsel yükleyebiliyorsunuz."
+      },
+      {
+        "s": "Taranmış PDF neden çevrilmiyor?",
+        "c": "Google'ın doküman çevirisi sayfası, görsellerin içindeki ve taranmış PDF belgelerindeki metnin çevrilmediğini yazıyor. Taranmış PDF'in içinde seçilebilir metin yok; sayfalar aslında fotoğraf. Aynı sayfaları resim olarak verdiğinizde okunabiliyor."
+      },
+      {
+        "s": "El yazısı okunuyor mu?",
+        "c": "Google'ın resim çevirisi sayfası el yazısı notları örnek olarak veriyor. Ancak aynı sayfa doğruluğun metnin netliğine bağlı olduğunu, küçük yazılmış veya net olmayan metinlerde sonucun çok doğru olmayabileceğini de belirtiyor."
+      },
+      {
+        "s": "Türkçe destekleniyor mu?",
+        "c": "Evet. Google Çeviri'de Türkçe hem kaynak hem hedef dil olarak var. Çıkan metinde Türkçe karakterler bozuk görünüyorsa sorun genelde fotoğrafın çözünürlüğünde veya netliğinde oluyor."
+      },
+      {
+        "s": "Kaç sayfalık belge işleyebilirim?",
+        "c": "Metni seçilebilen bir PDF'i doküman olarak çevirtiyorsanız Google'ın sınırı 10 MB ve en fazla 300 sayfa. Taranmış belgelerde sayfa sayfa görsel vermeniz gerektiği için pratik sınırı yükleme kotanız belirliyor: ücretsiz ChatGPT'de günde 3 dosya, Gemini'da aynı isteme en fazla 10 dosya."
+      },
+      {
+        "s": "Kimlik veya sözleşme fotoğrafı yükleyebilir miyim?",
+        "c": "Teknik olarak yükleniyor ama önce düşünün. Bu belgelerde çoğu zaman başkalarının da bilgisi geçiyor ve yüklenen dosya cihazınızdan ayrılıyor. İhtiyacınız olan bölümü kırpıp yüklemek çoğu durumda aynı işi görüyor."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Google Destek — Resimlerdeki metni çevirme (Türkçe)",
+        "url": "https://support.google.com/translate/answer/6142483?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Doküman ve web sitesi çevirme, sınırlar (Türkçe)",
+        "url": "https://support.google.com/translate/answer/2534559?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Gemini Uygulamaları'na dosya yükleme ve sınırlar (Türkçe)",
+        "url": "https://support.google.com/gemini/answer/14903178?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "Google Destek — Gemini Notebook: desteklenen dosya türleri (Türkçe)",
+        "url": "https://support.google.com/notebooklm/answer/16215270?hl=tr",
+        "dogrulama": "2026-09-08"
+      },
+      {
+        "ad": "OpenAI Help Center — Dosya yükleme SSS",
+        "url": "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "dogrulama": "2026-09-08"
+      }
+    ]
   }
 ]
