@@ -227,6 +227,9 @@ def main() -> int:
     # indekslenmek, siteyi "ince içerik" olarak damgalatır ve AdSense onayını da
     # riske atar; eşiği geçince kendiliğinden açılır.
     site["noindex"] = len(rehberler) + len(gorevler) < EN_AZ_SAYFA
+    # Ana sayfa sayacı yalnız rehberleri sayıyordu: 17 görev varken site
+    # kendini "3 rehber" diye tanıtıyordu. Asıl ölçü kaynaklı araç satırı.
+    site["arac_sayisi"] = sum(len(g.get("araclar", [])) for g in gorevler)
 
     env = Environment(loader=FileSystemLoader(TEMPLATES),
                       autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)

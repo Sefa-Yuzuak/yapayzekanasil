@@ -27,10 +27,10 @@
       {"tur": "metin", "metin": "Bu site statik sayfalardan oluşur; üyelik, form ya da yorum yoktur. Sizden ad, e-posta veya başka bir kişisel bilgi istenmez."},
       {"tur": "baslik", "metin": "Reklamlar ve çerezler"},
       {"tur": "metin", "metin": "Sitede Google AdSense reklamları gösterilebilir. Google ve reklam ortakları, size daha alakalı reklam göstermek için üçüncü taraf çerezleri kullanabilir; bu çerezler bu siteye ve daha önce ziyaret ettiğiniz diğer sitelere dayanabilir."},
-      {"tur": "madde", "maddeler": [
-        "Kişiselleştirilmiş reklamları Google Reklam Ayarları'ndan kapatabilirsiniz: https://adssettings.google.com",
-        "Diğer üçüncü taraf sağlayıcıların çerezlerinden çıkmak için: https://www.aboutads.info/choices",
-        "Google'ın verileri nasıl kullandığı: https://policies.google.com/technologies/partner-sites"
+      {"tur": "baglanti", "maddeler": [
+        {"metin": "Kişiselleştirilmiş reklamları buradan kapatabilirsiniz:", "ad": "Google Reklam Ayarları", "url": "https://adssettings.google.com"},
+        {"metin": "Diğer üçüncü taraf sağlayıcıların çerezlerinden çıkmak için:", "ad": "aboutads.info/choices", "url": "https://www.aboutads.info/choices"},
+        {"metin": "Google'ın verileri nasıl kullandığı:", "ad": "Google — İş ortağı sitelerde veri kullanımı", "url": "https://policies.google.com/technologies/partner-sites"}
       ]},
       {"tur": "baslik", "metin": "Sunucu kayıtları"},
       {"tur": "metin", "metin": "Sunucu, güvenlik ve arıza tespiti için standart erişim kayıtları tutar (IP adresi, tarayıcı türü, istenen sayfa). Bu kayıtlar kısa süre saklanır ve kimseyle paylaşılmaz."},

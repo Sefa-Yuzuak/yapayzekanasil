@@ -7,6 +7,10 @@
     {% if b.tur == "baslik" %}<h2>{{ b.metin }}</h2>
     {% elif b.tur == "metin" %}<p>{{ b.metin }}</p>
     {% elif b.tur == "madde" %}<ul class="madde">{% for m in b.maddeler %}<li>{{ m }}</li>{% endfor %}</ul>
+    {# Adresi düz metin yazmak hem tıklanamıyor hem de uzun URL mobilde
+       sayfayı yatay taşırıyordu. Bağlantı metnini ad alanından basıyoruz. #}
+    {% elif b.tur == "baglanti" %}<ul class="madde">{% for m in b.maddeler %}<li>{{ m.metin }}
+      <a href="{{ m.url }}" rel="nofollow noopener" target="_blank">{{ m.ad }}</a></li>{% endfor %}</ul>
     {% elif b.tur == "uyari" %}<p class="uyari">{{ b.metin }}</p>
     {% endif %}
   {% endfor %}

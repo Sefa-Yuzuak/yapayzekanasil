@@ -52,7 +52,7 @@
     <div class="tablo-sar">
       <table class="veri">
         <thead><tr>{% for s in b.basliklar %}<th scope="col">{{ s }}</th>{% endfor %}</tr></thead>
-        <tbody>{% for satir in b.satirlar %}<tr>{% for h in satir %}<td>{{ h }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+        <tbody>{% for satir in b.satirlar %}<tr>{% for h in satir %}<td data-etiket="{{ b.basliklar[loop.index0] }}">{{ h }}</td>{% endfor %}</tr>{% endfor %}</tbody>
       </table>
     </div>
     {% if b.not %}<p class="soluk kucuk">{{ b.not }}</p>{% endif %}

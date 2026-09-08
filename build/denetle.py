@@ -3,7 +3,8 @@
 
 Kontroller: çift/uzun başlık, meta açıklama, tek robots ve canonical etiketi,
 tek h1, bozuk JSON-LD, kırık iç bağlantı, yetim sayfa, sitemap tutarlılığı,
-ince sayfa, kaynaksız sayı (rehberde rakam var ama kaynak listesi boş).
+ince sayfa, kaynaksız sayı (rehberde rakam var ama kaynak listesi boş),
+mobilde yatay taşmaya yol açan kırılamayan uzun dizi.
 Hedef: 0 sorun. Çıkış kodu 1 ise deploy etme.
 """
 from __future__ import annotations
@@ -22,6 +23,9 @@ DIST = KOK / "dist"
 BASLIK_EN = 62
 DESC_EN = 160
 EN_AZ_METIN = 900
+# 375px ekranda 16px yazıyla ~44 karakter bir satıra sığıyor; 54 karakterlik bir
+# URL sayfayı 401px'e itmişti. CSS artık kırıyor, bu kural kaynağı yakalar.
+EN_UZUN_SOZCUK = 45
 
 
 def metin(h: str) -> str:
@@ -102,6 +106,13 @@ def main() -> int:
         g = metin(h)
         if not dis_404 and not noindex and len(g) < EN_AZ_METIN:
             sorunlar.append(f"{u}: gövde metni {len(g)} karakter (ince sayfa şüphesi)")
+
+        # Kırılamayan uzun dizi (çoğunlukla düz metin yazılmış URL) mobilde
+        # sayfayı görüntü alanının dışına itiyor. CSS bunu artık kırıyor, ama
+        # kaynağı düzeltmek daha iyi: uzun URL'yi bağlantı metnine sarın.
+        for uzun in sorted({w for w in g.split() if len(w) > EN_UZUN_SOZCUK}):
+            sorunlar.append(f"{u}: {len(uzun)} karakterlik kırılamayan dizi "
+                            f"«{uzun[:55]}» — mobilde yatay taşma riski")
 
         # Rehberde yıl/fiyat/yüzde gibi rakam var ama kaynak bölümü yoksa: kaynaksız sayı.
         if u.startswith("/rehber/") and 'id="kaynaklar"' not in h and re.search(r"\d{2,}", g):

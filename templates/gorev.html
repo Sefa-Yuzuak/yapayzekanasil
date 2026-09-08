@@ -34,7 +34,7 @@
     <p class="soluk">Her satır, aracın kendi sayfasından alındı. Boş bırakılan hücre, o bilginin
        kaynak sayfada yazmadığı anlamına gelir — tahmin yazmıyoruz.</p>
     <div class="tablo-sar">
-      <table class="veri">
+      <table class="veri arac">
         <thead><tr>
           <th scope="col">Araç</th><th scope="col">Ücretsiz katmanda</th>
           <th scope="col">Türkçe</th><th scope="col">Filigran</th>
@@ -43,12 +43,14 @@
         <tbody>
           {% for a in g.araclar %}
           <tr>
-            <td><a href="{{ a.kaynak }}" rel="nofollow noopener" target="_blank">{{ a.ad }}</a></td>
-            <td>{{ a.ucretsiz or "—" }}</td>
-            <td>{{ a.turkce or "—" }}</td>
-            <td>{{ a.filigran or "—" }}</td>
-            <td>{{ a.ticari or "—" }}</td>
-            <td class="kucuk">{{ a.dogrulama|tarih }}</td>
+            {# data-etiket: dar ekranda tablo bloklara dönüşüyor ve sütun başlığı
+               her hücrenin önüne bu öznitelikten basılıyor (bkz. s.css). #}
+            <td data-etiket="Araç"><a href="{{ a.kaynak }}" rel="nofollow noopener" target="_blank">{{ a.ad }}</a></td>
+            <td data-etiket="Ücretsiz katmanda">{{ a.ucretsiz or "—" }}</td>
+            <td data-etiket="Türkçe">{{ a.turkce or "—" }}</td>
+            <td data-etiket="Filigran">{{ a.filigran or "—" }}</td>
+            <td data-etiket="Ticari kullanım">{{ a.ticari or "—" }}</td>
+            <td class="kucuk" data-etiket="Kontrol">{{ a.dogrulama|tarih }}</td>
           </tr>
           {% endfor %}
         </tbody>
@@ -82,7 +84,7 @@
     <div class="tablo-sar">
       <table class="veri">
         <thead><tr>{% for s in b.basliklar %}<th scope="col">{{ s }}</th>{% endfor %}</tr></thead>
-        <tbody>{% for satir in b.satirlar %}<tr>{% for h in satir %}<td>{{ h }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+        <tbody>{% for satir in b.satirlar %}<tr>{% for h in satir %}<td data-etiket="{{ b.basliklar[loop.index0] }}">{{ h }}</td>{% endfor %}</tr>{% endfor %}</tbody>
       </table>
     </div>
     {% if b.not %}<p class="soluk kucuk">{{ b.not }}</p>{% endif %}

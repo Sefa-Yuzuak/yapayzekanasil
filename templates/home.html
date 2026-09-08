@@ -4,10 +4,10 @@
 <section class="kahraman">
   <h1>Yapay zekâ nasıl kullanılır?</h1>
   <p class="giris">{{ site.aciklama }}</p>
-  {% if rehberler %}
+  {% if rehberler or gorevler %}
   <ul class="sayilar">
-    <li><strong>{{ rehberler|length }}</strong><span>rehber</span></li>
-    <li><strong>{{ alanlar|selectattr("dolu")|list|length }}</strong><span>konu</span></li>
+    {% if gorevler %}<li><strong>{{ gorevler|length }}</strong><span>nasıl yapılır</span></li>{% endif %}
+    {% if site.arac_sayisi %}<li><strong>{{ site.arac_sayisi }}</strong><span>kaynaklı araç satırı</span></li>{% endif %}
     <li><strong>{{ site.guncelleme_tr }}</strong><span>son güncelleme</span></li>
   </ul>
   {% endif %}
