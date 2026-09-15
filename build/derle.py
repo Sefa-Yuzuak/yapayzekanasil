@@ -181,6 +181,10 @@ def makale_schema(site: dict, r: dict, alan: dict) -> dict:
          "description": r["ozet"], "inLanguage": "tr-TR", "url": site["url"] + r["yol"],
          "mainEntityOfPage": site["url"] + r["yol"], "wordCount": r["kelime"],
          "articleSection": alan.get("ad", ""),
+         # author eksikti: Google'in Article gereksinimi ve uretken motorlarda
+         # "bunu kim yazdi" sorusunun makine okunur cevabi. Yayinci kurulusun
+         # kendisi yazar; gercek bir kisi adi uydurulmaz.
+         "author": {"@type": "Organization", "name": site["ad"], "url": site["url"] + "/"},
          "publisher": {"@type": "Organization", "name": site["ad"], "url": site["url"] + "/"}}
     if r.get("guncelleme"):
         s["dateModified"] = r["guncelleme"]
@@ -188,6 +192,32 @@ def makale_schema(site: dict, r: dict, alan: dict) -> dict:
         s["citation"] = [{"@type": "CreativeWork", "name": k["ad"], "url": k["url"]}
                          for k in r["kaynaklar"]]
     return s
+
+
+def nasil_schema(site: dict, g: dict) -> dict | None:
+    """Görev adımlarından HowTo. Sitenin en alıntılanabilir yapısı numaralı
+    adımlar; metinler veride hazır, yeni bilgi üretilmiyor. Adım bloğu yoksa
+    şema da yok."""
+    adimlar = []
+    for blok in g.get("bolumler", []) or []:
+        if blok.get("tur") != "adim":
+            continue
+        for i, x in enumerate(blok.get("adimlar") or [], start=len(adimlar) + 1):
+            if isinstance(x, str):
+                ad, metin = x.split(".")[0][:110], x
+            else:
+                ad, metin = (x.get("baslik") or ""), (x.get("metin") or "")
+                ad = ad or metin.split(".")[0][:110]
+            if not metin:
+                continue
+            adimlar.append({"@type": "HowToStep", "position": i,
+                            "name": ad.rstrip(". "), "text": metin})
+    if not adimlar:
+        return None
+    return {"@context": "https://schema.org", "@type": "HowTo",
+            "name": g["baslik"], "description": g["ozet"], "inLanguage": "tr-TR",
+            "url": site["url"] + g["yol"], "step": adimlar,
+            **({"dateModified": g["guncelleme"]} if g.get("guncelleme") else {})}
 
 
 def liste_schema(site: dict, ad: str, yol: str, rehberler: list[dict]) -> dict:
@@ -282,7 +312,10 @@ def main() -> int:
     bugun = date.today().isoformat()
     site["derleme_zamani"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     site["yil"] = bugun[:4]
-    site["guncelleme"] = max([x.get("guncelleme") or "" for x in rehberler + gorevler] + [bugun])
+    # bugun listeden CIKARILDI: icerik degismese de tarih her derlemede bugune
+    # cekiliyordu ve gorev sayfasinin kendi damgasiyla celisiyordu.
+    site["guncelleme"] = max([x.get("guncelleme") or "" for x in rehberler + gorevler]
+                             or [bugun])
     site["guncelleme_tr"] = tarih_yaz(site["guncelleme"])
     # Yeterli içerik birikene kadar arama motorlarına kapalı. Tek sayfayla
     # indekslenmek, siteyi "ince içerik" olarak damgalatır ve AdSense onayını da
@@ -341,12 +374,20 @@ def main() -> int:
               oncelik="0.9", kirinti=[("Nasıl yapılır", "/nasil/")])
 
     for g in gorevler:
-        sayfa(g["yol"], "gorev.html", g["baslik"], g["ozet"],
-              [makale_schema(site, g, {"ad": "Nasıl yapılır"}),
-               sss_schema(g.get("sss", [])),
-               kirintilar(site, ("Nasıl yapılır", "/nasil/"), (g["baslik"], g["yol"]))],
-              oncelik="0.9", lastmod=g.get("guncelleme"), g=g,
-              kirinti=[("Nasıl yapılır", "/nasil/"), (g["baslik"], g["yol"])])
+        # articleSection 23 gorevde de "Nasıl yapılır" yaziyordu; konu veride
+        # (g["alan"]) var ama ne semaya ne kirintiya yansiyordu.
+        _alan = alan_dizin.get(g.get("alan")) or {"ad": "Nasıl yapılır"}
+        _kirinti = [("Nasıl yapılır", "/nasil/")]
+        if _alan.get("yol"):
+            _kirinti.append((_alan["ad"], _alan["yol"]))
+        _kirinti.append((g["baslik"], g["yol"]))
+        _semalar = [makale_schema(site, g, _alan), sss_schema(g.get("sss", [])),
+                    kirintilar(site, *_kirinti)]
+        _nasil = nasil_schema(site, g)
+        if _nasil:
+            _semalar.insert(1, _nasil)
+        sayfa(g["yol"], "gorev.html", g["baslik"], g["ozet"], _semalar,
+              oncelik="0.9", lastmod=g.get("guncelleme"), g=g, kirinti=_kirinti)
 
     if rehberler:
         sayfa("/rehberler/", "rehberler.html", f"Tüm Rehberler ({len(rehberler)})",
