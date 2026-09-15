@@ -10,6 +10,7 @@
     {% if r.guncelleme %}Güncelleme: <strong>{{ r.guncelleme|tarih }}</strong> · {% endif %}
     {{ r.okuma }} dk okuma{% if r.kaynaklar %} · {{ r.kaynaklar|length }} resmî kaynak{% endif %}
   </p>
+  {% include "_paylas.html" %}
 
   {% if r.cevap %}
   <div class="kisa-cevap">

@@ -36,7 +36,9 @@
 
 <header class="ust">
   <div class="kap ust-ic">
-    <a class="logo" href="/" aria-label="{{ site.ad }} ana sayfa">
+    {# aria-label yok: görünen ad ("YapayZekaNasıl") erişilebilir adla birebir aynı olmalı,
+       yoksa sesli komutla tıklama ve Lighthouse "label-content-name-mismatch" bozuluyor. #}
+    <a class="logo" href="/">
       <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="7" fill="#2b1f66"/><circle cx="12" cy="14" r="2.6" fill="#f5b942"/><circle cx="20" cy="14" r="2.6" fill="#f5b942"/><path d="M10.5 20.5c1.6 2.2 9.4 2.2 11 0" fill="none" stroke="#c9b8ff" stroke-width="2.2" stroke-linecap="round"/></svg>
       <span>YapayZeka<b>Nasıl</b></span>
     </a>
@@ -97,6 +99,17 @@
     d.setAttribute("aria-expanded", String(!acik));
     d.setAttribute("aria-label", acik ? "Menüyü aç" : "Menüyü kapat");
     m.classList.toggle("acik", !acik);
+  });
+  var p = document.querySelector(".paylas"), durum = document.getElementById("paylas-durum");
+  if (p) p.addEventListener("click", function () {
+    var metin = p.querySelector(".paylas-metin");
+    var bildir = function (m) {
+      metin.textContent = m; if (durum) durum.textContent = m; p.classList.add("oldu");
+      setTimeout(function () { metin.textContent = p.dataset.etiket; p.classList.remove("oldu"); }, 2200);
+    };
+    if (navigator.share) { navigator.share({ title: document.title, url: location.href }).catch(function () {}); return; }
+    if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(
+      function () { bildir("Bağlantı kopyalandı"); }, function () { bildir("Kopyalanamadı"); });
   });
 })();
 </script>

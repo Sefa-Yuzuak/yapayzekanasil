@@ -9,6 +9,7 @@
     {% if g.guncelleme %}Güncelleme: <strong>{{ g.guncelleme|tarih }}</strong> · {% endif %}
     {{ g.okuma }} dk okuma{% if g.araclar %} · {{ g.araclar|length }} araç karşılaştırıldı{% endif %}{% if g.kaynaklar %} · {{ g.kaynaklar|length }} resmî kaynak{% endif %}
   </p>
+  {% include "_paylas.html" %}
 
   {% if g.cevap %}
   <div class="kisa-cevap">
@@ -33,6 +34,20 @@
     <h2 id="araclar">Hangi araçla, ücretsiz katmanda ne kadar?</h2>
     <p class="soluk">Her satır, aracın kendi sayfasından alındı. Boş bırakılan hücre, o bilginin
        kaynak sayfada yazmadığı anlamına gelir — tahmin yazmıyoruz.</p>
+    {# Kutu derlemede tablonun hücrelerinden hesaplanıyor (derle.py: bir_bakista);
+       görüş, sıralama ya da "en iyi" içermez. Listede olmayan satır hakkında
+       hiçbir şey iddia edilmez — tablo ayrıntıyı verir. #}
+    {% if g.bakis or g.kontrol %}
+    <div class="bakis">
+      <p class="etiket">Bir bakışta — tablodan derlendi</p>
+      <dl>
+        {% for b in g.bakis %}
+        <div><dt>{{ b.etiket }}</dt><dd>{{ b.adlar|join(", ") }}</dd></div>
+        {% endfor %}
+        {% if g.kontrol %}<div><dt>Son kontrol</dt><dd>{{ g.kontrol }}</dd></div>{% endif %}
+      </dl>
+    </div>
+    {% endif %}
     <div class="tablo-sar">
       <table class="veri arac">
         <thead><tr>
@@ -56,6 +71,10 @@
         </tbody>
       </table>
     </div>
+    <p class="kontrol-notu soluk kucuk"><strong>Nasıl kontrol ettik:</strong> Her satır aracın kendi
+       yardım ya da fiyat sayfasından alındı; Kontrol sütunundaki tarih o sayfaya en son baktığımız
+       gündür. Şirketler sınırları değiştirebilir, bu yüzden karar vermeden önce satırdaki kaynağa
+       bakın — yöntemin tamamı <a href="/hakkinda/">Hakkında ve yöntem</a> sayfasında.</p>
   </section>
   {% endif %}
 

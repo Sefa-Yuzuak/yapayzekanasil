@@ -34,6 +34,21 @@
 </section>
 {% endif %}
 
+{% if son_kontroller %}
+{# Veri dosyasındaki kontrol tarihinden üretilir (derle.py); "değişti" değil
+   "kontrol edildi" demektir — kontrol her zaman bir değişiklik bulmaz. #}
+<section class="bolum">
+  <h2>Son kontrol edilen satırlar</h2>
+  <p class="soluk">Araç tablolarında kaynağına en son bakılan satırlar; tarih, o kaynağı
+     en son kontrol ettiğimiz gündür.</p>
+  <ul class="son-liste">
+    {% for s in son_kontroller %}
+    <li><span class="son-arac">{{ s.ad }}</span><a href="{{ s.yol }}">{{ s.baslik }}</a><span class="soluk kucuk">{{ s.dogrulama|tarih }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {% if rehberler %}
 {% for a in alanlar if a.rehberler %}
 <section class="bolum">

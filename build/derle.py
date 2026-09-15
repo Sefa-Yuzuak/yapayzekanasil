@@ -98,6 +98,51 @@ def duz_metin(r: dict) -> str:
     return " ".join(p for p in parcalar if p)
 
 
+# ---------------------------------------------------------------- bir bakışta
+# Araç tablosunun hücreleri serbest metin. Kutu yalnız hücrede AÇIKÇA yazan durumu
+# özetler: kalıba uymayan satır hiçbir listeye girmez ve "listede yok" hiçbir şey
+# iddia etmez — ayrıntı tabloda. "Ücretsiz katmanda" sütunu için olumlu liste
+# üretilmez: satırların bir kısmı araç değil ayar/yetenek sınırı/karşılaştırma
+# satırı, "hücre dolu = ücretsiz katmanı var" demek olmaz. Türkçe harfler
+# yüzünden lower() yok; kalıplar hücrenin yazıldığı hâliyle eşleşir.
+# Kalıbı None olan satır: aynı sütunda önceki kurallara girmemiş, dolu hücreler.
+BAKIS_KURALLARI = (
+    ("ucretsiz", "Ücretsiz katmanda değil", re.compile(r"^(Yok\b|Ücretsiz katmanda değil)")),
+    ("turkce", "Türkçe destekleyen", re.compile(r"^Var\b|\bTürkçe var\b")),
+    ("filigran", "Filigransız", re.compile(r"^Yok\b|filigran konmuyor")),
+    ("filigran", "Filigran notu olan", None),
+    ("ticari", "Ticari kullanıma açık", re.compile(r"^Çıktının sahibi kullanıcı")),
+    ("ticari", "Ticari kullanım yok", re.compile(r"^YOK\b")),
+    ("ticari", "Ticari kullanım notu olan", None),
+)
+
+
+def bir_bakista(araclar: list[dict]) -> list[dict]:
+    satirlar = []
+    alinan: set[tuple[str, int]] = set()      # (sütun, satır no): satır sütun başına tek listeye girer
+    for sutun, etiket, kalip in BAKIS_KURALLARI:
+        adlar = []
+        for i, a in enumerate(araclar):
+            deger = (a.get(sutun) or "").strip()
+            if not deger or (sutun, i) in alinan:
+                continue
+            if kalip is None or kalip.search(deger):
+                adlar.append(a["ad"])
+                alinan.add((sutun, i))
+        if adlar:
+            satirlar.append({"etiket": etiket, "adlar": adlar})
+    return satirlar
+
+
+def kontrol_araligi(araclar: list[dict]) -> str:
+    tarihler = sorted(a["dogrulama"] for a in araclar if a.get("dogrulama"))
+    if not tarihler:
+        return ""
+    if tarihler[0] == tarihler[-1]:
+        return tarih_yaz(tarihler[0])
+    return f"{tarih_yaz(tarihler[0])} – {tarih_yaz(tarihler[-1])}"
+
+
 def yukle(ad: str, varsayilan=None):
     yol = DATA / ad
     if not yol.exists():
@@ -180,6 +225,22 @@ def main() -> int:
         kaynaksiz = [a["ad"] for a in g.get("araclar", []) if not a.get("kaynak")]
         if kaynaksiz:
             sys.exit(f"HATA: {g['slug']} görevinde kaynaksız araç satırı: {kaynaksiz}")
+        g["bakis"] = bir_bakista(g.get("araclar", []))
+        g["kontrol"] = kontrol_araligi(g.get("araclar", []))
+    # Ana sayfa "son kontrol edilenler": kontrol tarihi en yeni satırlar. Aynı
+    # tarihte en son eklenen görev öne (veri dosyasına sona ekleniyor); tek görevin
+    # bütün satırları listeyi doldurmasın diye görev başına en fazla iki satır.
+    son_kontroller: list[dict] = []
+    gorev_sayaci: dict[str, int] = {}
+    for s in sorted(({"ad": a["ad"], "dogrulama": a.get("dogrulama") or "", "baslik": g["baslik"],
+                      "yol": g["yol"], "sira": i}
+                     for i, g in enumerate(gorevler) for a in g.get("araclar", [])),
+                    key=lambda s: (s["dogrulama"], s["sira"]), reverse=True):
+        if gorev_sayaci.get(s["yol"], 0) < 2:
+            son_kontroller.append(s)
+            gorev_sayaci[s["yol"]] = gorev_sayaci.get(s["yol"], 0) + 1
+        if len(son_kontroller) == 8:
+            break
     for g in gorevler:
         # Sabit ilk üçü vermek, listenin başındaki görevlere bütün iç bağlantıyı
         # yığıp sonrakileri öksüz bırakıyordu. Önce aynı konudan, sonra sırayı
@@ -249,7 +310,7 @@ def main() -> int:
     ozet = hashlib.sha256(css.read_bytes()).hexdigest()[:8]
     css = css.rename(DIST / "static" / f"s.{ozet}.css")
     ortak = {"site": site, "alanlar": alanlar, "rehberler": rehberler, "gorevler": gorevler,
-             "css_url": f"/static/{css.name}"}
+             "son_kontroller": son_kontroller, "css_url": f"/static/{css.name}"}
     yollar: list[tuple[str, str, str | None]] = []
 
     def tam_baslik(b: str) -> str:

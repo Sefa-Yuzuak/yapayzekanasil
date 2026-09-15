@@ -46,7 +46,9 @@ strong { font-weight: 700; }
 .ust { background: var(--kutu); border-bottom: 1px solid var(--cizgi); position: sticky; top: 0; z-index: 50; }
 .ust-ic { display: flex; align-items: center; justify-content: space-between; min-height: 60px; gap: 1rem; }
 .logo { display: inline-flex; align-items: center; gap: .55rem; text-decoration: none; color: var(--mor); font-weight: 700; font-size: 1.15rem; min-height: 44px; }
-.logo b { color: var(--vurgu); }
+/* --vurgu (#7c5cff) beyaz üstünde 4,4:1 — 18px kalın yazı "büyük metin" sayılmadığı
+   için 4,5:1 eşiğinin altında kalıyordu; --mor-acik 8,5:1. */
+.logo b { color: var(--mor-acik); }
 .menu { display: flex; gap: .2rem; flex-wrap: wrap; }
 .menu a {
   display: inline-flex; align-items: center; min-height: 44px; padding: 0 .75rem;
@@ -152,6 +154,30 @@ table.veri tr:last-child td { border-bottom: 0; }
   table.arac tr td:first-child::before { display: none; }
   table.arac tr td:first-child { font-size: 1.08rem; font-weight: 700; padding-top: .3rem; }
 }
+
+/* bir bakışta: tablodan derlenen özet */
+.bakis { background: #fff; border: 1px solid var(--cizgi); border-left: 4px solid var(--sari); border-radius: 0 var(--yuvarlak) var(--yuvarlak) 0; padding: .8rem 1rem .5rem; margin: .6rem 0 .9rem; }
+.bakis dl { margin: 0; }
+.bakis dl > div { display: grid; grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: .1rem .8rem; padding: .3rem 0; border-top: 1px solid var(--cizgi); }
+.bakis dl > div:first-child { border-top: 0; }
+.bakis dt { font-weight: 700; color: var(--mor); }
+.bakis dd { margin: 0; }
+@media (max-width: 600px) { .bakis dl > div { grid-template-columns: minmax(0, 1fr); } }
+.kontrol-notu { margin: .6rem 0 0; max-width: 72ch; }
+
+/* paylaş */
+.paylas-sar { margin: -.5rem 0 1.2rem; position: relative; }
+.paylas { display: inline-flex; align-items: center; justify-content: center; gap: .45rem; min-height: 44px; min-width: 12.5rem; padding: 0 1rem; background: #fff; color: var(--mor); border: 1px solid var(--cizgi); border-radius: 999px; font: inherit; font-size: .92rem; font-weight: 600; cursor: pointer; }
+.paylas:hover { border-color: var(--vurgu); background: var(--acik); }
+.paylas.oldu { border-color: var(--yesil); color: var(--yesil); }
+.gorsel-gizli { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* son kontrol edilen satırlar (ana sayfa) */
+.son-liste { list-style: none; padding: 0; margin: .6rem 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: .6rem .9rem; }
+.son-liste li { min-width: 0; background: #fff; border: 1px solid var(--cizgi); border-radius: 10px; padding: .6rem .9rem; display: flex; flex-direction: column; gap: .15rem; }
+.son-liste a { text-decoration: none; }
+.son-liste a:hover { text-decoration: underline; }
+.son-arac { font-weight: 700; color: var(--mor); }
 
 /* sss */
 .sss details { background: #fff; border: 1px solid var(--cizgi); border-radius: 10px; padding: 0 1rem; margin: .5rem 0; }
